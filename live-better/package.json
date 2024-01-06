@@ -1,0 +1,14 @@
+{
+  "name": "live-better",
+  "version": "1.0.0",
+  "description": "Live better landing page",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass assets/sass/main.scss assets/css/style.css -w"
+  },
+  "author": "Jc Enriquez",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

@@ -1,0 +1,22 @@
+.section {
+  padding: 4.8rem 0;
+}
+
+.about {
+  &__cards {
+    padding: 4.8rem 0;
+  }
+
+  &__partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9.6rem 0 4.8rem 0;
+
+    &__img {
+      height: 3.6rem;
+      filter: brightness(0);
+      opacity: 50%;
+    }
+  }
+}

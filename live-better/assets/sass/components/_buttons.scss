@@ -1,0 +1,28 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+
+    padding: 1rem 2rem;
+    border-radius: 8px;
+  }
+
+  &--solid {
+    &:link,
+    &:visited {
+      background-color: $clr-green-light;
+      color: $clr-green;
+      border: 1px solid $clr-gray-dark;
+      box-shadow: 0.5rem 0.5rem $clr-gray-light;
+      transition: all 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      background-color: darken($clr-green-light, 5%);
+      box-shadow: 0.7rem 0.7rem;
+    }
+  }
+}

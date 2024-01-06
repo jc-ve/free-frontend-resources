@@ -1,0 +1,52 @@
+.card {
+  padding: 2rem;
+  font-size: 1.4rem;
+  border-radius: 10px;
+  border: 1px solid $clr-gray-dark;
+  box-shadow: 0.5rem 0.5rem $clr-gray-light;
+
+  &--stats {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    background-color: $clr-green-light;
+  }
+
+  &__icon {
+    font-size: 2.4rem;
+    flex-shrink: 0;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid currentColor;
+
+    &--red {
+      background-color: $clr-red-light;
+      color: $clr-red;
+    }
+
+    &--orange {
+      background-color: $clr-orange-light;
+      color: $clr-orange;
+    }
+
+    &--purple {
+      background-color: $clr-purple-light;
+      color: $clr-purple;
+    }
+
+    &--yellow {
+      background-color: $clr-yellow-light;
+      color: $clr-yellow;
+    }
+
+    &--green {
+      background-color: $clr-green-light;
+      color: $clr-green;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+}

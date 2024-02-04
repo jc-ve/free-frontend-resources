@@ -1,0 +1,24 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: $clr-gray;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: $clr-blue;
+
+  &--primary {
+    font-size: 5.2rem;
+  }
+
+  &--secondary {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,8 @@
+.navigation {
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+}

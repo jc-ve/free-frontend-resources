@@ -1,0 +1,23 @@
+.card {
+  background-color: $clr-blue-100;
+  padding: 2rem;
+  border-radius: 10px;
+
+  &__title {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: $clr-blue;
+    margin-bottom: 1.6rem;
+  }
+
+  &__icon {
+    font-size: 2rem;
+    color: $clr-white;
+    padding: 1.2rem 1.6rem;
+    border-radius: 50%;
+    background-color: $clr-blue;
+    display: inline-block;
+    margin-bottom: 3.6rem;
+  }
+}

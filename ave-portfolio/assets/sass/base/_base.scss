@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+img,
+video,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+}

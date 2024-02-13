@@ -1,0 +1,36 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 2.3rem;
+  line-height: 1;
+  color: $clr-white;
+}
+
+.heading {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+
+  &--primary {
+    font-size: 9rem;
+  }
+
+  &--secondary {
+    font-size: 6rem;
+  }
+
+  &--tertiary {
+    font-size: 4.2rem;
+  }
+}
+
+.paragraph {
+  line-height: 1.6;
+  &--lg {
+    font-size: 4.6rem;
+    line-height: 1;
+  }
+}

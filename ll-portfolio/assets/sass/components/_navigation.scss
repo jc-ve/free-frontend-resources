@@ -1,0 +1,44 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 2rem 4rem;
+  background-color: $clr-black;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 2.4rem;
+      @include linkReset;
+      @include linkBaseStyle;
+      background-position: bottom left;
+      background-size: 0% 1px;
+    }
+
+    &:hover,
+    &:active {
+      background-size: 100% 1px;
+    }
+
+    &--active {
+      &:link,
+      &:visited,
+      &:hover,
+      &:active {
+        background: linear-gradient($clr-white, $clr-white);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 100% 1px;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+}

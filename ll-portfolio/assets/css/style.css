@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit; }
+
+::selection {
+  background-color: #191919;
+  color: #fff; }
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #0b0b0b; }
+
+img,
+svg,
+picture,
+video {
+  display: block;
+  max-width: 100%; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 2.3rem;
+  line-height: 1;
+  color: #fff; }
+
+.heading {
+  font-family: "Merriweather", serif;
+  font-weight: 900; }
+  .heading--primary {
+    font-size: 9rem; }
+  .heading--secondary {
+    font-size: 6rem; }
+  .heading--tertiary {
+    font-size: 4.2rem; }
+
+.paragraph {
+  line-height: 1.6; }
+  .paragraph--lg {
+    font-size: 4.6rem;
+    line-height: 1; }
+
+.u-container {
+  max-width: 130rem;
+  margin-inline: auto; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 2.4rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 3.6rem; }
+
+.u-margin-bottom-xl {
+  margin-bottom: 6.4rem; }
+
+.u-text-center {
+  text-align: center; }
+
+.u-block {
+  display: block; }
+
+.footer {
+  padding: 12.8rem 0 6.4rem 0; }
+  .footer__brand:link, .footer__brand:visited, .footer__brand:hover, .footer__brand:active {
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block; }
+  .footer__text {
+    margin-bottom: 3.6rem; }
+  .footer__nav {
+    display: flex;
+    justify-content: space-between; }
+  .footer__list {
+    list-style: none;
+    display: flex;
+    gap: 1.6rem; }
+  .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    padding-bottom: 0.5rem;
+    transition: background-size 0.5s ease-out;
+    background-position: bottom right;
+    background-size: 100% 1px; }
+  .footer__link:hover, .footer__link:active {
+    background-size: 0% 1px; }
+
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 2rem 4rem;
+  background-color: #0b0b0b; }
+  .navigation__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none; }
+  .navigation__link:link, .navigation__link:visited {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    padding-bottom: 0.5rem;
+    transition: background-size 0.5s ease-out;
+    background-position: bottom left;
+    background-size: 0% 1px; }
+  .navigation__link:hover, .navigation__link:active {
+    background-size: 100% 1px; }
+  .navigation__link--active:link, .navigation__link--active:visited, .navigation__link--active:hover, .navigation__link--active:active {
+    background: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 100% 1px;
+    padding-bottom: 0.5rem; }
+
+.section--hero {
+  padding-block: 2rem; }
+
+.section--about {
+  padding-block: 12.8rem; }
+  .section--about__content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center; }
+    .section--about__content img {
+      grid-column: 1 / 4;
+      grid-row: 1; }
+    .section--about__content h2 {
+      grid-column: 3 / -1;
+      grid-row: 1; }
+    .section--about__content div {
+      grid-column: 4 / -1;
+      grid-row: 2; }
+
+.section--contact {
+  background-color: #191919;
+  padding-block: 12.8rem; }
+  .section--contact__link:link, .section--contact__link:visited {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    padding-bottom: 0.5rem;
+    transition: background-size 0.5s ease-out;
+    background-position: bottom right;
+    background-size: 100% 1px; }
+  .section--contact__link:hover, .section--contact__link:active {
+    background-size: 0% 1px; }

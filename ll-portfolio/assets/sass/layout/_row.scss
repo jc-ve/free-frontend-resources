@@ -1,0 +1,7 @@
+.row {
+  display: flex;
+
+  &--end {
+    justify-content: end;
+  }
+}

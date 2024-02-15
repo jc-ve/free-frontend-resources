@@ -5,6 +5,7 @@
   left: 0;
   padding: 2rem 4rem;
   background-color: $clr-black;
+  z-index: 1;
 
   &__list {
     display: flex;

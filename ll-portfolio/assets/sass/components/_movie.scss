@@ -1,0 +1,42 @@
+.movie {
+  position: relative;
+  display: inline-block;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 7.2rem;
+  }
+
+  &__video {
+    height: 50rem;
+    width: 80rem;
+  }
+
+  &__caption {
+    position: absolute;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-size: 5.2rem;
+
+    &--left {
+      top: 50%;
+      left: -15%;
+      transform: translate(-15%, -50%);
+    }
+
+    &--right {
+      top: 50%;
+
+      &--long {
+        right: -150%;
+        transform: translate(-150%, -50%);
+      }
+
+      &--short {
+        right: -30%;
+        transform: translate(-30%, -50%);
+      }
+    }
+  }
+}

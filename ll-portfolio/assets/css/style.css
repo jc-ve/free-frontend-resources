@@ -52,6 +52,9 @@ body {
   max-width: 130rem;
   margin-inline: auto; }
 
+.u-margin-bottom-xs {
+  margin-bottom: 1.2rem; }
+
 .u-margin-bottom-sm {
   margin-bottom: 2.4rem; }
 
@@ -63,6 +66,9 @@ body {
 
 .u-text-center {
   text-align: center; }
+
+.u-text-right {
+  text-align: right; }
 
 .u-block {
   display: block; }
@@ -97,13 +103,42 @@ body {
   .footer__link:hover, .footer__link:active {
     background-size: 0% 1px; }
 
+.movie {
+  position: relative;
+  display: inline-block; }
+  .movie__container {
+    display: flex;
+    flex-direction: column;
+    gap: 7.2rem; }
+  .movie__video {
+    height: 50rem;
+    width: 80rem; }
+  .movie__caption {
+    position: absolute;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-size: 5.2rem; }
+    .movie__caption--left {
+      top: 50%;
+      left: -15%;
+      transform: translate(-15%, -50%); }
+    .movie__caption--right {
+      top: 50%; }
+      .movie__caption--right--long {
+        right: -150%;
+        transform: translate(-150%, -50%); }
+      .movie__caption--right--short {
+        right: -30%;
+        transform: translate(-30%, -50%); }
+
 .navigation {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   padding: 2rem 4rem;
-  background-color: #0b0b0b; }
+  background-color: #0b0b0b;
+  z-index: 1; }
   .navigation__list {
     display: flex;
     align-items: center;
@@ -128,6 +163,11 @@ body {
     background-position: bottom left;
     background-size: 100% 1px;
     padding-bottom: 0.5rem; }
+
+.row {
+  display: flex; }
+  .row--end {
+    justify-content: end; }
 
 .section--hero {
   padding-block: 2rem; }
@@ -163,3 +203,6 @@ body {
     background-size: 100% 1px; }
   .section--contact__link:hover, .section--contact__link:active {
     background-size: 0% 1px; }
+
+.section--movie {
+  padding-block: 12.8rem; }

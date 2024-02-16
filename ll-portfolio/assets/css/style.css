@@ -26,27 +26,25 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: 400;
-  font-size: 2.3rem;
+  font-size: 1.6rem;
   line-height: 1;
   color: #fff; }
 
 .heading {
-  font-family: "Merriweather", serif;
   font-weight: 900; }
   .heading--primary {
     font-size: 9rem; }
   .heading--secondary {
-    font-size: 6rem; }
+    font-size: 4.8rem; }
   .heading--tertiary {
-    font-size: 4.2rem; }
+    font-size: 3.6rem; }
 
 .paragraph {
   line-height: 1.6; }
   .paragraph--lg {
-    font-size: 4.6rem;
-    line-height: 1; }
+    font-size: 3.2rem; }
 
 .u-container {
   max-width: 130rem;
@@ -113,15 +111,21 @@ body {
   .movie__video {
     height: 50rem;
     width: 80rem; }
+    .movie__video--full {
+      width: 100%;
+      height: 80rem; }
   .movie__caption {
     position: absolute;
-    font-family: "Merriweather", serif;
     font-weight: 900;
     font-size: 5.2rem; }
     .movie__caption--left {
-      top: 50%;
-      left: -15%;
-      transform: translate(-15%, -50%); }
+      top: 50%; }
+      .movie__caption--left--short {
+        left: -10%;
+        transform: translate(-10%, -50%); }
+      .movie__caption--left--long {
+        left: -15%;
+        transform: translate(-15%, -50%); }
     .movie__caption--right {
       top: 50%; }
       .movie__caption--right--long {
@@ -187,6 +191,9 @@ body {
     .section--about__content div {
       grid-column: 4 / -1;
       grid-row: 2; }
+  .section--about__img {
+    height: 80rem;
+    width: 50rem; }
 
 .section--contact {
   background-color: #191919;

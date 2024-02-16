@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -18,7 +18,7 @@
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="film.html" class="navigation__link">Movie</a>
+            <a href="film.html" class="navigation__link">Films</a>
           </li>
           <li class="navigation__item">
             <a
@@ -28,7 +28,7 @@
             >
           </li>
           <li class="navigation__item">
-            <a href="photo.html" class="navigation__link">Photo</a>
+            <a href="photo.html" class="navigation__link">Photography</a>
           </li>
         </ul>
       </nav>
@@ -36,44 +36,54 @@
     <main>
       <section class="section section--hero">
         <div class="u-container">
-          <video autoplay muted>
-            <source src="assets/images/hero-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <figure>
+            <iframe
+              class="movie__video--full"
+              src="https://www.youtube.com/embed/3nU8FrNtIh0?rel=0&controls=0"
+              loading="lazy"
+              frameborder="0"
+            >
+            </iframe>
+          </figure>
         </div>
       </section>
       <section class="section section--about">
         <div class="u-container">
           <h1 class="heading heading--secondary u-margin-bottom-md">
-            Lorem ipsum dolor sit.
+            Meet Your Storytelling Buddy Behind the Lens!
           </h1>
           <p class="paragraph paragraph--lg u-margin-bottom-xl">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel
-            doloribus tempora suscipit, non minima earum. Facilis distinctio
-            consequatur laborum optio corrupti. Quasi modi impedit eius
-            explicabo. Magni iusto error esse?
+            I'm Jolo &mdash; a filmmaker, photographer, freelance creative, hobo
+            and a self-proclaimed avant-gardist.
           </p>
           <div class="section--about__content">
-            <img src="https://placehold.co/600x800" alt="" />
+            <img
+              src="assets/images/laurence.webp"
+              alt="Laurence Llamas"
+              class="section--about__img"
+            />
             <h2 class="heading heading--primary">
               <span class="u-block">Laurence</span> Llamas
             </h2>
             <div>
               <p class="paragraph u-margin-bottom-md">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur commodi dicta quod, facilis delectus beatae aut
-                nesciunt ut ratione consectetur iure ex quos maiores. Deleniti,
-                earum obcaecati itaque totam facere sequi qui provident cumque
-                sunt repellat delectus excepturi eos fuga iste? Quos sapiente
-                mollitia cupiditate ad ducimus delectus ut, dolorum
-                necessitatibus eaque nulla ullam ipsa amet, porro dolore quia
-                nostrum odit fugiat in reiciendis! Assumenda ea placeat velit
-                cum voluptatibus. Tenetur perspiciatis nam assumenda explicabo
-                deleniti delectus esse eaque, ad non saepe quos obcaecati
-                similique quae eligendi facere velit sequi est! Dicta ad quam
-                optio quibusdam dolore quod magnam molestiae.
+                Laurence Llamas is a filmmaker/based in Manila, Philippines, and
+                hails from his roots in Dagupan, Pangasinan. He gained early
+                recognition by showcasing his photography talents in different
+                photo exhibits, including Kalye Dagupan (2017) and the Dagupan
+                Photo (2021). With a deep-seated interest and passion for the
+                arts, He eventually moved to Far Eastern University to study
+                digital cinema. There, he actively engaged in various
+                student-led productions, honing his skills as a writer and
+                producer.
               </p>
-              <span>SIGNATURE HERE</span>
+              <p class="paragraph">
+                One of his current and most significant milestones came with the
+                creation of his best film to date, "Ang Pagtangis ng mga Aninong
+                Umiindak sa Hangin" (2023), which garnered critical acclaim and
+                numerous awards within local and prestigious film festivals
+                including SINEPIYU XV (2023) and GAWAD ALTERNATIBO 2023.
+              </p>
             </div>
           </div>
         </div>
@@ -82,11 +92,13 @@
         <div class="u-container">
           <div class="u-text-center">
             <h3 class="heading heading--tertiary u-margin-bottom-sm">
-              <span class="u-block">Lorem ipsum dolor sit amet</span>
-              consectetur adipisicing elit. Dicta.
+              <span class="u-block">
+                Let's Create Beautiful Moments Together!
+              </span>
+              Reach Out for Photography & Filmmaking Magic.
             </h3>
             <a href="mailto:someone@example.com" class="section--contact__link"
-              >info@laurencellamas.com</a
+              >jolollamas@gmail.com</a
             >
           </div>
         </div>

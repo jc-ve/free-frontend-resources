@@ -2,12 +2,6 @@
   position: relative;
   display: inline-block;
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    gap: 7.2rem;
-  }
-
   &__video {
     height: 50rem;
     width: 80rem;

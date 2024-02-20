@@ -104,10 +104,6 @@ body {
 .movie {
   position: relative;
   display: inline-block; }
-  .movie__container {
-    display: flex;
-    flex-direction: column;
-    gap: 7.2rem; }
   .movie__video {
     height: 50rem;
     width: 80rem; }
@@ -211,5 +207,12 @@ body {
   .section--contact__link:hover, .section--contact__link:active {
     background-size: 0% 1px; }
 
-.section--movie {
+.section--content {
   padding-block: 12.8rem; }
+  .section--content__container {
+    display: flex;
+    flex-direction: column;
+    gap: 7.2rem; }
+
+.img {
+  width: 65%; }

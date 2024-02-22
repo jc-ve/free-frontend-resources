@@ -19,21 +19,21 @@
         <ul class="navigation__list">
           <li class="navigation__item">
             <a
-              href="film.html"
+              href="/film.html"
               class="navigation__link navigation__link--active"
               >Films</a
             >
           </li>
           <li class="navigation__item">
-            <a href="index.html" class="navigation__link">Laurence Llamas</a>
+            <a href="/index.html" class="navigation__link">Laurence Llamas</a>
           </li>
           <li class="navigation__item">
-            <a href="photo.html" class="navigation__link">Photography</a>
+            <a href="/photo.html" class="navigation__link">Photography</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="swup" class="transition-main">
       <section class="section--content">
         <div class="u-container section--content__container">
           <div class="row row--end">
@@ -45,13 +45,19 @@
                 frameborder="0"
               >
               </iframe>
-              <figcaption
-                class="movie__caption movie__caption--left movie__caption--left--long"
-              >
-                <span class="u-block u-margin-bottom-xs">Pagtangis ng mga</span>
-                <span class="u-block u-margin-bottom-xs">Aninong Umiindak</span>
-                <span class="u-block">sa Hangin</span>
-              </figcaption>
+              <a href="" class="movie__link">
+                <figcaption
+                  class="movie__caption movie__caption--left movie__caption--left--long"
+                >
+                  <span class="u-block u-margin-bottom-xs"
+                    >Pagtangis ng mga</span
+                  >
+                  <span class="u-block u-margin-bottom-xs"
+                    >Aninong Umiindak</span
+                  >
+                  <span class="u-block">sa Hangin</span>
+                </figcaption>
+              </a>
             </figure>
           </div>
           <div class="row">
@@ -177,6 +183,7 @@
       </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swup@4"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

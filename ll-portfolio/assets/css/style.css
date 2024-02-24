@@ -1,23 +1,13 @@
-.transition-main {
-  transition-property: opacity, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
-  transform: translateX(0);
-  opacity: 1; }
+@keyframes pageTransition {
+  from {
+    opacity: 0;
+    transform: translateX(-100%); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
 
-html.is-animating .transition-main {
-  opacity: 0;
-  transform: translateX(-1em); }
-
-html.is-leaving .transition-main {
-  transform: translateX(1em); }
-
-html.is-animating.to-left .transition-main {
-  opacity: 0;
-  transform: translateX(1em); }
-
-html.is-leaving.to-left .transition-main {
-  transform: translateX(-1em); }
+.main {
+  animation: pageTransition 0.5s; }
 
 *,
 *::before,
@@ -129,8 +119,20 @@ body {
     height: 50rem;
     width: 80rem; }
     .movie__video--full {
-      width: 100%;
-      height: 80rem; }
+      height: 80rem;
+      width: 100%; }
+  .movie__link:link, .movie__link:visited {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background: linear-gradient(#fff, #fff);
+    background-repeat: no-repeat;
+    padding-bottom: 0.5rem;
+    transition: background-size 0.5s ease-out;
+    background-position: bottom left;
+    background-size: 0% 1px; }
+  .movie__link:hover, .movie__link:active {
+    background-size: 100% 1px; }
   .movie__caption {
     position: absolute;
     font-weight: 900;

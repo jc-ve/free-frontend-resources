@@ -3,41 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="view-transition" content="same-origin" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Laurence Llamas</title>
   </head>
-  <body>
+  <body class="use-lax">
     <header>
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a
-              href="/film.html"
+              href="film.html"
               class="navigation__link navigation__link--active"
               >Films</a
             >
           </li>
           <li class="navigation__item">
-            <a href="/index.html" class="navigation__link">Laurence Llamas</a>
+            <a href="index.html" class="navigation__link">Laurence Llamas</a>
           </li>
           <li class="navigation__item">
-            <a href="/photo.html" class="navigation__link">Photography</a>
+            <a href="photo.html" class="navigation__link">Photography</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main id="swup" class="transition-main">
+
+    <main class="main">
       <section class="section--content">
         <div class="u-container section--content__container">
           <div class="row row--end">
-            <figure class="movie" data-aos="fade-left">
+            <figure class="movie">
               <iframe
                 class="movie__video"
                 src="https://www.youtube.com/embed/uqBS-Fj95P8?rel=0&controls=0"
@@ -45,7 +46,7 @@
                 frameborder="0"
               >
               </iframe>
-              <a href="" class="movie__link">
+              <a href="index.html" class="movie__link">
                 <figcaption
                   class="movie__caption movie__caption--left movie__caption--left--long"
                 >
@@ -61,7 +62,7 @@
             </figure>
           </div>
           <div class="row">
-            <figure class="movie" data-aos="fade-right">
+            <figure class="movie lax lax_preset_fadeIn lax_preset_scaleIn">
               <iframe
                 class="movie__video"
                 src="https://www.youtube.com/embed/Kj851PWU5qo?rel=0&controls=0"
@@ -77,7 +78,7 @@
             </figure>
           </div>
           <div class="row row--end">
-            <figure class="movie" data-aos="fade-left">
+            <figure class="movie lax lax_preset_fadeIn lax_preset_scaleIn">
               <iframe
                 class="movie__video"
                 src="https://www.youtube.com/embed/3nU8FrNtIh0?rel=0&controls=0"
@@ -93,7 +94,7 @@
             </figure>
           </div>
           <div class="row">
-            <figure class="movie" data-aos="fade-right">
+            <figure class="movie lax lax_preset_fadeIn lax_preset_scaleIn">
               <iframe
                 class="movie__video"
                 src="https://www.youtube.com/embed/Ac3a1-Tckz0?rel=0&controls=0"
@@ -112,7 +113,7 @@
             </figure>
           </div>
           <div class="row row--end">
-            <figure class="movie" data-aos="fade-left">
+            <figure class="movie lax lax_preset_fadeIn lax_preset_scaleIn">
               <iframe
                 class="movie__video"
                 src="https://www.youtube.com/embed/oNttpbAGelI?rel=0&controls=0"
@@ -128,7 +129,7 @@
             </figure>
           </div>
           <div class="row">
-            <figure class="movie" data-aos="fade-right">
+            <figure class="movie lax lax_preset_fadeIn lax_preset_scaleIn">
               <iframe
                 class="movie__video"
                 src="https://www.youtube.com/embed/0jZcnRDVnas?rel=0&controls=0"
@@ -182,8 +183,8 @@
         </nav>
       </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://unpkg.com/swup@4"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

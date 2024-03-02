@@ -1,0 +1,182 @@
+/**********************/
+/****** BASE *****/
+/**********************/
+
+:root {
+  --clr-primary: #2c3e50;
+  --clr-secondary: #27ae60;
+  --clr-accent: #ff5733;
+  --clr-charcoal: #333;
+  --clr-light-gray: #f9f9f9;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--clr-charcoal);
+  background-color: var(--clr-light-gray);
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/**********************/
+/****** UTILITIES *****/
+/**********************/
+
+.u-container {
+  max-width: 120rem;
+  margin-inline: auto;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.6rem;
+}
+
+.u-margin-bottom-md {
+  margin-bottom: 2.4rem;
+}
+
+/**********************/
+/****** HEADER *****/
+/**********************/
+.header {
+  padding: 6rem 2rem;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/**********************/
+/****** NAVIGATION *****/
+/**********************/
+.navigation__list {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+/**********************/
+/****** LINKS *****/
+/**********************/
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link--brand:link,
+.link--brand:visited {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: var(--clr-primary);
+}
+
+.link--navigation:link,
+.link--navigation:visited {
+  background: linear-gradient(var(--clr-secondary), var(--clr-secondary))
+    no-repeat left bottom;
+  background-size: 0 1px;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.link--navigation:hover,
+.link--navigation:active {
+  color: var(--clr-secondary);
+  background-size: 100% 1px;
+}
+
+/**********************/
+/****** BUTTONS *****/
+/**********************/
+
+.btn:link,
+.btn:visited {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  border-radius: 6px;
+}
+
+.btn--solid:link,
+.btn--solid:visited {
+  color: var(--clr-light-gray);
+  background-color: var(--clr-primary);
+  transition: background-color 0.3s ease;
+}
+
+.btn--solid:hover,
+.btn--solid:active {
+  background-color: rgba(44, 62, 80, 0.9);
+}
+
+/**********************/
+/****** TYPOGRAPHY *****/
+/**********************/
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.heading--primary {
+  font-size: 4.8rem;
+  color: var(--clr-primary);
+  line-height: 1;
+}
+
+/**********************/
+/****** SECTIONS *****/
+/**********************/
+
+.section {
+  padding: 4.8rem 0;
+}
+
+/**********************/
+/****** HERO *****/
+/**********************/
+
+.hero__text-box {
+  max-width: 100rem;
+  margin: 0 auto 6.4rem;
+  text-align: center;
+}
+
+.hero__img {
+  max-height: 70vh;
+  width: 100%;
+  object-fit: cover;
+}

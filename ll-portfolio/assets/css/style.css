@@ -26,6 +26,11 @@ body {
   min-height: 100vh;
   background-color: #0b0b0b; }
 
+header,
+main,
+footer {
+  padding: 0 2rem; }
+
 img,
 svg,
 picture,
@@ -35,6 +40,12 @@ video {
 
 html {
   font-size: 62.5%; }
+  @media screen and (max-width: 46.875em) {
+    html {
+      font-size: 56.25%; } }
+  @media screen and (max-width: 38.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Roboto Mono", monospace;
@@ -83,7 +94,7 @@ body {
   display: block; }
 
 .footer {
-  padding: 12.8rem 0 6.4rem 0; }
+  padding: 12.8rem 2rem 6.4rem; }
   .footer__brand:link, .footer__brand:visited, .footer__brand:hover, .footer__brand:active {
     font-size: 3.2rem;
     font-weight: 900;
@@ -112,12 +123,42 @@ body {
   .footer__link:hover, .footer__link:active {
     background-size: 0% 1px; }
 
+.img__category {
+  position: relative; }
+  .img__category:hover .img__caption {
+    background-color: #0b0b0b; }
+  .img__category img {
+    height: 45rem;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+    transition: filter 0.3s ease; }
+    .img__category img:hover {
+      filter: brightness(40%); }
+
+.img__caption {
+  font-weight: 700;
+  font-size: 4.4rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  transition: background-color 0.3s ease; }
+
 .movie {
   position: relative;
   display: inline-block; }
   .movie__video {
     height: 50rem;
     width: 80rem; }
+    @media screen and (max-width: 53.125em) {
+      .movie__video {
+        width: 100%; } }
+    @media screen and (max-width: 65.625em) {
+      .movie__video {
+        margin-bottom: 3.2rem; } }
     .movie__video--full {
       height: 80rem;
       width: 100%; }
@@ -137,22 +178,48 @@ body {
     position: absolute;
     font-weight: 900;
     font-size: 5.2rem; }
+    @media screen and (max-width: 65.625em) {
+      .movie__caption {
+        position: static;
+        font-size: 4.4rem; } }
     .movie__caption--left {
       top: 50%; }
+      @media screen and (max-width: 65.625em) {
+        .movie__caption--left {
+          top: auto; } }
       .movie__caption--left--short {
         left: -10%;
         transform: translate(-10%, -50%); }
+        @media screen and (max-width: 65.625em) {
+          .movie__caption--left--short {
+            left: auto;
+            transform: translate(0, 0); } }
       .movie__caption--left--long {
         left: -15%;
         transform: translate(-15%, -50%); }
+        @media screen and (max-width: 65.625em) {
+          .movie__caption--left--long {
+            left: auto;
+            transform: translate(0, 0); } }
     .movie__caption--right {
       top: 50%; }
+      @media screen and (max-width: 65.625em) {
+        .movie__caption--right {
+          top: auto; } }
       .movie__caption--right--long {
-        right: -150%;
-        transform: translate(-150%, -50%); }
+        right: -135%;
+        transform: translate(-135%, -50%); }
+        @media screen and (max-width: 65.625em) {
+          .movie__caption--right--long {
+            right: auto;
+            transform: translate(0, 0); } }
       .movie__caption--right--short {
         right: -30%;
         transform: translate(-30%, -50%); }
+        @media screen and (max-width: 65.625em) {
+          .movie__caption--right--short {
+            right: auto;
+            transform: translate(0, 0); } }
 
 .navigation {
   position: fixed;
@@ -168,6 +235,7 @@ body {
     justify-content: space-between;
     list-style: none; }
   .navigation__link:link, .navigation__link:visited {
+    font-weight: 700;
     font-size: 2.4rem;
     text-decoration: none;
     color: #fff;
@@ -178,6 +246,9 @@ body {
     transition: background-size 0.5s ease-out;
     background-position: bottom left;
     background-size: 0% 1px; }
+    @media screen and (max-width: 38.75em) {
+      .navigation__link:link, .navigation__link:visited {
+        font-size: 1.6rem; } }
   .navigation__link:hover, .navigation__link:active {
     background-size: 100% 1px; }
   .navigation__link--active:link, .navigation__link--active:visited, .navigation__link--active:hover, .navigation__link--active:active {

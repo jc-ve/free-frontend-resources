@@ -6,6 +6,14 @@
     height: 50rem;
     width: 80rem;
 
+    @media screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: $bp-large) {
+      margin-bottom: 3.2rem;
+    }
+
     &--full {
       height: 80rem;
       width: 100%;
@@ -32,31 +40,64 @@
     font-weight: 900;
     font-size: 5.2rem;
 
+    @media screen and (max-width: $bp-large) {
+      position: static;
+      font-size: 4.4rem;
+    }
+
     &--left {
       top: 50%;
+
+      @media screen and (max-width: $bp-large) {
+        top: auto;
+      }
 
       &--short {
         left: -10%;
         transform: translate(-10%, -50%);
+
+        @media screen and (max-width: $bp-large) {
+          left: auto;
+          transform: translate(0, 0);
+        }
       }
 
       &--long {
         left: -15%;
         transform: translate(-15%, -50%);
+
+        @media screen and (max-width: $bp-large) {
+          left: auto;
+          transform: translate(0, 0);
+        }
       }
     }
 
     &--right {
       top: 50%;
 
+      @media screen and (max-width: $bp-large) {
+        top: auto;
+      }
+
       &--long {
-        right: -150%;
-        transform: translate(-150%, -50%);
+        right: -135%;
+        transform: translate(-135%, -50%);
+
+        @media screen and (max-width: $bp-large) {
+          right: auto;
+          transform: translate(0, 0);
+        }
       }
 
       &--short {
         right: -30%;
         transform: translate(-30%, -50%);
+
+        @media screen and (max-width: $bp-large) {
+          right: auto;
+          transform: translate(0, 0);
+        }
       }
     }
   }

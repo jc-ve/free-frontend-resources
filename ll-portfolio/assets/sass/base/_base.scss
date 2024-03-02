@@ -18,6 +18,12 @@ body {
   background-color: $clr-black;
 }
 
+header,
+main,
+footer {
+  padding: 0 2rem;
+}
+
 img,
 svg,
 picture,

@@ -17,11 +17,16 @@
   &__link {
     &:link,
     &:visited {
+      font-weight: 700;
       font-size: 2.4rem;
       @include linkReset;
       @include linkBaseStyle;
       background-position: bottom left;
       background-size: 0% 1px;
+
+      @media screen and (max-width: $bp-small) {
+        font-size: 1.6rem;
+      }
     }
 
     &:hover,

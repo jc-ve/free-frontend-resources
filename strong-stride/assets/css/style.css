@@ -25,7 +25,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
   color: var(--clr-charcoal);
@@ -59,6 +59,51 @@ video {
 
 .u-margin-bottom-md {
   margin-bottom: 2.4rem;
+}
+
+.u-margin-bottom-lg {
+  margin-bottom: 3.6rem;
+}
+
+/**********************/
+/****** TYPOGRAPHY *****/
+/**********************/
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+
+.heading--primary {
+  font-size: 4.8rem;
+  line-height: 1;
+}
+
+.heading--secondary {
+  font-size: 3.6rem;
+  line-height: 1.4;
+}
+
+/**********************/
+/****** LAYOUT *****/
+/**********************/
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
 }
 
 /**********************/
@@ -143,26 +188,27 @@ video {
 }
 
 /**********************/
-/****** TYPOGRAPHY *****/
-/**********************/
-
-.heading {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
-
-.heading--primary {
-  font-size: 4.8rem;
-  color: var(--clr-primary);
-  line-height: 1;
-}
-
-/**********************/
 /****** SECTIONS *****/
 /**********************/
 
 .section {
   padding: 4.8rem 0;
+}
+
+.section__label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--clr-accent);
+  text-transform: uppercase;
+}
+
+.section__label::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 4rem;
+  background-color: var(--clr-accent);
 }
 
 /**********************/
@@ -179,4 +225,31 @@ video {
   max-height: 70vh;
   width: 100%;
   object-fit: cover;
+}
+
+.hero__awards {
+  background-color: var(--clr-primary);
+  padding: 4rem 0;
+}
+
+.award {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--clr-light-gray);
+}
+
+.award__icon {
+  font-size: 8.4rem;
+  color: var(--clr-secondary);
+}
+
+/**********************/
+/****** HERO *****/
+/**********************/
+
+.section--about {
+  border-bottom: 1px solid var(--clr-charcoal);
 }

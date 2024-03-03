@@ -49,10 +49,6 @@ video {
   margin-inline: auto;
 }
 
-.u-text-center {
-  text-align: center;
-}
-
 .u-margin-bottom-sm {
   margin-bottom: 1.6rem;
 }
@@ -247,9 +243,26 @@ video {
 }
 
 /**********************/
-/****** HERO *****/
+/****** ABOUT *****/
 /**********************/
 
 .section--about {
-  border-bottom: 1px solid var(--clr-charcoal);
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.metric__stats {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.metric__stat {
+  font-weight: 800;
+  font-size: 4rem;
+  color: var(--clr-accent);
+}
+
+.metric__caption {
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }

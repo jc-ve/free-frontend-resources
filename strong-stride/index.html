@@ -37,6 +37,9 @@
             </ul>
           </nav>
           <!-- /NAVIGATION -->
+          <button class="btn--transparent" id="btn-mobile-open">
+            <ion-icon name="menu" class="icon-mobile"></ion-icon>
+          </button>
         </div>
       </div>
       <!-- /CONTAINER -->
@@ -45,7 +48,7 @@
 
     <main>
       <!-- SECTION - HERO -->
-      <section class="section">
+      <section class="section section--full">
         <div class="hero__text-box">
           <h1 class="heading heading--primary u-margin-bottom-md">
             Unleash your Fitness Potential
@@ -109,7 +112,7 @@
       <!-- /SECTION - HERO -->
 
       <!-- SECTION - ABOUT -->
-      <section class="section section--about u-container">
+      <section class="section section--padded section--about u-container">
         <!-- GRID CONTAINER -->
         <div class="grid grid--2-cols u-margin-bottom-lg">
           <div>
@@ -147,39 +150,37 @@
             />
           </div>
         </div>
+        <!-- /GRID CONTAINER -->
 
         <!-- ABOUT - METRICS -->
         <div class="about__metrics">
-          <!-- GRID CONTAINER -->
-          <div class="grid grid--3-cols">
-            <figure class="metric">
-              <figcaption class="metric__stats">
-                <span class="metric__stat">100%</span>
-                <p class="metric__caption">Satisfaction Clients</p>
-              </figcaption>
-            </figure>
+          <figure class="metric">
+            <figcaption class="metric__stats">
+              <span class="metric__stat">100%</span>
+              <p class="metric__caption">Satisfaction Clients</p>
+            </figcaption>
+          </figure>
 
-            <figure class="metric">
-              <figcaption class="metric__stats">
-                <span class="metric__stat">4500+</span>
-                <p class="metric__caption">Clients Transformed</p>
-              </figcaption>
-            </figure>
+          <figure class="metric">
+            <figcaption class="metric__stats">
+              <span class="metric__stat">4500+</span>
+              <p class="metric__caption">Clients Transformed</p>
+            </figcaption>
+          </figure>
 
-            <figure class="metric">
-              <figcaption class="metric__stats">
-                <span class="metric__stat">350</span>
-                <p class="metric__caption">Coaches Worldwide</p>
-              </figcaption>
-            </figure>
-          </div>
-          <!-- /GRID CONTAINER -->
+          <figure class="metric">
+            <figcaption class="metric__stats">
+              <span class="metric__stat">350</span>
+              <p class="metric__caption">Coaches Worldwide</p>
+            </figcaption>
+          </figure>
         </div>
         <!-- /ABOUT - METRICS -->
       </section>
+      <!-- /SECTION - ABOUT -->
 
       <!-- SECTION - PRICING -->
-      <section class="section section--pricing">
+      <section class="section section--padded">
         <!-- CONTAINER -->
         <div class="u-container">
           <span class="section__label u-margin-bottom-md">What We Offer</span>
@@ -365,7 +366,7 @@
       <!-- /SECTION - PRICING -->
 
       <!-- SECTION - CLIENTS -->
-      <section class="section section--clients">
+      <section class="section section--padded">
         <!-- CONTAINER -->
         <div class="u-container">
           <span class="section__label u-margin-bottom-md"
@@ -455,7 +456,7 @@
       <!-- /SECTION - CLIENTS -->
 
       <!-- SECTION - CONTACT -->
-      <section>
+      <section class="section section--padded">
         <div class="u-container">
           <div class="contact">
             <div class="u-text-center u-margin-bottom-md">
@@ -530,5 +531,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

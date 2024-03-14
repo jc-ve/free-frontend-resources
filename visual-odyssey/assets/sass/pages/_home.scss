@@ -1,0 +1,17 @@
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/img-hero.webp);
+  background-size: cover;
+}
+
+.about {
+  &__img {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}

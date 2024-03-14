@@ -1,0 +1,38 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+
+  &--primary {
+    line-height: 1;
+
+    &--sub,
+    &--main {
+      display: block;
+    }
+
+    &--sub,
+    &--year {
+      font-size: 1.2rem;
+    }
+
+    &--main {
+      font-size: 6.4rem;
+      text-transform: uppercase;
+    }
+
+    &--year {
+      display: inline-block;
+      transform: rotate(90deg);
+    }
+  }
+}

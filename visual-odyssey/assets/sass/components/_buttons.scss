@@ -1,0 +1,30 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: scale(0.9);
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  }
+
+  &--primary {
+    &:link,
+    &:visited {
+      color: #fff;
+      background-color: $clr-tertiary;
+    }
+  }
+}

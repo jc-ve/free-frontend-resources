@@ -44,6 +44,44 @@ body {
   max-width: 120rem;
   margin-inline: auto; }
 
+.u-width-full {
+  width: 100%; }
+
+.u-text-center {
+  text-align: center; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.6rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 2.4rem; }
+
+.btn:link, .btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  border-radius: 100px;
+  transition: all 0.2s ease; }
+
+.btn:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: scale(0.9);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2); }
+
+.btn--primary:link, .btn--primary:visited {
+  color: #fff;
+  background-color: #eb822f; }
+
+.grid {
+  display: grid; }
+  .grid--3-cols {
+    grid-template-columns: repeat(3, 1fr); }
+
 .hero {
   min-height: 70vh;
   display: flex;

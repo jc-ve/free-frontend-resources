@@ -1,0 +1,12 @@
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+  }
+}

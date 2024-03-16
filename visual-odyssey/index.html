@@ -13,52 +13,50 @@
     <title>Visual Odyssey &mdash; UI/UX Portfolio</title>
   </head>
   <body>
-    <main>
-      <section class="hero">
-        <div class="hero__text-box">
-          <h1 class="heading heading--primary u-margin-bottom-md">
-            <span class="heading--primary--sub">UI/UX Designer</span>
-            <span class="heading--primary--main"
-              >Portfolio <span class="heading--primary--year">2024</span></span
-            >
-          </h1>
-          <a href="#" class="btn btn--primary u-width-full u-text-center"
-            >Send a message</a
-          >
+    <header class="header">
+      <div class="u-container">
+        <div class="header__content">
+          <nav class="navigation">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Works</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Services</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Blog</a>
+            </li>
+          </nav>
         </div>
-      </section>
-
-      <section class="about">
+      </div>
+    </header>
+    <main>
+      <section class="section hero">
         <div class="u-container">
-          <img
-            src="assets/images/img-about.webp"
-            alt="Oliver Bennet"
-            class="about__img"
-          />
-          <h2 class="heading heading--secondary heading--secondary--small">
-            Hello! I'm Oliver
-          </h2>
-
-          <p class="paragraph">
-            Hello, I'm Oliver Bennett, a passionate UI/UX designer dedicated to
-            creating seamless digital experiences. With a keen eye for
-            aesthetics and a deep understanding of user behavior, I strive to
-            craft interfaces that not only look beautiful but also provide
-            intuitive and engaging interactions. From wireframing to
-            prototyping, I am committed to delivering user-centric designs that
-            elevate the way people interact with technology. Let's collaborate
-            to bring your vision to life and create delightful experiences
-            together.
-          </p>
-
-          <p class="paragraph">
-            With a background in both design and psychology, I leverage my
-            expertise to empathize with users and anticipate their needs. My
-            goal is to design solutions that seamlessly integrate form and
-            function, enhancing usability and leaving a lasting impression.
-            Let's work together to transform your ideas into intuitive and
-            visually captivating digital experiences.
-          </p>
+          <div class="grid grid--2-cols">
+            <div class="hero__info">
+              <h1 class="heading heading--primary u-margin-bottom-md">
+                Creating Intuitive Experiences
+              </h1>
+              <p class="paragraph u-margin-bottom-lg">
+                Hello, I'm Oliver Bennett, a passionate UI/UX designer dedicated
+                to creating seamless digital experiences. From wireframing to
+                prototyping, I am committed to delivering user-centric designs
+                that elevate the way people interact with technology.
+              </p>
+              <div class="hero__links">
+                <a href="#" class="btn btn--solid">Contact me</a>
+                <a href="#" class="btn btn--outline">Resume</a>
+              </div>
+            </div>
+            <div class="hero__img-box">
+              <img
+                src="assets/images/img-hero.webp"
+                alt="Oliver Bennett"
+                class="hero__img"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>

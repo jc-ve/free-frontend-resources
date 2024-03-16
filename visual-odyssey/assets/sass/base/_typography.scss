@@ -13,26 +13,7 @@ body {
   font-weight: 700;
 
   &--primary {
+    font-size: 4.8rem;
     line-height: 1;
-
-    &--sub,
-    &--main {
-      display: block;
-    }
-
-    &--sub,
-    &--year {
-      font-size: 1.2rem;
-    }
-
-    &--main {
-      font-size: 6.4rem;
-      text-transform: uppercase;
-    }
-
-    &--year {
-      display: inline-block;
-      transform: rotate(90deg);
-    }
   }
 }

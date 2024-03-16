@@ -9,12 +9,14 @@
 
 body {
   box-sizing: border-box;
+  background-color: $clr-light-gray;
+  color: $clr-charcoal;
 }
 
 img,
 video,
 svg,
 picture {
-  display: block;
   max-width: 100%;
+  display: block;
 }

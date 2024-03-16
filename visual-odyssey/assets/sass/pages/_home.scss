@@ -1,16 +1,15 @@
-.hero {
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url(../images/img-hero.webp);
-  background-size: cover;
+.section {
+  padding: 8.4rem 2rem;
 }
 
-.about {
+.hero {
+  &__img-box {
+    justify-self: center;
+  }
+
   &__img {
-    height: 20rem;
-    width: 20rem;
+    height: 25rem;
+    width: 25rem;
     object-fit: cover;
     border-radius: 50%;
   }

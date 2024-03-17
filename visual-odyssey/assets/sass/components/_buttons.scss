@@ -3,28 +3,39 @@
   &:visited {
     display: inline-block;
     text-decoration: none;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 3rem;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    border-radius: 100px;
+    border-radius: 12px;
     transition: all 0.2s ease;
-  }
-
-  &:hover {
-    transform: translateY(-0.5rem);
-    box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.2);
   }
 
   &:active {
     transform: scale(0.9);
-    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   }
 
-  &--primary {
+  &--solid {
     &:link,
     &:visited {
-      color: #fff;
-      background-color: $clr-tertiary;
+      color: $clr-white;
+      background-color: $clr-primary;
+    }
+
+    &:hover {
+      background-color: $clr-primary-light;
+    }
+  }
+
+  &--outline {
+    &:link,
+    &:visited {
+      color: $clr-primary;
+      box-shadow: 0 0 0 1px inset $clr-primary;
+    }
+
+    &:hover {
+      color: $clr-white;
+      background-color: $clr-primary;
     }
   }
 }

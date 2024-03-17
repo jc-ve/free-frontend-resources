@@ -1,0 +1,18 @@
+.fieldset {
+  border: 1px solid $clr-charcoal-lightest;
+  border-radius: 12px;
+  padding: 2.4rem 3.6rem;
+
+  &__legend {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    padding: 0 1.6rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}

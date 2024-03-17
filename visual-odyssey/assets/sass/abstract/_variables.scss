@@ -1,7 +1,14 @@
 // COLORS
-$clr-primary: #007bff;
-$clr-secondary: #ffc107;
-$clr-tertiary: #8e44ad;
+$clr-primary: #8e44ad;
+$clr-primary-light: #a569bd;
+$clr-primary-lightest: #f4ecf7;
 
+$clr-white: #fff;
 $clr-light-gray: #f5f5f5;
 $clr-charcoal: #333;
+$clr-charcoal-light: #5c5c5c;
+$clr-charcoal-lightest: #c2c2c2;
+
+// BREAKPOINTS
+$bp-large: 56.25em;
+$bp-tablet: 46.875em;

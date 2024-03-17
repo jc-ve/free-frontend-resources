@@ -6,7 +6,15 @@
   &__link {
     &:link,
     &:visited {
+      font-weight: 700;
+      color: inherit;
       text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-primary;
     }
   }
 }

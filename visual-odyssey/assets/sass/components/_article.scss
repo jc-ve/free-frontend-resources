@@ -1,0 +1,51 @@
+.article {
+  background-color: $clr-white;
+  border-radius: 10px;
+  padding: 2.4rem;
+
+  &__img {
+    @include articleImage;
+    margin-bottom: 1.6rem;
+  }
+
+  &__date {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    color: $clr-charcoal-light;
+    margin-bottom: 2.4rem;
+  }
+
+  &__icon {
+    font-size: 1.8rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 2.4rem;
+  }
+
+  &--work {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    &__img {
+      @include articleImage;
+      flex: 0 0 30%;
+    }
+
+    // &__info {
+    //   flex: 0 0 70%;
+    // }
+
+    &:not(:last-child) {
+      padding-bottom: 2.4rem;
+      border-bottom: 1px solid $clr-charcoal-lightest;
+    }
+  }
+}

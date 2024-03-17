@@ -3,8 +3,35 @@
 }
 
 .hero {
+  &__info {
+    @media screen and (max-width: $bp-tablet) {
+      order: 2;
+      text-align: center;
+    }
+  }
+
+  &__links,
+  &__skills {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    @media screen and (max-width: $bp-tablet) {
+      justify-content: center;
+    }
+  }
+
+  &__icon {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+
   &__img-box {
     justify-self: center;
+
+    @media screen and (max-width: $bp-tablet) {
+      order: 1;
+    }
   }
 
   &__img {
@@ -13,4 +40,14 @@
     object-fit: cover;
     border-radius: 50%;
   }
+}
+
+.blog {
+  background-color: $clr-primary-lightest;
+}
+
+.contact {
+  background-color: $clr-primary-lightest;
+  padding: 4rem;
+  border-radius: 12px;
 }

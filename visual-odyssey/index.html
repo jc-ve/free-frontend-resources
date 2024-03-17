@@ -18,21 +18,24 @@
         <div class="header__content">
           <nav class="navigation">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Works</a>
+              <a href="#blog" class="navigation__link">Blog</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Services</a>
+              <a href="#works" class="navigation__link">Works</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Blog</a>
+              <a href="#contact" class="navigation__link">Contact</a>
             </li>
           </nav>
         </div>
       </div>
     </header>
     <main>
+      <!-- SECTION - HERO -->
       <section class="section hero">
+        <!-- CONTAINER -->
         <div class="u-container">
+          <!-- CONTAINER - GRID -->
           <div class="grid grid--2-cols">
             <div class="hero__info">
               <h1 class="heading heading--primary u-margin-bottom-md">
@@ -44,9 +47,33 @@
                 prototyping, I am committed to delivering user-centric designs
                 that elevate the way people interact with technology.
               </p>
-              <div class="hero__links">
-                <a href="#" class="btn btn--solid">Contact me</a>
-                <a href="#" class="btn btn--outline">Resume</a>
+
+              <div class="hero__links u-margin-bottom-lg">
+                <a href="#contact" class="btn btn--solid">Contact me</a>
+                <a href="#" class="btn btn--outline" download="">Resume</a>
+              </div>
+
+              <div class="hero__skills">
+                <img
+                  src="assets/images/figma-original.svg"
+                  alt="Figma icon"
+                  class="hero__icon"
+                />
+                <img
+                  src="assets/images/sketch-original.svg"
+                  alt="Sketch icon"
+                  class="hero__icon"
+                />
+                <img
+                  src="assets/images/xd-original.svg"
+                  alt="Adobe XD icon"
+                  class="hero__icon"
+                />
+                <img
+                  src="assets/images/photoshop-original.svg"
+                  alt="Adobe Photoshop icon"
+                  class="hero__icon"
+                />
               </div>
             </div>
             <div class="hero__img-box">
@@ -57,8 +84,208 @@
               />
             </div>
           </div>
+          <!-- /CONTAINER - GRID -->
+        </div>
+        <!-- /CONTAINER -->
+      </section>
+      <!-- /SECTION - HERO -->
+
+      <!-- SECTION - BLOG -->
+      <section class="section blog" id="blog">
+        <!-- CONTAINER -->
+        <div class="u-container">
+          <h2 class="heading heading--secondary u-margin-bottom-xl">
+            Recent Posts
+          </h2>
+          <!-- CONTAINER - GRID -->
+          <div class="grid grid--3-cols">
+            <article class="article">
+              <img
+                src="assets/images/img-blog-1.webp"
+                alt="Woman working on a laptop"
+                class="article__img"
+              />
+              <time class="article__date">
+                <ion-icon
+                  name="calendar-clear-outline"
+                  class="article__icon"
+                ></ion-icon>
+                <span>3/17/24</span>
+              </time>
+              <p class="article__title">
+                Climbing the Career Ladder: Insights on Navigating the Workforce
+              </p>
+              <a href="#" class="btn btn--solid u-width-full u-text-center"
+                >Read more
+              </a>
+            </article>
+
+            <article class="article">
+              <img
+                src="assets/images/img-blog-2.webp"
+                alt="Man reading a book"
+                class="article__img"
+              />
+              <time class="article__date">
+                <ion-icon
+                  name="calendar-clear-outline"
+                  class="article__icon"
+                ></ion-icon>
+                <span>3/16/24</span>
+              </time>
+              <p class="article__title">
+                Unlocking Your Productivity Potential: Strategies for Success
+              </p>
+              <a href="#" class="btn btn--solid u-width-full u-text-center"
+                >Read more
+              </a>
+            </article>
+
+            <article class="article">
+              <img
+                src="assets/images/img-blog-3.webp"
+                alt="Man reading a book"
+                class="article__img"
+              />
+              <time class="article__date">
+                <ion-icon
+                  name="calendar-clear-outline"
+                  class="article__icon"
+                ></ion-icon>
+                <span>3/15/24</span>
+              </time>
+              <p class="article__title">
+                Coding Chronicles: Exploring the World of Programming
+              </p>
+              <a href="#" class="btn btn--solid u-width-full u-text-center"
+                >Read more
+              </a>
+            </article>
+          </div>
+          <!-- CONTAINER - GRID -->
+        </div>
+        <!-- CONTAINER -->
+      </section>
+      <!-- /SECTION - BLOG -->
+
+      <!-- SECTION - WORKS -->
+      <section class="section works" id="works">
+        <div class="u-container">
+          <fieldset class="fieldset">
+            <legend class="fieldset__legend">Featured Works</legend>
+            <div class="fieldset__content">
+              <article class="article--work">
+                <img
+                  src="assets/images/img-work-1.webp"
+                  alt="Website dashboard"
+                  class="article--work__img"
+                />
+                <div class="article--work__info">
+                  <p class="article__title">
+                    Revitalizing Digital Presence: A Website Redesign Journey
+                  </p>
+
+                  <p class="article__description">
+                    A website redesign project involves revamping an existing
+                    website to improve its visual appeal, usability, and overall
+                    user experience. This often includes updating the layout,
+                    navigation, color scheme, typography, and imagery to align
+                    with current design trends and user expectations.
+                  </p>
+                </div>
+              </article>
+
+              <article class="article--work">
+                <img
+                  src="assets/images/img-work-2.webp"
+                  alt=""
+                  class="article--work__img"
+                />
+                <div class="article--work__info">
+                  <p class="article__title">
+                    Strategic Solutions: Partnering for UI/UX Excellence
+                  </p>
+                  <p class="article__description">
+                    A UI/UX consultation involves a collaborative process where
+                    a design expert provides guidance, advice, and
+                    recommendations to improve the user interface (UI) and user
+                    experience (UX) of a digital product or service.
+                  </p>
+                </div>
+              </article>
+
+              <article class="article--work">
+                <img
+                  src="assets/images/img-work-3.webp"
+                  alt=""
+                  class="article--work__img"
+                />
+                <div class="article--work__info">
+                  <p class="article__title">
+                    From Concept to Creation: The Art of Wireframing
+                  </p>
+                  <p class="article__description">
+                    Wireframing and prototyping are crucial steps in the UI/UX
+                    design journey, enabling you to bring your digital vision to
+                    life with clarity and precision. Our wireframing and
+                    prototyping services provide you with the tools and insights
+                    needed to conceptualize, iterate, and validate your design
+                    ideas effectively.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </fieldset>
         </div>
       </section>
+      <!-- /SECTION - WORKS -->
+
+      <!-- SECTION - CONTACT -->
+      <section class="section contact u-container" id="contact">
+        <div class="u-text-center">
+          <h2 class="heading heading--secondary u-margin-bottom-sm">
+            Let's Chat! I'm ready to work on exciting projects
+          </h2>
+          <p class="paragraph">oliverbennett@contact.com | +34 824 428 248</p>
+        </div>
+      </section>
+      <!-- /SECTION - CONTACT -->
+
+      <footer class="footer">
+        <div class="u-container u-text-center">
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <ion-icon name="logo-behance"></ion-icon>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link"></a>
+              </li>
+            </ul>
+          </nav>
+          <p class="footer__copyright">All Rights Reserved &copy; 2024</p>
+        </div>
+      </footer>
     </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

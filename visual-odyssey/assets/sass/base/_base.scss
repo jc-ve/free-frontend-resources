@@ -7,9 +7,18 @@
   font: inherit;
 }
 
+::selection {
+  color: $clr-charcoal;
+  background-color: $clr-primary;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
-  background-color: $clr-light-gray;
+  background-color: $clr-white;
   color: $clr-charcoal;
 }
 

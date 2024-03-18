@@ -7,7 +7,7 @@
   font: inherit; }
 
 ::selection {
-  color: #333;
+  color: #fff;
   background-color: #8e44ad; }
 
 html {
@@ -181,7 +181,11 @@ body {
   .footer__link:link, .footer__link:visited {
     font-size: 2.4rem;
     color: #8e44ad;
-    text-decoration: none; }
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease; }
+  .footer__link:hover, .footer__link:active {
+    transform: translateY(-0.5rem); }
   .footer__copyright {
     font-size: 1.2rem;
     color: #5c5c5c; }
@@ -203,9 +207,13 @@ body {
     font-weight: 700;
     color: inherit;
     text-decoration: none;
+    background: linear-gradient(#8e44ad, #8e44ad) no-repeat bottom left;
+    background-size: 0% 2px;
+    padding-bottom: 0.5rem;
     transition: all 0.3s ease; }
   .navigation__link:hover, .navigation__link:active {
-    color: #8e44ad; }
+    color: #8e44ad;
+    background-size: 100% 2px; }
 
 .service__icon {
   height: 3.2rem;

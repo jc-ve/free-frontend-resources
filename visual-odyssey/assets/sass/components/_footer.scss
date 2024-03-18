@@ -16,6 +16,13 @@
       font-size: 2.4rem;
       color: $clr-primary;
       text-decoration: none;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      transform: translateY(-0.5rem);
     }
   }
 

@@ -9,12 +9,17 @@
       font-weight: 700;
       color: inherit;
       text-decoration: none;
+      background: linear-gradient($clr-primary, $clr-primary) no-repeat bottom
+        left;
+      background-size: 0% 2px;
+      padding-bottom: 0.5rem;
       transition: all 0.3s ease;
     }
 
     &:hover,
     &:active {
       color: $clr-primary;
+      background-size: 100% 2px;
     }
   }
 }

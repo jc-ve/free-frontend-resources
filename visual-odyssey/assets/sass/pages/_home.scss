@@ -1,5 +1,9 @@
 .section {
   padding: 8.4rem 2rem;
+
+  @media screen and (max-width: $bp-medium) {
+    padding: 4.8rem 2rem;
+  }
 }
 
 .hero {
@@ -42,12 +46,7 @@
   }
 }
 
-.blog {
-  background-color: $clr-primary-lightest;
-}
-
+.blog,
 .contact {
   background-color: $clr-primary-lightest;
-  padding: 4rem;
-  border-radius: 12px;
 }

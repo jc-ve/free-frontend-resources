@@ -4,5 +4,9 @@
   &__content {
     display: flex;
     justify-content: flex-end;
+
+    @media screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
   }
 }

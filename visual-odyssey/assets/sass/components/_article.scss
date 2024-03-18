@@ -23,6 +23,7 @@
   }
 
   &__title {
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 2rem;
     line-height: 1.4;
@@ -34,14 +35,14 @@
     align-items: center;
     gap: 2.4rem;
 
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+    }
+
     &__img {
       @include articleImage;
       flex: 0 0 30%;
     }
-
-    // &__info {
-    //   flex: 0 0 70%;
-    // }
 
     &:not(:last-child) {
       padding-bottom: 2.4rem;

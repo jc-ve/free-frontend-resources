@@ -15,7 +15,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: #f5f5f5;
   color: #333; }
 
 img,
@@ -30,7 +30,7 @@ html {
   @media screen and (max-width: 56.25em) {
     html {
       font-size: 56.25%; } }
-  @media screen and (max-width: 34.375em) {
+  @media screen and (max-width: 34.475em) {
     html {
       font-size: 50%; } }
 
@@ -45,12 +45,12 @@ body {
   .heading--primary {
     font-size: 4.8rem;
     line-height: 1.2; }
-    @media screen and (max-width: 34.375em) {
+    @media screen and (max-width: 34.475em) {
       .heading--primary {
         font-size: 4rem; } }
   .heading--secondary {
     font-size: 3.6rem; }
-    @media screen and (max-width: 34.375em) {
+    @media screen and (max-width: 34.475em) {
       .heading--secondary {
         font-size: 3rem; } }
 
@@ -132,7 +132,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   border-radius: 12px;
-  transition: all 0.2s ease; }
+  transition: all 0.3s ease; }
 
 .btn:active {
   transform: scale(0.9); }
@@ -161,7 +161,7 @@ body {
     font-weight: 700;
     font-size: 3.6rem;
     padding: 0 1.6rem; }
-    @media screen and (max-width: 34.375em) {
+    @media screen and (max-width: 34.475em) {
       .fieldset__legend {
         font-size: 3rem; } }
   .fieldset__content {
@@ -195,7 +195,7 @@ body {
   .header__content {
     display: flex;
     justify-content: flex-end; }
-    @media screen and (max-width: 34.375em) {
+    @media screen and (max-width: 34.475em) {
       .header__content {
         justify-content: center; } }
 
@@ -219,8 +219,8 @@ body {
   height: 3.2rem;
   width: 3.2rem;
   color: #8e44ad;
-  padding: 1.6rem;
   background-color: #f4ecf7;
+  padding: 1.6rem;
   border-radius: 50%;
   margin-bottom: 2.4rem; }
 
@@ -245,7 +245,7 @@ body {
     @media screen and (max-width: 46.875em) {
       .grid--3-cols {
         grid-template-columns: repeat(2, 1fr); } }
-    @media screen and (max-width: 34.375em) {
+    @media screen and (max-width: 34.475em) {
       .grid--3-cols {
         grid-template-columns: 1fr; } }
   .grid--4-cols {
@@ -254,13 +254,13 @@ body {
     @media screen and (max-width: 46.875em) {
       .grid--4-cols {
         grid-template-columns: repeat(2, 1fr); } }
-    @media screen and (max-width: 34.375em) {
+    @media screen and (max-width: 34.475em) {
       .grid--4-cols {
         grid-template-columns: 1fr; } }
 
 .section {
   padding: 8.4rem 2rem; }
-  @media screen and (max-width: 34.375em) {
+  @media screen and (max-width: 34.475em) {
     .section {
       padding: 4.8rem 2rem; } }
 

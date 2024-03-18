@@ -13,9 +13,11 @@
     <title>Visual Odyssey &mdash; UI/UX Portfolio</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="u-container">
         <div class="header__content">
+          <!-- NAVIGATION -->
           <nav class="navigation">
             <li class="navigation__item">
               <a href="#blog" class="navigation__link">Blog</a>
@@ -27,9 +29,11 @@
               <a href="#contact" class="navigation__link">Contact</a>
             </li>
           </nav>
+          <!-- /NAVIGATION -->
         </div>
       </div>
     </header>
+    <!-- /HEADER -->
     <main>
       <!-- SECTION - HERO -->
       <section class="section hero">
@@ -76,6 +80,7 @@
                 />
               </div>
             </div>
+
             <div class="hero__img-box">
               <img
                 src="assets/images/img-hero.webp"
@@ -116,8 +121,8 @@
                 Climbing the Career Ladder: Navigating the Workforce
               </p>
               <a href="#" class="btn btn--solid u-width-full u-text-center"
-                >Read more
-              </a>
+                >Read more</a
+              >
             </article>
 
             <article class="article">
@@ -137,14 +142,14 @@
                 Unlocking Your Productivity: Strategies for Success
               </p>
               <a href="#" class="btn btn--solid u-width-full u-text-center"
-                >Read more
-              </a>
+                >Read more</a
+              >
             </article>
 
             <article class="article">
               <img
                 src="assets/images/img-blog-3.webp"
-                alt="Man reading a book"
+                alt="Man working on a laptop"
                 class="article__img"
               />
               <time class="article__date">
@@ -152,24 +157,24 @@
                   name="calendar-clear-outline"
                   class="article__icon"
                 ></ion-icon>
-                <span>3/15/24</span>
+                <span>3/17/24</span>
               </time>
               <p class="article__title">
                 Coding Chronicles: Exploring the World of Programming
               </p>
               <a href="#" class="btn btn--solid u-width-full u-text-center"
-                >Read more
-              </a>
+                >Read more</a
+              >
             </article>
           </div>
-          <!-- CONTAINER - GRID -->
+          <!-- /CONTAINER - GRID -->
         </div>
-        <!-- CONTAINER -->
       </section>
       <!-- /SECTION - BLOG -->
 
       <!-- SECTION - WORKS -->
       <section class="section works" id="works">
+        <!-- CONTAINER -->
         <div class="u-container">
           <fieldset class="fieldset u-margin-bottom-2xl">
             <legend class="fieldset__legend">Featured Works</legend>
@@ -184,7 +189,6 @@
                   <p class="article__title">
                     Revitalizing Digital Presence: A Website Redesign Journey
                   </p>
-
                   <p class="article__description">
                     A website redesign project involves revamping an existing
                     website to improve its visual appeal, usability, and overall
@@ -198,7 +202,7 @@
               <article class="article--work">
                 <img
                   src="assets/images/img-work-2.webp"
-                  alt=""
+                  alt="Website design"
                   class="article--work__img"
                 />
                 <div class="article--work__info">
@@ -217,7 +221,7 @@
               <article class="article--work">
                 <img
                   src="assets/images/img-work-3.webp"
-                  alt=""
+                  alt="Wireframes"
                   class="article--work__img"
                 />
                 <div class="article--work__info">
@@ -236,6 +240,8 @@
               </article>
             </div>
           </fieldset>
+
+          <!-- CONTAINER - GRID -->
           <div class="grid grid--4-cols">
             <figure class="service">
               <ion-icon name="search-outline" class="service__icon"></ion-icon>
@@ -276,7 +282,9 @@
               </figcaption>
             </figure>
           </div>
+          <!-- /CONTAINER - GRID -->
         </div>
+        <!-- /CONTAINER -->
       </section>
       <!-- /SECTION - WORKS -->
 
@@ -290,32 +298,36 @@
         </div>
       </section>
       <!-- /SECTION - CONTACT -->
-
-      <footer class="footer">
-        <div class="u-container u-text-center">
-          <nav class="footer__nav">
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a href="#" class="footer__link">
-                  <ion-icon name="logo-pinterest"></ion-icon>
-                </a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">
-                  <ion-icon name="logo-behance"></ion-icon>
-                </a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <p class="footer__copyright">All Rights Reserved &copy; 2024</p>
-        </div>
-      </footer>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="u-container u-text-center">
+        <!-- NAVIGATION -->
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"
+                ><ion-icon name="logo-behance"></ion-icon
+              ></a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link"
+                ><ion-icon name="logo-linkedin"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /NAVIGATION -->
+        <p class="footer__copyright">All Rights Reserved &copy; 2024</p>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

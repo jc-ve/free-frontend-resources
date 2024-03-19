@@ -1,0 +1,15 @@
+:root {
+  --clr-primary: #336699;
+  --clr-secondary: #ffd700;
+  --clr-tertiary: #e5e5e5;
+  --clr-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit;
+}

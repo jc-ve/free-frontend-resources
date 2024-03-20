@@ -64,6 +64,14 @@ body {
   margin-bottom: 3.6rem;
 }
 
+.u-margin-bottom-xl {
+  margin-bottom: 4.8rem;
+}
+
+.u-margin-bottom-2xl {
+  margin-bottom: 6.4rem;
+}
+
 /*********************/
 /***** LAYOUT *****/
 /*********************/
@@ -75,6 +83,12 @@ body {
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
   gap: 4.8rem;
+  align-items: center;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
 }
 
 /*********************/
@@ -92,12 +106,28 @@ body {
   line-height: 1;
 }
 
+.heading--secondary {
+  font-size: 4.8rem;
+}
+
 .heading-label {
   display: block;
+  position: relative;
   font-weight: 700;
   font-size: 1.4rem;
   text-transform: uppercase;
   color: var(--clr-secondary-dark);
+}
+
+.heading-label::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 2rem;
+  background-color: var(--clr-secondary-dark);
+  position: absolute;
+  top: 50%;
+  left: -3rem;
 }
 
 .paragraph {
@@ -122,6 +152,7 @@ body {
   padding: 3.6rem;
   border-radius: 12px;
   max-width: 60rem;
+  box-shadow: 0 1rem 1rem rgba(86, 108, 141, 0.08);
 }
 
 .form__label {
@@ -174,4 +205,77 @@ textarea.form__input {
 .btn--primary:hover,
 .btn--primary:active {
   background-color: var(--clr-primary);
+}
+
+/*********************/
+/***** CONTACT *****/
+/*********************/
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  background-color: #fff;
+  padding: 1.6rem;
+  border-radius: 6px;
+  box-shadow: 0 1rem 1rem rgba(86, 108, 141, 0.08);
+}
+
+.contact__icon {
+  height: 3.6rem;
+  width: 3.6rem;
+}
+
+.contact__caption {
+  font-size: 1.2rem;
+}
+
+.contact__header {
+  display: block;
+  color: var(--clr-gray);
+  margin-bottom: 0.5rem;
+}
+
+.contact__info {
+  font-weight: 700;
+}
+
+/*********************/
+/***** SCHEDULE *****/
+/*********************/
+
+.schedule {
+  color: var(--clr-white);
+  background: var(--clr-primary-dark);
+  padding: 3.6rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.schedule__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.schedule__day,
+.schedule__time {
+  display: block;
+}
+
+.schedule__day {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.schedule__time {
+  font-size: 1.4rem;
+}
+
+/*********************/
+/***** MAP *****/
+/*********************/
+#map {
+  height: 180px;
 }

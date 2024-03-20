@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -18,7 +18,8 @@
         <div class="u-container">
           <div class="grid grid--2-cols">
             <header class="section__header">
-              <h1 class="heading heading--primary">
+              <span class="heading-label u-margin-bottom-sm">Contact</span>
+              <h1 class="heading heading--primary u-margin-bottom-md">
                 Let's Start a Conversation
               </h1>
               <p class="paragraph">
@@ -28,7 +29,38 @@
                 possible.
               </p>
             </header>
-            <form action="#" class="form"></form>
+            <form action="#" class="form" autocomplete="off">
+              <div class="form__input-group u-margin-bottom-md">
+                <label for="name" class="form__label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form__input"
+                  placeholder="Juan Dela Cruz"
+                />
+              </div>
+              <div class="form__input-group u-margin-bottom-md">
+                <label for="email" class="form__label">Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  class="form__input"
+                  placeholder="juandelacruz@email.com"
+                />
+              </div>
+              <div class="form__input-group u-margin-bottom-lg">
+                <label for="message" class="form__label">Message</label>
+                <textarea
+                  class="form__input"
+                  id="message"
+                  rows="10"
+                  placeholder="We'd love to hear from you!"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">
+                Send message
+              </button>
+            </form>
           </div>
         </div>
       </section>

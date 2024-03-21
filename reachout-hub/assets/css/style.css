@@ -193,6 +193,7 @@ textarea.form__input {
   padding: 1.2rem 2.4rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .btn--primary,
@@ -205,6 +206,19 @@ textarea.form__input {
 .btn--primary:hover,
 .btn--primary:active {
   background-color: var(--clr-primary);
+}
+
+.btn--outline,
+.btn--outline:link,
+.btn--outline:visited {
+  color: var(--clr-primary-dark);
+  box-shadow: 0 0 0 1px inset var(--clr-primary-dark);
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  color: var(--clr-white);
+  background-color: var(--clr-primary-dark);
 }
 
 /*********************/
@@ -276,6 +290,7 @@ textarea.form__input {
 /*********************/
 /***** MAP *****/
 /*********************/
-#map {
-  height: 180px;
+.map {
+  height: 30rem;
+  box-shadow: 0 1rem 1rem rgba(86, 108, 141, 0.08);
 }

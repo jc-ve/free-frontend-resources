@@ -36,6 +36,18 @@ html {
   font-size: 62.5%;
 }
 
+@media screen and (max-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media screen and (max-width: 46.875em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   box-sizing: border-box;
   font-size: 1.6rem;
@@ -94,9 +106,11 @@ picture {
   gap: 4.8rem;
 }
 
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.4rem;
+@media screen and (max-width: 56.25em) {
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+    gap: 3.6rem;
+  }
 }
 
 /*********************/
@@ -149,6 +163,12 @@ picture {
   padding: 8.4rem 2rem;
 }
 
+@media screen and (max-width: 56.25em) {
+  .section {
+    padding: 4.8rem 2rem;
+  }
+}
+
 /*********************/
 /***** FORM *****/
 /*********************/
@@ -159,6 +179,12 @@ picture {
   border-radius: 12px;
   max-width: 60rem;
   box-shadow: 0 1rem 1rem rgba(86, 108, 141, 0.08);
+}
+
+@media screen and (max-width: 56.25em) {
+  .form {
+    max-width: 100%;
+  }
 }
 
 .form__label {
@@ -292,14 +318,17 @@ textarea.form__input {
 
 .schedule__day {
   font-weight: 700;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 50%;
 }
 
 .schedule__day::after {
   content: "";
   display: inline-block;
-  height: 2rem;
-  width: 2rem;
+  height: 1.6rem;
+  width: 1.6rem;
   background-color: var(--clr-secondary);
   border-radius: 50%;
 }

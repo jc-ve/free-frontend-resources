@@ -26,7 +26,9 @@
             <div>
               <header class="section__header u-margin-bottom-2xl">
                 <span class="heading-label u-margin-bottom-sm">Contact</span>
-                <h1 class="heading heading--primary u-margin-bottom-md">
+                <h1
+                  class="heading heading--primary heading--dark u-margin-bottom-md"
+                >
                   Let's Start a Conversation
                 </h1>
                 <p class="paragraph">
@@ -125,10 +127,12 @@
 
       <section class="section">
         <div class="u-container">
-          <div class="grid grid--2-cols">
+          <div class="grid grid--2-cols u-margin-bottom-2xl">
             <header class="section__header u-margin-bottom-lg">
               <span class="heading-label u-margin-bottom-sm">Location</span>
-              <h2 class="heading heading--secondary u-margin-bottom-md">
+              <h2
+                class="heading heading--secondary heading--dark u-margin-bottom-md"
+              >
                 Discover our Location
               </h2>
               <p class="paragraph u-margin-bottom-lg">
@@ -139,7 +143,7 @@
               <a href="#" class="btn btn--outline">Get Directions</a>
             </header>
             <figure class="schedule">
-              <ul class="schedule__list">
+              <ul class="schedule__list u-margin-bottom-md">
                 <li class="schedule__item">
                   <span class="schedule__day">Weekdays</span>
                   <time class="schedule__time">9am - 5pm</time>
@@ -153,15 +157,24 @@
                   <time class="schedule__time">9am - 2pm</time>
                 </li>
               </ul>
+              <p class="schedule__note">
+                Please note that our services are not available on public
+                holidays. Our office will be closed on these days, and service
+                appointments will resume on the next business day.
+              </p>
             </figure>
           </div>
+          <div id="map" class="map"></div>
         </div>
       </section>
+
       <section class="section">
         <div class="u-container">
           <header class="section__header u-margin-bottom-lg">
             <span class="heading-label u-margin-bottom-sm">Faq</span>
-            <h2 class="heading heading--secondary u-margin-bottom-md">
+            <h2
+              class="heading heading--secondary heading--dark u-margin-bottom-md"
+            >
               Explore Our Frequently Asked Questions
             </h2>
           </header>
@@ -245,7 +258,21 @@
           </div>
         </div>
       </section>
-      <section id="map" class="map"></section>
+
+      <section class="section conversion">
+        <div class="u-container u-text-center">
+          <h3
+            class="heading heading--secondary heading--light u-margin-bottom-md"
+          >
+            Elevate your email game with our seamless and efficient services.
+            Get started today!
+          </h3>
+          <div class="conversion__ctas">
+            <a href="#" class="btn btn--secondary">Browse services</a>
+            <a href="#" class="btn btn--outline--secondary">Schedule a call</a>
+          </div>
+        </div>
+      </section>
     </main>
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"

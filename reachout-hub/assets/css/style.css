@@ -93,6 +93,10 @@ picture {
   margin-bottom: 6.4rem;
 }
 
+.u-text-center {
+  text-align: center;
+}
+
 /*********************/
 /***** LAYOUT *****/
 /*********************/
@@ -120,7 +124,14 @@ picture {
 .heading {
   font-family: "Cabin", serif;
   font-weight: 700;
+}
+
+.heading--dark {
   color: var(--clr-primary-dark);
+}
+
+.heading--light {
+  color: var(--clr-white);
 }
 
 .heading--primary {
@@ -130,6 +141,17 @@ picture {
 
 .heading--secondary {
   font-size: 4.8rem;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 56.25em) {
+  .heading--primary {
+    font-size: 4.8rem;
+  }
+
+  .heading--secondary {
+    font-size: 3rem;
+  }
 }
 
 .heading-label {
@@ -156,7 +178,7 @@ picture {
 }
 
 /*********************/
-/***** SECTION *****/
+/***** SECTIONS *****/
 /*********************/
 
 .section {
@@ -167,6 +189,16 @@ picture {
   .section {
     padding: 4.8rem 2rem;
   }
+}
+
+.conversion {
+  background-color: var(--clr-primary-dark);
+}
+
+.conversion__ctas {
+  display: flex;
+  gap: 2.4rem;
+  justify-content: center;
 }
 
 /*********************/
@@ -240,6 +272,18 @@ textarea.form__input {
   background-color: var(--clr-primary);
 }
 
+.btn--secondary,
+.btn--secondary:link,
+.btn--secondary:visited {
+  color: var(--clr-white);
+  background-color: var(--clr-secondary-dark);
+}
+
+.btn--secondary:hover,
+.btn--secondary:active {
+  background-color: var(--clr-secondary);
+}
+
 .btn--outline,
 .btn--outline:link,
 .btn--outline:visited {
@@ -251,6 +295,18 @@ textarea.form__input {
 .btn--outline:active {
   color: var(--clr-white);
   background-color: var(--clr-primary-dark);
+}
+
+.btn--outline--secondary,
+.btn--outline--secondary:link,
+.btn--outline--secondary:visited {
+  color: var(--clr-white);
+  box-shadow: 0 0 0 1px inset var(--clr-secondary-dark);
+}
+
+.btn--outline--secondary:hover,
+.btn--outline--secondary:active {
+  background-color: var(--clr-secondary-dark);
 }
 
 /*********************/
@@ -333,6 +389,20 @@ textarea.form__input {
   border-radius: 50%;
 }
 
+.schedule__note {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+/*********************/
+/***** MAP *****/
+/*********************/
+.map {
+  height: 30rem;
+  box-shadow: 0 1rem 1rem rgba(86, 108, 141, 0.08);
+  border-radius: 12px;
+}
+
 /*********************/
 /***** FAQ *****/
 /*********************/
@@ -355,12 +425,4 @@ textarea.form__input {
   font-weight: 700;
   margin-bottom: 1.6rem;
   color: var(--clr-primary-dark);
-}
-
-/*********************/
-/***** MAP *****/
-/*********************/
-.map {
-  height: 30rem;
-  box-shadow: 0 1rem 1rem rgba(86, 108, 141, 0.08);
 }

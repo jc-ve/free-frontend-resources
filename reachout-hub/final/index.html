@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>ReachOut Hub</title>
+  </head>
+  <body>
+    <!-- SECTION - HERO -->
+    <section class="section">
+      <!-- CONTAINER -->
+      <div class="u-container">
+        <!-- CONTAINER - GRID -->
+        <div class="grid grid--2-cols grid--2-cols--centered">
+          <div>
+            <header class="section__header u-margin-bottom-2xl">
+              <span class="heading-label u-margin-bottom-sm">Contact</span>
+              <h1
+                class="heading heading--primary heading--dark u-margin-bottom-md"
+              >
+                Let's Start a Conversation
+              </h1>
+              <p class="paragraph">
+                Have a question, suggestion, or simply want to say hello? We'd
+                love to hear from you! Feel free to reach out using the contact
+                form below, and our team will get back to you as soon as
+                possible.
+              </p>
+            </header>
+
+            <div class="contacts">
+              <figure class="contact">
+                <img
+                  src="assets/images/icon-email.svg"
+                  alt="Email icon"
+                  class="contact__icon"
+                />
+                <figcaption class="contact__caption">
+                  <span class="contact__header">Email</span>
+                  <span class="contact__info">roh@email.com</span>
+                </figcaption>
+              </figure>
+
+              <figure class="contact">
+                <img
+                  src="assets/images/icon-phone.svg"
+                  alt="Phone icon"
+                  class="contact__icon"
+                />
+                <figcaption class="contact__caption">
+                  <span class="contact__header">Phone</span>
+                  <span class="contact__info">(369)-246-2468</span>
+                </figcaption>
+              </figure>
+
+              <figure class="contact">
+                <img
+                  src="assets/images/icon-location.svg"
+                  alt="Location icon"
+                  class="contact__icon"
+                />
+                <figcaption class="contact__caption">
+                  <span class="contact__header">Location</span>
+                  <span class="contact__info">Philippines</span>
+                </figcaption>
+              </figure>
+
+              <figure class="contact">
+                <img
+                  src="assets/images/icon-rocket.svg"
+                  alt="Email icon"
+                  class="contact__icon"
+                />
+                <figcaption class="contact__caption">
+                  <span class="contact__header">Fax Address</span>
+                  <span class="contact__info">+63 (02) 123-6789</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <form action="#" class="form" autocomplete="off">
+            <div class="form__input-group u-margin-bottom-md">
+              <label for="name" class="form__label">Name</label>
+              <input
+                type="text"
+                class="form__input"
+                id="name"
+                placeholder="Juan Dela Cruz"
+                required
+              />
+            </div>
+            <div class="form__input-group u-margin-bottom-md">
+              <label for="email" class="form__label">Email</label>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                placeholder="juandelacruz@email.com"
+                required
+              />
+            </div>
+            <div class="form__input-group u-margin-bottom-lg">
+              <label for="message" class="form__label">Message</label>
+              <textarea
+                name=""
+                id="message"
+                rows="10"
+                class="form__input"
+                placeholder="We'd love to hear from you!"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary u-margin-left-auto">
+              Send message
+            </button>
+          </form>
+        </div>
+        <!-- /CONTAINER GRID -->
+      </div>
+      <!-- /CONTAINER -->
+    </section>
+    <!-- /SECTION - HERO -->
+
+    <!-- SECTION - DIRECTIONS -->
+    <section class="section">
+      <!-- CONTAINER -->
+      <div class="u-container">
+        <!-- CONTAINER - GRID -->
+        <div class="grid grid--2-cols u-margin-bottom-2xl">
+          <header class="section__header">
+            <span class="heading-label u-margin-bottom-sm">Location</span>
+            <h2
+              class="heading heading--secondary heading--dark u-margin-bottom-md"
+            >
+              Discover our Location
+            </h2>
+            <p class="paragraph u-margin-bottom-lg">
+              Explore where we are located and how to find us. Whether you're
+              nearby or planning a visit, discover our physical location and get
+              directions.
+            </p>
+            <a href="#" class="btn btn--outline">Get Directions</a>
+          </header>
+
+          <figure class="schedule">
+            <ul class="schedule__list u-margin-bottom-md">
+              <li class="schedule__item">
+                <span class="schedule__day">Weekdays</span>
+                <time class="schedule__time">9am - 5pm</time>
+              </li>
+              <li class="schedule__item">
+                <span class="schedule__day">Saturdays</span>
+                <time class="schedule__time">11am - 5pm</time>
+              </li>
+              <li class="schedule__item">
+                <span class="schedule__day">Sundays</span>
+                <time class="schedule__time">9am - 2pm</time>
+              </li>
+            </ul>
+            <p class="schedule__note">
+              Please note that our services are not available on public
+              holidays. Our office will be closed on these days, and service
+              appointments will resume on the next business day.
+            </p>
+          </figure>
+        </div>
+        <!-- /CONTAINER - GRID -->
+        <div id="map" class="map"></div>
+      </div>
+      <!-- /CONTAINER -->
+    </section>
+    <!-- /SECTION - DIRECTIONS -->
+
+    <!-- SECTION - FAQS -->
+    <section class="section">
+      <!-- CONTAINER -->
+      <div class="u-container">
+        <header class="section__header u-margin-bottom-lg">
+          <span class="heading-label u-margin-bottom-sm">Faq</span>
+          <h2
+            class="heading heading--secondary heading--dark u-margin-bottom-md"
+          >
+            Explore Our Frequently Asked Questions
+          </h2>
+        </header>
+
+        <!-- CONTAINER - GRID-->
+        <div class="grid grid--2-cols">
+          <div class="faq">
+            <img
+              src="assets/images/icon-information.svg"
+              alt="Information icon"
+              class="faq__icon"
+            />
+            <div class="faq__text">
+              <p class="faq__question">What is your return or refund policy?</p>
+              <p class="paragraph">
+                Our return policy allows you to return any unused or defective
+                items within 30 days of purchase for a full refund. Please
+                contact our customer support team to initiate the return
+                process.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <img
+              src="assets/images/icon-information.svg"
+              alt="Information icon"
+              class="faq__icon"
+            />
+            <div class="faq__text">
+              <p class="faq__question">
+                Do you offer any discounts or promotions?
+              </p>
+              <p class="paragraph">
+                Yes, we periodically offer discounts and promotions to our
+                customers. Be sure to sign up for our newsletter to receive
+                updates on upcoming sales and exclusive offers.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <img
+              src="assets/images/icon-information.svg"
+              alt="Information icon"
+              class="faq__icon"
+            />
+            <div class="faq__text">
+              <p class="faq__question">
+                What are the system requirements for using your service?
+              </p>
+              <p class="paragraph">
+                Our product/service is compatible with most modern devices and
+                operating systems. You will need an internet connection and a
+                compatible web browser to access our platform. Specific system
+                requirements may vary, so please refer to our documentation for
+                detailed information.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <img
+              src="assets/images/icon-information.svg"
+              alt="Information icon"
+              class="faq__icon"
+            />
+            <div class="faq__text">
+              <p class="faq__question">How do I troubleshoot common issues?</p>
+              <p class="paragraph">
+                If you encounter any issues while using our product/service, we
+                recommend checking our knowledge base or FAQ section for
+                troubleshooting tips. You can also contact our customer support
+                team for assistance, and they will be happy to help you resolve
+                any issues you may be experiencing.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /CONTAINER - GRID -->
+      </div>
+      <!-- /CONTAINER -->
+    </section>
+    <!-- /SECTION - FAQS -->
+
+    <!-- SECTION - CONVERSION -->
+    <section class="section conversion">
+      <div class="u-container u-text-center">
+        <h2
+          class="heading heading--secondary heading--light u-margin-bottom-xl"
+        >
+          Elevate your email game with our seamless and efficient services. Get
+          started today!
+        </h2>
+        <div class="conversion__ctas">
+          <a href="#" class="btn btn--secondary">Browse services</a>
+          <a href="#" class="btn btn--outline--secondary">Schedule a call</a>
+        </div>
+      </div>
+    </section>
+    <!-- /SECTION - CONVERSION -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>

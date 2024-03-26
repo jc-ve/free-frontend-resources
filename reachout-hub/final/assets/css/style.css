@@ -8,14 +8,15 @@
   --clr-primary-light: #eaeff2;
   --clr-secondary: #e49170;
   --clr-secondary-dark: #ce6b56;
-  --clr-white: #f6f6f4;
+  --clr-white: #fff;
+  --clr-off-white: #f6f6f4;
   --clr-gray: #495057;
   --clr-gray-dark: #212529;
 }
 
 ::selection {
   color: var(--clr-white);
-  background-color: var(--clr-primary-dark);
+  background-color: var(--clr-secondary-dark);
 }
 
 *,
@@ -50,10 +51,10 @@ html {
 
 body {
   box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
-  background-color: var(--clr-white);
-  font-family: "Quicksand", sans-serif;
+  background-color: var(--clr-off-white);
 }
 
 img,
@@ -93,6 +94,10 @@ picture {
   margin-bottom: 6.4rem;
 }
 
+.u-margin-left-auto {
+  margin-left: auto;
+}
+
 .u-text-center {
   text-align: center;
 }
@@ -110,6 +115,10 @@ picture {
   gap: 4.8rem;
 }
 
+.grid--2-cols--centered {
+  align-items: center;
+}
+
 @media screen and (max-width: 56.25em) {
   .grid--2-cols {
     grid-template-columns: 1fr;
@@ -122,7 +131,7 @@ picture {
 /*********************/
 
 .heading {
-  font-family: "Cabin", serif;
+  font-family: "Cabin", sans-serif;
   font-weight: 700;
 }
 
@@ -173,7 +182,6 @@ picture {
 }
 
 .paragraph {
-  line-height: 1.6;
   color: var(--clr-gray);
 }
 
@@ -206,11 +214,11 @@ picture {
 /*********************/
 
 .form {
-  background-color: #fff;
-  padding: 3.6rem;
-  border-radius: 12px;
   max-width: 60rem;
-  box-shadow: 0 1rem 1rem rgba(86, 108, 141, 0.08);
+  background-color: var(--clr-white);
+  border-radius: 12px;
+  padding: 3.6rem;
+  box-shadow: 0 0 1rem rgba(86, 108, 141, 0.08);
 }
 
 @media screen and (max-width: 56.25em) {
@@ -250,14 +258,14 @@ textarea.form__input {
 .btn,
 .btn:link,
 .btn:visited {
-  font-family: "Cabin", serif;
+  font-family: "Cabin", sans-serif;
   font-weight: 700;
+  text-decoration: none;
   border: none;
   border-radius: 6px;
   padding: 1.2rem 2.4rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-decoration: none;
 }
 
 .btn--primary,
@@ -323,10 +331,10 @@ textarea.form__input {
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  background-color: #fff;
+  background-color: var(--clr-white);
   padding: 1.6rem;
   border-radius: 6px;
-  box-shadow: 0 1rem 1rem rgba(86, 108, 141, 0.08);
+  box-sizing: 0 1rem 1rem rgba(86, 108, 141, 0.08);
 }
 
 .contact__icon {
@@ -354,7 +362,7 @@ textarea.form__input {
 
 .schedule {
   color: var(--clr-white);
-  background: var(--clr-primary-dark);
+  background-color: var(--clr-primary-dark);
   padding: 3.6rem;
   border-radius: 12px;
 }
@@ -383,8 +391,8 @@ textarea.form__input {
 .schedule__day::after {
   content: "";
   display: inline-block;
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.2rem;
+  width: 1.2rem;
   background-color: var(--clr-secondary);
   border-radius: 50%;
 }
@@ -397,9 +405,10 @@ textarea.form__input {
 /*********************/
 /***** MAP *****/
 /*********************/
+
 .map {
   height: 30rem;
-  box-shadow: 0 1rem 1rem rgba(86, 108, 141, 0.08);
+  box-shadow: 0 0 1rem rgba(86, 108, 141, 0.08);
   border-radius: 12px;
 }
 

@@ -1,0 +1,9 @@
+Experience
+
+Company: GammaTech Innovations
+Position: Full Stack Developer
+Duration: March 2017 - March 2018
+
+- Led the development of complex web applications from concept to deployment, utilizing a combination of front-end and back-end technologies.
+- Designed and implemented RESTful APIs and database schemas to support application functionality and data management.
+- Developed dynamic and interactive user interfaces using modern JavaScript frameworks such as React.js and   AngularJS.

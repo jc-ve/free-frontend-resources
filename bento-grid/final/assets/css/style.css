@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit; }
+
+body {
+  box-sizing: border-box;
+  background-color: #fff; }
+
+img,
+svg,
+picture,
+video {
+  display: block;
+  max-width: 100%; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #333; }
+
+.heading {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  line-height: 1; }
+  .heading--primary {
+    font-size: 3rem; }
+  .heading--secondary {
+    font-size: 2.4rem; }
+
+.paragraph--light {
+  color: #5c5c5c; }
+
+.grid {
+  display: grid; }
+  .grid--8-cols {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 2.4rem; }
+  .grid--img {
+    grid-column: 1 / 3;
+    grid-row: 1; }
+  .grid--name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 3 / 5;
+    grid-row: 1; }
+  .grid--social {
+    grid-column: 5 / -1;
+    grid-row: 1; }
+  .grid--experience {
+    grid-column: 1 / 7;
+    grid-row: 2; }
+  .grid--tools {
+    grid-column: 7 / -1;
+    grid-row: 2; }
+
+.u-container {
+  max-width: 120rem;
+  padding: 4rem;
+  margin: 0 auto; }
+
+.u-margin-bottom-xs {
+  margin-bottom: 0.8rem; }
+
+.avatar-img {
+  border-radius: 16px; }
+
+.bento {
+  border-radius: 16px;
+  background-color: #f2f2f2;
+  padding: 2rem; }

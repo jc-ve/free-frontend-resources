@@ -33,4 +33,9 @@
     grid-column: 7 / -1;
     grid-row: 2;
   }
+
+  &--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+  }
 }

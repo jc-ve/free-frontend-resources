@@ -1,9 +1,45 @@
 .avatar-img {
   border-radius: $border-outer;
+  height: 100%;
+  object-fit: cover;
 }
 
 .bento {
   border-radius: $border-outer;
   background-color: $clr-gray;
   padding: 2rem;
+
+  &__box {
+    background-color: $clr-white;
+    padding: 1.2rem;
+    border-radius: $border-inner;
+  }
+
+  &__icon {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+}
+
+.social {
+  display: flex;
+  gap: 2.4rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & span {
+      font-size: 1.2rem;
+      color: $clr-charcoal-light;
+    }
+  }
 }

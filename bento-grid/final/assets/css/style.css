@@ -61,6 +61,9 @@ body {
   .grid--tools {
     grid-column: 7 / -1;
     grid-row: 2; }
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem; }
 
 .u-container {
   max-width: 120rem;
@@ -70,10 +73,38 @@ body {
 .u-margin-bottom-xs {
   margin-bottom: 0.8rem; }
 
+.u-margin-bottom-md {
+  margin-bottom: 3.6rem; }
+
 .avatar-img {
-  border-radius: 16px; }
+  border-radius: 16px;
+  height: 100%;
+  object-fit: cover; }
 
 .bento {
   border-radius: 16px;
   background-color: #f2f2f2;
   padding: 2rem; }
+  .bento__box {
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 12px; }
+  .bento__icon {
+    height: 3.6rem;
+    width: 3.6rem; }
+
+.social {
+  display: flex;
+  gap: 2.4rem; }
+  .social__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; }
+  .social__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+    .social__item span {
+      font-size: 1.2rem;
+      color: #5c5c5c; }

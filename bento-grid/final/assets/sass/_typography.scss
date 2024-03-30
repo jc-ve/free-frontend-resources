@@ -6,13 +6,14 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: $clr-charcoal;
+  color: $clr-primary-900;
 }
 
 .heading {
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
   line-height: 1;
+  color: $clr-primary-800;
 
   &--primary {
     font-size: 3rem;

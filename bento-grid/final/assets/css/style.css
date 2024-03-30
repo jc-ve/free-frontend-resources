@@ -24,12 +24,13 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #333; }
+  color: #0c3a66; }
 
 .heading {
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
-  line-height: 1; }
+  line-height: 1;
+  color: #0f4880; }
   .heading--primary {
     font-size: 3rem; }
   .heading--secondary {
@@ -83,12 +84,14 @@ body {
 
 .bento {
   border-radius: 16px;
-  background-color: #f2f2f2;
+  background-color: #f4faff;
   padding: 2rem; }
   .bento__box {
     background-color: #fff;
     padding: 1.2rem;
-    border-radius: 12px; }
+    border-radius: 12px;
+    display: grid;
+    place-items: center; }
   .bento__icon {
     height: 3.6rem;
     width: 3.6rem; }

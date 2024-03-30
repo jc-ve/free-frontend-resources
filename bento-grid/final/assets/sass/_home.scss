@@ -6,13 +6,15 @@
 
 .bento {
   border-radius: $border-outer;
-  background-color: $clr-gray;
+  background-color: $clr-primary-100;
   padding: 2rem;
 
   &__box {
     background-color: $clr-white;
     padding: 1.2rem;
     border-radius: $border-inner;
+    display: grid;
+    place-items: center;
   }
 
   &__icon {

@@ -1,0 +1,18 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Duru Sans", sans-serif;
+  font-size: 1.8rem;
+  color: $clr-white;
+}
+
+.heading {
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+
+  &--primary {
+    font-size: 5.2rem;
+  }
+}

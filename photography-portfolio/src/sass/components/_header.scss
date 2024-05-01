@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  &__brand {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $clr-black;
+    }
+  }
+}

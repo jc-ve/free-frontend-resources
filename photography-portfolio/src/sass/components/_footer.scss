@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $clr-white;
+      background-color: $clr-black;
+    }
+  }
+}

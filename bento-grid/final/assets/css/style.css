@@ -24,13 +24,12 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #0c3a66; }
+  color: #333; }
 
 .heading {
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
-  line-height: 1;
-  color: #0f4880; }
+  line-height: 1; }
   .heading--primary {
     font-size: 3rem; }
   .heading--secondary {
@@ -84,7 +83,7 @@ body {
 
 .bento {
   border-radius: 16px;
-  background-color: #f4faff;
+  background-color: #f0f0f0;
   padding: 2rem; }
   .bento__box {
     background-color: #fff;

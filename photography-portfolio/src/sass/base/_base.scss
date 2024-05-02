@@ -7,6 +7,11 @@
   font: inherit;
 }
 
+::selection {
+  color: $clr-black;
+  background-color: $clr-yellow;
+}
+
 body {
   box-sizing: border-box;
   background-color: $clr-black;

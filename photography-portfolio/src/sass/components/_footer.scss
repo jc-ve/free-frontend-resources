@@ -1,6 +1,25 @@
 .footer {
-  display: flex;
-  align-items: center;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__brand {
+    &:link,
+    &:visited {
+      @include linkReset;
+      font-family: "Gilda Display", serif;
+      font-size: 3rem;
+      flex: 0 0 20%;
+      transition: color 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-yellow;
+    }
+  }
 
   &__list {
     list-style: none;

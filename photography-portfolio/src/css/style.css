@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit; }
+
+::selection {
+  color: #000;
+  background-color: #f08c00; }
+
+body {
+  box-sizing: border-box;
+  background-color: #000; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Duru Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #fff; }
+
+.heading {
+  font-family: "Gilda Display", serif;
+  font-weight: 400; }
+  .heading--primary {
+    font-size: 5.2rem; }
+
+.u-container {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.u-text-center {
+  text-align: center; }
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.footer__brand:link, .footer__brand:visited {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Gilda Display", serif;
+  font-size: 3rem;
+  flex: 0 0 20%;
+  transition: color 0.3s ease; }
+
+.footer__brand:hover, .footer__brand:active {
+  color: #f08c00; }
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem; }
+
+.footer__link:link, .footer__link:visited {
+  color: #fff;
+  background-color: #000; }
+
+.header {
+  padding: 6rem 0; }
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .header__brand:link, .header__brand:visited {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Gilda Display", serif;
+    font-size: 3rem;
+    flex: 0 0 20%;
+    transition: color 0.3s ease; }
+  .header__brand:hover, .header__brand:active {
+    color: #f08c00; }
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  position: relative;
+  text-decoration: none;
+  color: #fff; }
+
+.navigation__link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120%;
+  height: 3px;
+  background: linear-gradient(#f08c00, #f08c00);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0% 3px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+  transition: background-size 0.3s ease; }
+
+.navigation__link:hover.navigation__link::before, .navigation__link:active.navigation__link::before {
+  background-size: 100% 3px; }

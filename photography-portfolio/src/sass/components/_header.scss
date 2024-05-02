@@ -1,12 +1,25 @@
 .header {
-  display: flex;
-  align-items: center;
+  padding: 6rem 0;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__brand {
     &:link,
     &:visited {
-      text-decoration: none;
-      color: $clr-black;
+      @include linkReset;
+      font-family: "Gilda Display", serif;
+      font-size: 3rem;
+      flex: 0 0 20%;
+      transition: color 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-yellow;
     }
   }
 }

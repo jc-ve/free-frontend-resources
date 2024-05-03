@@ -27,11 +27,19 @@
     gap: 2.4rem;
   }
 
+  &__item {
+    padding: 0.4rem;
+    background-color: $clr-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__link {
     &:link,
     &:visited {
-      color: $clr-white;
-      background-color: $clr-black;
+      display: inline-block;
+      color: $clr-black;
     }
   }
 }

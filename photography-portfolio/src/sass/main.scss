@@ -1,3 +1,4 @@
+@import "abstract/animations";
 @import "abstract/mixins";
 @import "abstract/variables";
 
@@ -5,8 +6,11 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/buttons";
 @import "components/footer";
 @import "components/header";
 @import "components/navigation";
 
 @import "layout/grid";
+
+@import "pages/home";

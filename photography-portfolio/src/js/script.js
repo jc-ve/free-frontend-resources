@@ -2,10 +2,9 @@
 
 // Selectors
 
-const navBtn = document.querySelector(".nav__btn");
+const navBtn = document.querySelector(".btn--navigation");
+const header = document.querySelector(".header");
 
-new Kursor({
-  type: 1,
-  color: "#f08c00",
-  removeDefaultCursor: true,
+navBtn.addEventListener("click", function () {
+  header.classList.toggle("active");
 });

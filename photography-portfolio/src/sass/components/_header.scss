@@ -1,5 +1,10 @@
 .header {
   padding: 6rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba($clr-black, 0.8);
+  backdrop-filter: blur(10px);
 
   &.active {
     & .navigation {
@@ -33,9 +38,7 @@
     &:link,
     &:visited {
       @include linkReset;
-      font-family: "Gilda Display", serif;
-      font-size: 3rem;
-      flex: 0 0 20%;
+      font-size: 2.4rem;
       transition: color 0.3s ease;
     }
 

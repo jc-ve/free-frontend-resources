@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Duru+Sans&family=Gilda+Display&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
     <link rel="stylesheet" href="src/css/style.css" />
     <title>Document</title>
   </head>
@@ -26,10 +23,16 @@
                   <a href="#" class="navigation__link">Home</a>
                 </li>
                 <li class="navigation__item">
-                  <a href="#" class="navigation__link">About</a>
+                  <a href="#" class="navigation__link">Photography</a>
                 </li>
                 <li class="navigation__item">
-                  <a href="#" class="navigation__link">Portfolio</a>
+                  <a href="#" class="navigation__link">Videography</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">PSA</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Contact</a>
                 </li>
               </ul>
             </nav>
@@ -41,52 +44,27 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="section section--full">
         <div class="u-container">
-          <a href="#" class="btn btn--down">
-            <ion-icon name="chevron-down-outline"></ion-icon>
-          </a>
+          <div class="u-text-center">
+            <h1 class="heading heading--primary u-text-uppercase">
+              Hi, I'm Rora Santos
+            </h1>
+            <a href="#section-two" class="btn btn--down">
+              <i class="fa-solid fa-chevron-down fa-2x"></i>
+            </a>
+          </div>
         </div>
       </section>
-      <!-- <section class="section section--hero section--full">
-        <div class="u-container">
-          <h1 class="heading heading--primary u-text-center u-text-uppercase">
-            Hi, I'm Rora Santos
-          </h1>
-        </div>
-      </section> -->
-    </main>
-    <!-- <footer class="footer">
-      <div class="u-container">
-        <div class="footer__content">
-          <a href="index.html" class="footer__brand">Rora Santos</a>
 
-          <nav class="footer__nav">
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a href="" class="footer__link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-              <li class="footer__item">
-                <a href="" class="footer__link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-            </ul>
-          </nav>
+      <section class="section section--full" id="section-two">
+        <div class="u-container">
+          <div class="u-text-center">
+            <h2 class="heading heading--secondary">More than a creative.</h2>
+          </div>
         </div>
-      </div>
-    </footer> -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="https://unpkg.com/kursor"></script>
+      </section>
+    </main>
     <script src="src/js/script.js"></script>
   </body>
 </html>

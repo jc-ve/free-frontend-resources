@@ -1,18 +1,30 @@
+@font-face {
+  font-family: "Boucherie Block";
+  src: url(../../assets/fonts/boucherie-block.ttf);
+}
+
+@font-face {
+  font-family: "Maru Gothic";
+  src: url(../../assets/fonts/maru-gothic.ttf);
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: "Duru Sans", sans-serif;
+  font-family: "Maru Gothic", sans-serif;
   font-size: 1.8rem;
   color: $clr-white;
 }
 
 .heading {
-  font-family: "Gilda Display", serif;
-  font-weight: 400;
-
   &--primary {
-    font-size: 5.2rem;
+    font-family: "Boucherie Block", sans-serif;
+    font-size: 16rem;
+  }
+
+  &--secondary {
+    font-size: 10rem;
   }
 }

@@ -20,25 +20,37 @@
   color: #000;
   background-color: #f08c00; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   box-sizing: border-box;
   background-color: #000;
   padding: 2rem;
   overflow-x: hidden; }
 
+@font-face {
+  font-family: "Boucherie Block";
+  src: url(../../assets/fonts/boucherie-block.ttf); }
+
+@font-face {
+  font-family: "Maru Gothic";
+  src: url(../../assets/fonts/maru-gothic.ttf); }
+
 html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Duru Sans", sans-serif;
+  font-family: "Maru Gothic", sans-serif;
   font-size: 1.8rem;
   color: #fff; }
 
-.heading {
-  font-family: "Gilda Display", serif;
-  font-weight: 400; }
-  .heading--primary {
-    font-size: 5.2rem; }
+.heading--primary {
+  font-family: "Boucherie Block", sans-serif;
+  font-size: 16rem; }
+
+.heading--secondary {
+  font-size: 10rem; }
 
 .u-container {
   max-width: 120rem;
@@ -66,13 +78,13 @@ body {
     .btn--navigation__icon {
       position: relative; }
       .btn--navigation__icon, .btn--navigation__icon::before, .btn--navigation__icon::after {
-        width: 2.4rem;
+        width: 1.6rem;
         height: 2px;
         background-color: #000;
         display: inline-block;
         transition: all 0.2s; }
       .btn--navigation__icon {
-        top: 1rem;
+        top: 0.8rem;
         background-color: transparent; }
       .btn--navigation__icon::before, .btn--navigation__icon::after {
         content: "";
@@ -80,20 +92,22 @@ body {
         left: 0;
         transition: all 0.2s; }
       .btn--navigation__icon::before {
-        top: -0.6rem; }
+        top: -0.4rem; }
       .btn--navigation__icon::after {
-        top: 0.6rem; }
+        top: 0.4rem; }
   .btn--down:link, .btn--down:visited {
     justify-content: center;
     align-items: center;
     font-size: 2.4rem;
     padding: 1.6rem;
     border-radius: 50%;
-    background-color: #fff;
-    color: #000;
-    transition: transform 0.3s ease;
+    color: #fff;
+    transition: all 0.3s ease;
     animation: bounce infinite 4s ease;
     animation-direction: alternate; }
+  .btn--down:hover, .btn--down:active {
+    color: #000;
+    background-color: #fff; }
 
 .footer__content {
   display: flex;
@@ -128,7 +142,12 @@ body {
   color: #000; }
 
 .header {
-  padding: 6rem 0; }
+  padding: 6rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px); }
   .header.active .navigation {
     visibility: visible;
     pointer-events: auto;
@@ -149,9 +168,7 @@ body {
   .header__brand:link, .header__brand:visited {
     text-decoration: none;
     color: #fff;
-    font-family: "Gilda Display", serif;
-    font-size: 3rem;
-    flex: 0 0 20%;
+    font-size: 2.4rem;
     transition: color 0.3s ease; }
   .header__brand:hover, .header__brand:active {
     color: #f08c00; }
@@ -164,7 +181,7 @@ body {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
-  transform: translateX(50%);
+  transform: translateX(25%);
   transition: all 0.3s ease; }
   .navigation__list {
     list-style: none;
@@ -180,7 +197,7 @@ body {
     position: absolute;
     display: block;
     width: 120%;
-    height: 3px;
+    height: 2px;
     background: linear-gradient(#f08c00, #f08c00);
     background-repeat: no-repeat;
     background-position: center;
@@ -191,7 +208,9 @@ body {
     z-index: 1;
     transition: background-size 0.3s ease; }
   .navigation__link:hover.navigation__link::before, .navigation__link:active.navigation__link::before {
-    background-size: 100% 3px; }
+    background-size: 100% 2px; }
 
 .section--full {
-  min-height: 100vh; }
+  min-height: 100vh;
+  display: flex;
+  align-items: center; }

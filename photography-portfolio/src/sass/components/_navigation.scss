@@ -28,7 +28,7 @@
       background: linear-gradient($clr-yellow, $clr-yellow);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 0% 3px;
+      background-size: 0% 2px;
       top: 50%;
       left: 50%;
       transform: translate(-50%, 50%);
@@ -39,6 +39,30 @@
     &:hover.navigation__link::before,
     &:active.navigation__link::before {
       background-size: 100% 2px;
+    }
+
+    &--active {
+      &:link,
+      &:visited {
+        position: relative;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 120%;
+        height: 2px;
+        background: linear-gradient($clr-yellow, $clr-yellow);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        z-index: 1;
+        transition: background-size 0.3s ease;
+      }
     }
   }
 }

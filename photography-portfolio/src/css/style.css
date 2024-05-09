@@ -16,11 +16,16 @@
   box-sizing: inherit;
   font: inherit; }
 
+*:focus {
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+  outline: none; }
+
 ::selection {
   color: #000;
-  background-color: #f08c00; }
+  background-color: #fff; }
 
 html {
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth; }
 
 body {
@@ -45,12 +50,16 @@ body {
   font-size: 1.8rem;
   color: #fff; }
 
-.heading--primary {
-  font-family: "Boucherie Block", sans-serif;
-  font-size: 16rem; }
-
-.heading--secondary {
-  font-size: 10rem; }
+.heading {
+  font-family: "Boucherie Block", sans-serif; }
+  .heading--primary {
+    font-size: 16rem;
+    line-height: 1.2; }
+    .heading--primary--main, .heading--primary--sub {
+      display: block; }
+  .heading--secondary {
+    font-size: 10rem;
+    line-height: 1; }
 
 .u-container {
   max-width: 120rem;
@@ -61,6 +70,12 @@ body {
 
 .u-text-uppercase {
   text-transform: uppercase; }
+
+.u-margin-bottom-md {
+  margin-bottom: 2.4rem; }
+
+.u-margin-bottom-lg {
+  margin-bottom: 6.4rem; }
 
 .btn {
   cursor: pointer; }
@@ -96,8 +111,6 @@ body {
       .btn--navigation__icon::after {
         top: 0.4rem; }
   .btn--down:link, .btn--down:visited {
-    justify-content: center;
-    align-items: center;
     font-size: 2.4rem;
     padding: 1.6rem;
     border-radius: 50%;
@@ -108,6 +121,15 @@ body {
   .btn--down:hover, .btn--down:active {
     color: #000;
     background-color: #fff; }
+  .btn--outline {
+    background: transparent;
+    color: #fff;
+    padding: 1rem;
+    border: 1px solid #fff;
+    transition: all 0.3s ease; }
+    .btn--outline:hover {
+      color: #000;
+      background-color: #fff; }
 
 .footer__content {
   display: flex;
@@ -140,6 +162,26 @@ body {
 .footer__link:link, .footer__link:visited {
   display: inline-block;
   color: #000; }
+
+.form__label {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+  cursor: pointer; }
+
+.form__input {
+  width: 100%;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 1rem 2rem; }
+
+.form .btn--outline {
+  display: block;
+  margin-left: auto; }
+
+textarea.form__input {
+  resize: none; }
 
 .header {
   padding: 6rem 0;
@@ -201,7 +243,7 @@ body {
     background: linear-gradient(#f08c00, #f08c00);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 0% 3px;
+    background-size: 0% 2px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -209,8 +251,57 @@ body {
     transition: background-size 0.3s ease; }
   .navigation__link:hover.navigation__link::before, .navigation__link:active.navigation__link::before {
     background-size: 100% 2px; }
+  .navigation__link--active:link, .navigation__link--active:visited {
+    position: relative; }
+  .navigation__link--active::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120%;
+    height: 2px;
+    background: linear-gradient(#f08c00, #f08c00);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    transition: background-size 0.3s ease; }
 
-.section--full {
+.table {
+  max-width: 100%;
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  border-style: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px #fff; }
+  .table__data {
+    padding: 1.6rem 3.6rem;
+    border: 1px solid #fff;
+    transition: all 0.3s ease; }
+    .table__data:first-child {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px; }
+    .table__data:last-child {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px; }
+    .table__data:hover {
+      color: #000;
+      background-color: #fff; }
+  .table__link:link, .table__link:visited {
+    text-decoration: none;
+    color: inherit; }
+
+.grid {
+  display: grid;
+  align-items: center; }
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.6rem; }
+
+.section {
   min-height: 100vh;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  scroll-snap-align: center; }

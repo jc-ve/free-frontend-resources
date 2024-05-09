@@ -19,12 +19,20 @@ body {
 }
 
 .heading {
+  font-family: "Boucherie Block", sans-serif;
+
   &--primary {
-    font-family: "Boucherie Block", sans-serif;
     font-size: 16rem;
+    line-height: 1.2;
+
+    &--main,
+    &--sub {
+      display: block;
+    }
   }
 
   &--secondary {
     font-size: 10rem;
+    line-height: 1;
   }
 }

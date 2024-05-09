@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="src/css/style.css" />
-    <title>Document</title>
+    <title>Rora Santos</title>
   </head>
   <body>
     <header class="header">
@@ -20,7 +20,9 @@
             <nav class="navigation">
               <ul class="navigation__list">
                 <li class="navigation__item">
-                  <a href="#" class="navigation__link">Home</a>
+                  <a href="#" class="navigation__link navigation__link--active"
+                    >Home</a
+                  >
                 </li>
                 <li class="navigation__item">
                   <a href="#" class="navigation__link">Photography</a>
@@ -43,13 +45,17 @@
         </div>
       </div>
     </header>
-    <main>
-      <section class="section section--full">
+    <main class="main">
+      <section class="section">
         <div class="u-container">
+          <h1
+            class="heading heading--primary u-text-uppercase u-margin-bottom-lg"
+          >
+            <span class="heading--primary--main">Hi, I'm</span>
+            <span class="heading--primary--sub">Rora Santos</span>
+          </h1>
+
           <div class="u-text-center">
-            <h1 class="heading heading--primary u-text-uppercase">
-              Hi, I'm Rora Santos
-            </h1>
             <a href="#section-two" class="btn btn--down">
               <i class="fa-solid fa-chevron-down fa-2x"></i>
             </a>
@@ -57,10 +63,72 @@
         </div>
       </section>
 
-      <section class="section section--full" id="section-two">
+      <section class="section" id="section-two">
         <div class="u-container">
           <div class="u-text-center">
             <h2 class="heading heading--secondary">More than a creative.</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="social">
+        <div class="u-container">
+          <h2
+            class="heading heading--secondary heading--greeting u-text-uppercase u-text-center u-margin-bottom-md"
+          ></h2>
+          <table class="table">
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td class="table__data">
+                  <a href="" class="table__link">Instagram</a>
+                </td>
+                <td class="table__data">
+                  <a href="" class="table__link">Facebook</a>
+                </td>
+                <td class="table__data">
+                  <a href="" class="table__link">LinkedIn</a>
+                </td>
+                <td class="table__data">
+                  <a href="" class="table__link">Email</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="u-container">
+          <div class="grid grid--2-cols">
+            <header>
+              <h2 class="heading heading--secondary u-text-uppercase">
+                Let's Talk ☎️
+              </h2>
+            </header>
+            <form action="#" class="form" autocomplete="off">
+              <div class="form__group u-margin-bottom-md">
+                <label for="email" class="form__label">Your Email:</label>
+                <input type="email" id="email" class="form__input" required />
+              </div>
+              <div class="form__group u-margin-bottom-md">
+                <label for="name" class="form__label">Your Name:</label>
+                <input type="text" id="name" class="form__input" required />
+              </div>
+
+              <div class="form__group u-margin-bottom-md">
+                <label for="message" class="form__label"
+                  >How can I help you?</label
+                >
+                <textarea
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  class="form__input"
+                ></textarea>
+              </div>
+
+              <button class="btn btn--outline" type="submit">Submit</button>
+            </form>
           </div>
         </div>
       </section>

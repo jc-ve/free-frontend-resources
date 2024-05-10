@@ -1,0 +1,71 @@
+:root {
+  color-scheme: light dark; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit; }
+
+body {
+  box-sizing: border-box;
+  padding: 6rem 2rem; }
+
+@media (prefers-color-scheme: light) {
+  ::selection {
+    background-color: #393d3f;
+    color: #fdfdff; }
+  body {
+    background-color: #fdfdff;
+    color: #393d3f; } }
+
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background-color: #fdfdff;
+    color: #393d3f; }
+  body {
+    background-color: #393d3f;
+    color: #fdfdff; } }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 1.8rem; }
+
+.heading {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700; }
+  .heading--primary {
+    font-size: 3.6rem; }
+
+.u-container {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.6rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 2.4rem; }
+
+.navigation {
+  position: absolute;
+  padding-left: 6rem; }
+  .navigation__list {
+    list-style: none; }
+  .navigation__item:not(:last-child) {
+    margin-bottom: 1rem; }
+  .navigation__link:link, .navigation__link:visited {
+    display: inline-block;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: inherit;
+    background: linear-gradient(currentcolor, currentcolor) no-repeat bottom left;
+    background-size: 0% 1px;
+    transition: background-size 0.3s ease; }
+  .navigation__link:hover, .navigation__link:active {
+    background-size: 100% 1px; }

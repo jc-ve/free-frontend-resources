@@ -1,0 +1,17 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 1.8rem;
+}
+
+.heading {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+
+  &--primary {
+    font-size: 3.6rem;
+  }
+}

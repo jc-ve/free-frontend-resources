@@ -1,0 +1,41 @@
+:root {
+  color-scheme: light dark;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 6rem 2rem;
+}
+
+@media (prefers-color-scheme: light) {
+  ::selection {
+    background-color: $clr-black;
+    color: $clr-white;
+  }
+
+  body {
+    background-color: $clr-white;
+    color: $clr-black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background-color: $clr-white;
+    color: $clr-black;
+  }
+
+  body {
+    background-color: $clr-black;
+    color: $clr-white;
+  }
+}

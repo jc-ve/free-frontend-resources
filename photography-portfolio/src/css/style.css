@@ -305,3 +305,6 @@ textarea.form__input {
   display: flex;
   align-items: center;
   scroll-snap-align: center; }
+
+.greetings__list {
+  list-style: none; }

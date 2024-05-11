@@ -1,6 +1,12 @@
 .list {
   list-style: none;
 
+  &--social {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+  }
+
   &__item {
     max-width: 75ch;
 
@@ -24,6 +30,28 @@
     &:active {
       background-size: 100% 1px;
     }
+
+    &--social {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover i,
+      &:active i {
+        animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+      }
+    }
+  }
+
+  &--social {
+    display: flex;
+    gap: 2.4rem;
   }
 }
 

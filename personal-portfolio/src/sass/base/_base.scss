@@ -13,12 +13,24 @@
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba($clr-gray-light, 0.4);
+  box-shadow: 0 0 0 3px rgba($clr-gray-light, 0.6);
+}
+
+html {
+  scrollbar-gutter: stable;
 }
 
 body {
   box-sizing: border-box;
   padding: 6rem 2rem;
+
+  @media screen and (max-width: $bp-lg) {
+    padding: 4rem 2rem;
+  }
+
+  @media screen and (max-width: $bp-sm) {
+    padding: 2rem;
+  }
 }
 
 @media (prefers-color-scheme: light) {

@@ -1,3 +1,7 @@
 .section {
   padding: 5.2rem 0;
+
+  @media screen and (max-width: $bp-lg) {
+    padding: 5.2rem 0 3.6rem;
+  }
 }

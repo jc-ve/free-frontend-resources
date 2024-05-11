@@ -1,5 +1,13 @@
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: $bp-lg) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: $bp-sm) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -24,6 +32,14 @@ body {
     border: 1px solid currentColor;
     border-radius: 6px;
   }
+
+  &--tertiary {
+    font-size: 2rem;
+  }
+}
+
+.paragraph {
+  max-width: 80ch;
 }
 
 @media (prefers-color-scheme: light) {

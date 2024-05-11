@@ -73,6 +73,30 @@ const displayAbout = () => {
   <section class="section">
     <div class="u-container">
       <h2 class="heading heading--secondary u-margin-bottom-lg">About</h2>
+      <p class="paragraph u-margin-bottom-md">Hello! My name is JC, a Philippine-based Frontend Developer. I honed my skills in FEU Institute of Technology where I developed my creativity to every project I create.</p>
+      <p class="paragraph u-margin-bottom-lg">When I'm not in work mode, you'll likely find me shooting hoops on the court, pounding the pavement for a run, or cruising along on my bike.</p>
+      <ul class="list list--social">
+        <li>
+          <a href="/assets/Enriquez_Resume.pdf" target="_blank" title="Resume" class="list__link--social">
+            <i class="fa-solid fa-square-pen fa-2xl"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:john.christopher.enriquez.2@gmail.com" target="_blank" title="Email" class="list__link--social">
+            <i class="fa-solid fa-square-envelope fa-2xl"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCakOD76rxddFiEgCukv5Ozw" target="_blank" title="Youtube" class="list__link--social">
+            <i class="fa-brands fa-square-youtube fa-2xl"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/jc-ve" target="_blank" title="GitHub" class="list__link--social">
+            <i class="fa-brands fa-square-github fa-2xl"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
   `;

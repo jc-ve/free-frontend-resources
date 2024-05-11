@@ -1,0 +1,40 @@
+.list {
+  list-style: none;
+
+  &__item {
+    max-width: 75ch;
+
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+      padding-bottom: 1.6rem;
+      border-bottom: 1px solid currentColor;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-weight: 600;
+      text-decoration: none;
+      color: inherit;
+      @include hoverEffect;
+    }
+
+    &:hover,
+    &:active {
+      background-size: 100% 1px;
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .list__description {
+    color: $clr-gray-dark;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .list__description {
+    color: $clr-gray-light;
+  }
+}

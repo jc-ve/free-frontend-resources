@@ -1,0 +1,5 @@
+@mixin hoverEffect {
+  background: linear-gradient(currentcolor, currentcolor) no-repeat bottom left;
+  background-size: 0% 1px;
+  transition: background-size 0.3s ease;
+}

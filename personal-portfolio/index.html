@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Crafting digital wonders using HTML, CSS, and JavaScript. Let's collaborate on creating seamless online experiences that leave a lasting impression. Excited to bring creativity and precision to your projects."
+    />
+    <meta
+      name="keyword"
+      content="HTML, CSS, JavaScript, John Christopher Enriquez"
+    />
+    <meta name="author" content="John Christopher Enriquez" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,16 +25,18 @@
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Home</a>
+          <button class="navigation__btn navigation__btn--active" id="btn-home">
+            Home
+          </button>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Activites</a>
+          <button class="navigation__btn" id="btn-about">About</button>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Youtube</a>
+          <button class="navigation__btn" id="btn-activities">Activites</button>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Email</a>
+          <button class="navigation__btn" id="btn-youtube">Youtube</button>
         </li>
       </ul>
     </nav>
@@ -38,6 +49,43 @@
         </p>
       </div>
     </header>
-    <main></main>
+    <main class="main">
+      <section class="section">
+        <div class="u-container">
+          <h2 class="heading heading--secondary u-margin-bottom-lg">
+            Projects
+          </h2>
+          <ul class="list">
+            <li class="list__item">
+              <a href="#" class="list__link">frontend-challenges</a> &mdash;
+              <span class="list__description"
+                >curated collection of different challenges I finished from
+                Frontend Mentor, Codewell & FrontendPro.</span
+              >
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">css-frameworks</a> &mdash;
+              <span class="list__description"
+                >compilation of projects I finished using different CSS
+                frameworks such as Tailwind, Bootstrap & Bulma.</span
+              >
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">freecodecamp-projects</a> &mdash;
+              <span class="list__description"
+                >projects included in freeCodeCamps's core curriculum.</span
+              >
+            </li>
+            <li class="list__item">
+              <a href="#" class="list__link">api-projects</a> &mdash;
+              <span class="list__description">
+                projects using different free API's I found across the net.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="src/js/script.js"></script>
   </body>
 </html>

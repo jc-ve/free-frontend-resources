@@ -11,6 +11,11 @@
   font: inherit;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba($clr-gray-light, 0.4);
+}
+
 body {
   box-sizing: border-box;
   padding: 6rem 2rem;

@@ -1,6 +1,7 @@
 .navigation {
-  position: absolute;
-  padding-left: 6rem;
+  position: fixed;
+  right: 0;
+  padding-right: 3.6rem;
 
   &__list {
     list-style: none;
@@ -8,25 +9,20 @@
 
   &__item {
     &:not(:last-child) {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
   }
 
-  &__link {
-    &:link,
-    &:visited {
-      display: inline-block;
-      font-size: 1.4rem;
-      text-decoration: none;
-      color: inherit;
-      background: linear-gradient(currentcolor, currentcolor) no-repeat bottom
-        left;
-      background-size: 0% 1px;
-      transition: background-size 0.3s ease;
+  &__btn {
+    @include hoverEffect;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+      background-size: 100% 1px;
     }
 
-    &:hover,
-    &:active {
+    &--active {
       background-size: 100% 1px;
     }
   }

@@ -4,14 +4,36 @@ html {
 
 body {
   font-family: "Space Mono", monospace;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
 
 .heading {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 700;
+  line-height: 1;
 
   &--primary {
     font-size: 3.6rem;
+  }
+
+  &--secondary {
+    display: inline-block;
+    font-size: 2.4rem;
+    padding: 1.2rem 2.4rem;
+    border: 1px solid currentColor;
+    border-radius: 6px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .paragraph {
+    color: $clr-gray-dark;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .paragraph {
+    color: $clr-gray-light;
   }
 }

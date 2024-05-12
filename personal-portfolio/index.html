@@ -29,18 +29,36 @@
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <button class="navigation__btn navigation__btn--active" id="btn-home">
+          <button
+            class="navigation__btn navigation__btn--active"
+            id="btn-home"
+            data-content="home"
+          >
             Home
           </button>
         </li>
         <li class="navigation__item">
-          <button class="navigation__btn" id="btn-about">About</button>
+          <button class="navigation__btn" id="btn-about" data-content="about">
+            About
+          </button>
         </li>
         <li class="navigation__item">
-          <button class="navigation__btn" id="btn-activities">Activites</button>
+          <button
+            class="navigation__btn"
+            id="btn-activities"
+            data-content="activities"
+          >
+            Activites
+          </button>
         </li>
         <li class="navigation__item">
-          <button class="navigation__btn" id="btn-youtube">Youtube</button>
+          <button
+            class="navigation__btn"
+            id="btn-youtube"
+            data-content="youtube"
+          >
+            Youtube
+          </button>
         </li>
       </ul>
     </nav>
@@ -54,7 +72,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="section">
+      <section class="section section--home active">
         <div class="u-container">
           <h2 class="heading heading--secondary u-margin-bottom-lg">
             Projects
@@ -87,6 +105,88 @@
               </span>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="section section--about">
+        <div class="u-container">
+          <h2 class="heading heading--secondary u-margin-bottom-lg">About</h2>
+          <p class="paragraph u-margin-bottom-md">
+            Hello! My name is JC, a Philippine-based Frontend Developer. I honed
+            my skills in FEU Institute of Technology where I developed my
+            creativity to every project I create.
+          </p>
+          <p class="paragraph u-margin-bottom-lg">
+            When I'm not in work mode, you'll likely find me shooting hoops on
+            the court, pounding the pavement for a run, or cruising along on my
+            bike.
+          </p>
+          <ul class="list list--social">
+            <li>
+              <a
+                href="/assets/Enriquez_Resume.pdf"
+                target="_blank"
+                title="Resume"
+                class="list__link--social"
+              >
+                <i class="fa-solid fa-square-pen fa-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:john.christopher.enriquez.2@gmail.com"
+                target="_blank"
+                title="Email"
+                class="list__link--social"
+              >
+                <i class="fa-solid fa-square-envelope fa-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCakOD76rxddFiEgCukv5Ozw"
+                target="_blank"
+                title="Youtube"
+                class="list__link--social"
+              >
+                <i class="fa-brands fa-square-youtube fa-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/jc-ve"
+                target="_blank"
+                title="GitHub"
+                class="list__link--social"
+              >
+                <i class="fa-brands fa-square-github fa-2xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section--activities">
+        <div class="u-container">
+          <h2 class="heading heading--secondary u-margin-bottom-lg">
+            Activities
+          </h2>
+          <ul class="list list--activities"></ul>
+        </div>
+      </section>
+      <section class="section section--youtube">
+        <div class="u-container">
+          <h2 class="heading heading--secondary u-margin-bottom-md">Youtube</h2>
+          <p class="paragraph u-margin-bottom-lg">
+            Dive into my world on Youtube! Catch my latest videos below.
+          </p>
+          <ul class="list list--youtube u-margin-bottom-lg"></ul>
+          <a
+            href="https://www.youtube.com/channel/UCakOD76rxddFiEgCukv5Ozw"
+            target="_blank"
+            class="btn"
+            >View All
+
+            <i class="fa-solid fa-arrow-right-long btn__icon"></i>
+          </a>
         </div>
       </section>
     </main>

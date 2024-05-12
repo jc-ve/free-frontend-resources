@@ -1,0 +1,24 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover,
+  &:active {
+    transform: translateY(-1rem);
+  }
+
+  &__icon {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover .btn__icon {
+    transform: translateX(0.5rem);
+  }
+}

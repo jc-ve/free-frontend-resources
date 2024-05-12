@@ -16,6 +16,13 @@
 :root {
   color-scheme: light dark; }
 
+::-webkit-scrollbar {
+  width: 0.5rem; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #495057; }
+
 *,
 *::before,
 *::after {
@@ -24,7 +31,7 @@
   box-sizing: inherit;
   font: inherit; }
 
-*:focus {
+*:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(173, 181, 189, 0.6); }
 
@@ -110,6 +117,23 @@ body {
 .u-margin-bottom-lg {
   margin-bottom: 3.6rem; }
 
+.btn:link, .btn:visited {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease; }
+
+.btn:hover, .btn:active {
+  transform: translateY(-1rem); }
+
+.btn__icon {
+  transition: transform 0.3s ease; }
+
+.btn:hover .btn__icon {
+  transform: translateX(0.5rem); }
+
 .header .paragraph {
   max-width: 50ch; }
 
@@ -125,6 +149,10 @@ body {
       margin-bottom: 1.6rem;
       padding-bottom: 1.6rem;
       border-bottom: 1px solid currentColor; }
+    .list__item--links:not(:last-child) {
+      margin-bottom: 1.6rem;
+      padding-bottom: 0;
+      border-bottom: none; }
   .list__link:link, .list__link:visited {
     font-weight: 600;
     text-decoration: none;
@@ -189,7 +217,10 @@ body {
       background-size: 100% 1px; }
 
 .section {
-  padding: 5.2rem 0; }
+  padding: 5.2rem 0;
+  display: none; }
+  .section.active {
+    display: block; }
   @media screen and (max-width: 56.25em) {
     .section {
       padding: 5.2rem 0 3.6rem; } }

@@ -2,6 +2,15 @@
   color-scheme: light dark;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $clr-gray-dark;
+}
+
 *,
 *::before,
 *::after {
@@ -11,7 +20,7 @@
   font: inherit;
 }
 
-*:focus {
+*:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba($clr-gray-light, 0.6);
 }

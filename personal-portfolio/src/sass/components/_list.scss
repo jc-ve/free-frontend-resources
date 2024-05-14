@@ -1,7 +1,8 @@
 .list {
-  list-style: none;
+  list-style-position: inside;
 
   &--social {
+    list-style: none;
     display: flex;
     gap: 1.2rem;
     align-items: center;
@@ -11,17 +12,7 @@
     max-width: 75ch;
 
     &:not(:last-child) {
-      margin-bottom: 1.6rem;
-      padding-bottom: 1.6rem;
-      border-bottom: 1px solid currentColor;
-    }
-
-    &--links {
-      &:not(:last-child) {
-        margin-bottom: 1.6rem;
-        padding-bottom: 0;
-        border-bottom: none;
-      }
+      margin-bottom: 2.4rem;
     }
   }
 

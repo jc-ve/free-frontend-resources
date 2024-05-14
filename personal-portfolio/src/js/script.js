@@ -4,7 +4,7 @@ const API_KEY_YOUTUBE = "AIzaSyCfL7EF9bpu3y1kXn2PXHyedAE95YnWJrk";
 const CHANNEL_ID = "UCakOD76rxddFiEgCukv5Ozw";
 const UPLOADS_ID = "UUakOD76rxddFiEgCukv5Ozw";
 
-const urlYoutube = `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=10&playlistId=UUakOD76rxddFiEgCukv5Ozw&key=${API_KEY_YOUTUBE}`;
+const urlYoutube = `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=5&playlistId=UUakOD76rxddFiEgCukv5Ozw&key=${API_KEY_YOUTUBE}`;
 
 const navigationList = document.querySelector(".navigation__list");
 const navigationBtns = document.querySelectorAll(".navigation__btn");
@@ -35,10 +35,9 @@ const showSection = (e) => {
 navigationList.addEventListener("click", showSection);
 
 const displayYoutubeVideos = (videos) => {
-  console.log(videos.items);
   videos.items.forEach((video) => {
     const markup = `
-      <li class="list__item list__item--links">
+      <li class="list__item">
         <a href="https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}" target="_blank" class="list__link">${video.snippet.title}</a>
       </li>
     `;

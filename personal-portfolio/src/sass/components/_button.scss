@@ -6,7 +6,10 @@
     font-weight: 700;
     text-decoration: none;
     color: inherit;
-    transition: transform 0.3s ease;
+    padding: 1.2rem 2.4rem;
+    border: 1px solid currentColor;
+    border-radius: 8px;
+    transition: all 0.3s ease;
   }
 
   &:hover,
@@ -20,5 +23,25 @@
 
   &:hover .btn__icon {
     transform: translateX(0.5rem);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .btn {
+    &:hover,
+    &:active {
+      background-color: $clr-black;
+      color: $clr-white;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn {
+    &:hover,
+    &:active {
+      background-color: $clr-white;
+      color: $clr-black;
+    }
   }
 }

@@ -29,6 +29,14 @@ body {
     &--sub {
       display: block;
     }
+
+    &--main {
+      animation: slideInLeft 1s ease-out;
+    }
+
+    &--sub {
+      animation: slideInRight 1s ease-out;
+    }
   }
 
   &--secondary {

@@ -62,7 +62,7 @@
       border-radius: 50%;
       color: $clr-white;
       transition: all 0.3s ease;
-      animation: bounce infinite 4s ease;
+      animation: bounce infinite 4s ease-out;
       animation-direction: alternate;
     }
 

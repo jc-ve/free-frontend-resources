@@ -42,5 +42,9 @@ body {
   &--secondary {
     font-size: 10rem;
     line-height: 1;
+
+    &--greeting {
+      font-size: 8rem;
+    }
   }
 }

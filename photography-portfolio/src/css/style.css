@@ -105,6 +105,8 @@ body {
   .heading--secondary {
     font-size: 10rem;
     line-height: 1; }
+    .heading--secondary--greeting {
+      font-size: 8rem; }
 
 .u-container {
   max-width: 120rem;
@@ -343,7 +345,7 @@ textarea.form__input {
     gap: 3.6rem; }
 
 .section {
-  min-height: 75vh;
+  min-height: 100vh;
   display: flex;
   align-items: center; }
   .section--hero {
@@ -363,7 +365,7 @@ textarea.form__input {
   flex-direction: column;
   gap: 3.6rem;
   list-style: none;
-  height: 10rem;
+  height: 12rem;
   overflow: hidden; }
 
 .greeting__item {

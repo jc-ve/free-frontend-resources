@@ -7,11 +7,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="src/css/animate.min.css" />
     <link rel="stylesheet" href="src/css/style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
-      async
-    ></script>
     <title>Rora Santos</title>
   </head>
   <body>
@@ -22,25 +19,21 @@
 
           <div class="header__nav">
             <nav class="navigation">
-              <ul class="navigation__list">
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link navigation__link--active"
-                    >Home</a
-                  >
-                </li>
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link">Photography</a>
-                </li>
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link">Videography</a>
-                </li>
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link">PSA</a>
-                </li>
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link">Contact</a>
-                </li>
-              </ul>
+              <button
+                class="navigation__tab navigation__tab--active"
+                data-tab="home"
+              >
+                Home
+              </button>
+              <button class="navigation__tab" data-tab="photography">
+                Photography
+              </button>
+              <button class="navigation__tab" data-tab="videography">
+                Videography</button
+              ><button class="navigation__tab" data-tab="psa">PSA</button
+              ><button class="navigation__tab" data-tab="contact">
+                Contact
+              </button>
             </nav>
             <button class="btn btn--navigation">
               <span class="btn--navigation__icon">&nbsp;</span>
@@ -49,20 +42,32 @@
         </div>
       </div>
     </header>
+
     <main class="main">
-      <div>
+      <div class="content content--home content--active">
         <section class="section section--hero">
           <div class="u-container">
             <div class="section--hero__content">
               <h1
                 class="heading heading--primary u-text-uppercase u-margin-bottom-lg"
               >
-                <span class="heading--primary--main">Hi, I'm</span>
-                <span class="heading--primary--sub">Rora Santos</span>
+                <span
+                  class="heading--primary--main animate__animated animate__bounceInLeft"
+                  >Hi, I'm</span
+                >
+                <span
+                  class="heading--primary--sub animate__animated animate__bounceInRight"
+                  >Rora Santos</span
+                >
               </h1>
 
-              <div class="section--hero__link">
-                <a href="#section-two" class="btn btn--down">
+              <div
+                class="animate__animated animate__bounceInUp animate__delay-2s"
+              >
+                <a
+                  href="#section-two"
+                  class="btn btn--down animate__animated animate__bounce animate__slow animate__delay-4s animate__infinite"
+                >
                   <i class="fa-solid fa-chevron-down fa-2x"></i>
                 </a>
               </div>
@@ -77,26 +82,75 @@
             </div>
           </div>
         </section>
+
+        <section class="section">
+          <div class="u-container">
+            <div class="grid grid--2-cols">
+              <div class="section__text-box">
+                <h2 class="heading heading--secondary u-margin-bottom-md">
+                  Hey there! I'm Rora Santos
+                </h2>
+                <p class="paragraph">
+                  I am a creative individual, based in Metro Manila,
+                  Philippines. My passion lies in photography and filmmaking.
+                  With a Bachelor's Degree in Communication, specializing in the
+                  Digital Cinema track, I graduated from Far Eastern University
+                  - Manila in 2023. While at FEU, I was a member of the FEU Film
+                  Society, where I honed my skills and established connections
+                  with fellow aspiring filmmakers. I possess skills in
+                  Production Management, Production Design, and Photography,
+                  which have propelled me into the world of filmmaking.
+                </p>
+              </div>
+
+              <div class="section__img-box">
+                <img src="assets/images/about/about.webp" alt="Rora Santos" />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
-      <section class="section" id="contact">
+      <section class="section content content--photography">
+        <h2 class="heading heading--secondary">Photo</h2>
+      </section>
+
+      <section class="section content content--videography">
+        <h2 class="heading heading--secondary">Video</h2>
+      </section>
+
+      <section class="section content content--psa">
+        <h2 class="heading heading--secondary">PSA</h2>
+      </section>
+
+      <section class="section content content--contact" id="contact">
         <div class="u-container">
           <div class="grid grid--2-cols">
-            <div>
+            <div class="greetings__header">
               <ul class="greetings__list">
-                <li class="greeting__item heading heading--secondary--greeting">
+                <li
+                  class="greetings__item heading heading--secondary--greeting"
+                >
                   Hola at me 🤙
                 </li>
-                <li class="greeting__item heading heading--secondary--greeting">
+                <li
+                  class="greetings__item heading heading--secondary--greeting"
+                >
                   Let's talk ☎️
                 </li>
-                <li class="greeting__item heading heading--secondary--greeting">
+                <li
+                  class="greetings__item heading heading--secondary--greeting"
+                >
                   Get in touch ✍️
                 </li>
-                <li class="greeting__item heading heading--secondary--greeting">
+                <li
+                  class="greetings__item heading heading--secondary--greeting"
+                >
                   Hit me up 📲
                 </li>
-                <li class="greeting__item heading heading--secondary--greeting">
+                <li
+                  class="greetings__item heading heading--secondary--greeting"
+                >
                   Say hello 🙋‍♂️
                 </li>
               </ul>

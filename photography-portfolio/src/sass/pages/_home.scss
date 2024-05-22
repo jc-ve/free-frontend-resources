@@ -21,15 +21,32 @@
   }
 }
 
-.greetings__list {
-  display: flex;
-  flex-direction: column;
-  gap: 3.6rem;
-  list-style: none;
-  height: 12rem;
-  overflow: hidden;
+.greetings {
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    list-style: none;
+    height: 12rem;
+    overflow: hidden;
+  }
+
+  &__item {
+    animation: rollText 10s ease-in-out infinite;
+  }
 }
 
-.greeting__item {
-  animation: rollText 10s ease-in-out infinite;
+.content {
+  display: none;
+
+  &--active {
+    display: block;
+  }
 }

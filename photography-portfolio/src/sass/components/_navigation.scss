@@ -2,22 +2,19 @@
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
-  transform: translateX(25%);
+  transform: translateX(20%);
   transition: all 0.3s ease;
 
-  &__list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 2.4rem;
-  }
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
 
-  &__link {
-    &:link,
-    &:visited {
-      position: relative;
-      @include linkReset;
-    }
+  &__tab {
+    position: relative;
+    color: $clr-white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -36,17 +33,12 @@
       transition: background-size 0.3s ease;
     }
 
-    &:hover.navigation__link::before,
-    &:active.navigation__link::before {
+    &:hover.navigation__tab::before,
+    &:active.navigation__tab::before {
       background-size: 100% 2px;
     }
 
     &--active {
-      &:link,
-      &:visited {
-        position: relative;
-      }
-
       &::before {
         content: "";
         position: absolute;

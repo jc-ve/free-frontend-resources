@@ -1,7 +1,5 @@
 .header {
   padding: 2rem 0 4rem;
-  background: rgba($clr-black, 0.8);
-  backdrop-filter: blur(10px);
 
   &.active {
     & .navigation {

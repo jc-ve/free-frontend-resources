@@ -1,84 +1,18 @@
-@keyframes bounce {
-  0% {
-    transform: translateY(-1.6rem);
-  }
-
-  50% {
-    transform: translateY(0);
-  }
-
-  75% {
-    transform: translateY(-1.6rem);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-10rem);
-    opacity: 0;
-  }
-
-  50% {
-    transform: translateX(2rem);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    transform: translateX(10rem);
-    opacity: 0;
-  }
-
-  50% {
-    transform: translateX(-2rem);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInBottom {
-  0% {
-    transform: translateY(10rem);
-    opacity: 0;
-  }
-
-  50% {
-    transform: translateY(-2rem);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
 @keyframes rollText {
   20% {
-    transform: translateY(-13.6rem);
+    transform: translateY(-9.6rem);
   }
 
   40% {
-    transform: translateY(-27.2rem);
+    transform: translateY(-19.2rem);
   }
 
   60% {
-    transform: translateY(-40.8rem);
+    transform: translateY(-28.8rem);
   }
 
   80% {
-    transform: translateY(-54.4rem);
+    transform: translateY(-38.4rem);
   }
 
   100% {

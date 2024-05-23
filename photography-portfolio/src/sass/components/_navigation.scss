@@ -57,4 +57,46 @@
       }
     }
   }
+
+  &__photography {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__photography-link {
+    &:link,
+    &:visited {
+      @include linkReset;
+    }
+  }
+
+  &__photography-block {
+    height: 45rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--event {
+      background: linear-gradient(rgba($clr-black, 0.3), rgba($clr-black, 0.3)),
+        url(/assets/images/events/events-42.webp);
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--bts {
+      background: linear-gradient(rgba($clr-black, 0.3), rgba($clr-black, 0.3)),
+        url(/assets/images/bts/bts-10.webp);
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--portrait {
+      background: linear-gradient(rgba($clr-black, 0.3), rgba($clr-black, 0.3)),
+        url(/assets/images/portraits/portrait-2.webp);
+      background-size: cover;
+      background-position: top 100rem;
+    }
+  }
 }

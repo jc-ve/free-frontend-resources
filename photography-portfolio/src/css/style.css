@@ -265,6 +265,31 @@ textarea.form__input {
       transform: translate(-50%, 50%);
       z-index: 1;
       transition: background-size 0.3s ease; }
+  .navigation__photography {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem; }
+  .navigation__photography-link:link, .navigation__photography-link:visited {
+    text-decoration: none;
+    color: #fff; }
+  .navigation__photography-block {
+    height: 45rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .navigation__photography-block--event {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/images/events/events-42.webp);
+      background-size: cover;
+      background-position: center; }
+    .navigation__photography-block--bts {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/images/bts/bts-10.webp);
+      background-size: cover;
+      background-position: center; }
+    .navigation__photography-block--portrait {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/images/portraits/portrait-2.webp);
+      background-size: cover;
+      background-position: top 100rem; }
 
 .table {
   max-width: 100%;

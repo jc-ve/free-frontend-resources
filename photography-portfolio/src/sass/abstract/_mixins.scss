@@ -2,3 +2,8 @@
   text-decoration: none;
   color: $clr-white;
 }
+
+@mixin backgroundDefault {
+  background-size: cover;
+  background-repeat: no-repeat;
+}

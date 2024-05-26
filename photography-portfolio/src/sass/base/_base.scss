@@ -17,13 +17,16 @@
   background-color: $clr-white;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   box-sizing: border-box;
   background-color: $clr-black;
   padding: 2rem;
-  overflow-x: hidden;
+  overscroll-behavior: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }

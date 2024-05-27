@@ -1,85 +1,21 @@
-// .home-container {
-//   overscroll-behavior: none;
-//   max-width: 120rem;
-//   max-width: 0 auto;
-//   height: 100%;
-//   display: flex;
-//   flex-wrap: nowrap;
-// }
-
-.transition-container {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.panels {
+  width: 300%;
   display: flex;
-  z-index: 10;
-  pointer-events: none;
-
-  & span {
-    position: relative;
-  }
-
-  &.from-left {
-    flex-direction: column;
-
-    & span {
-      background-color: $clr-white;
-      height: 100%;
-      width: 0;
-    }
-  }
+  flex-wrap: nowrap;
+  overscroll-behavior: none;
 }
 
 .section {
-  min-height: 100vh;
+  position: relative;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 
-  &--hero {
-    min-height: 80vh;
-
-    &__content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
+  &__text-box {
+    &--centered {
+      @include positionCentered;
     }
-
-    &__link {
-      animation: slideInBottom 1s ease-out;
-      animation-delay: 1s;
-      animation-fill-mode: backwards;
-    }
-  }
-}
-
-.greetings {
-  &__header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1.6rem;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    list-style: none;
-    height: 12rem;
-    overflow: hidden;
-  }
-
-  &__item {
-    animation: rollText 10s ease-in-out infinite;
-  }
-}
-
-.content {
-  display: none;
-
-  &--active {
-    display: block;
   }
 }

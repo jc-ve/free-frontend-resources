@@ -1,7 +1,7 @@
 {
   "name": "photography-portfolio",
   "version": "1.0.0",
-  "description": "photography portfolio",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
@@ -10,7 +10,7 @@
     "compress:css": "node-sass src/css/style.prefix.css src/css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
-  "author": "Jc Enriquez",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.19",

@@ -3,12 +3,16 @@
   margin: 0 auto;
 }
 
+.u-position-relative {
+  position: relative;
+}
+
 .u-text-center {
   text-align: center;
 }
 
-.u-text-uppercase {
-  text-transform: uppercase;
+.u-margin-bottom-sm {
+  margin-bottom: 1.6rem;
 }
 
 .u-margin-bottom-md {
@@ -16,5 +20,9 @@
 }
 
 .u-margin-bottom-lg {
+  margin-bottom: 3.6rem;
+}
+
+.u-margin-bottom-xl {
   margin-bottom: 6.4rem;
 }

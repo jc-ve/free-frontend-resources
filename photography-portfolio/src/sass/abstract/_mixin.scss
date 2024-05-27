@@ -1,0 +1,12 @@
+@mixin positionCentered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin linkReset {
+  display: inline-block;
+  text-decoration: none;
+  color: $clr-white;
+}

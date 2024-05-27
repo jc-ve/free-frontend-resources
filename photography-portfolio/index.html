@@ -7,204 +7,189 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="src/css/animate.min.css" />
     <link rel="stylesheet" href="src/css/style.css" />
-    <title>Rora Santos &mdash; Home</title>
+    <title>Rora Santos</title>
   </head>
   <body>
-    <header class="header">
-      <div class="u-container">
-        <div class="header__content">
-          <a href="index.html" class="header__brand">Rora Santos</a>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-          <div class="header__nav">
-            <nav class="navigation">
-              <button
-                class="navigation__tab navigation__tab--active"
-                data-tab="home"
-              >
-                Home
-              </button>
-              <button class="navigation__tab" data-tab="photography">
-                Photography
-              </button>
-              <button class="navigation__tab" data-tab="videography">
-                Videography</button
-              ><button class="navigation__tab" data-tab="psa">PSA</button
-              ><button class="navigation__tab" data-tab="contact">
-                Contact
-              </button>
-            </nav>
-            <button class="btn btn--navigation">
-              <span class="btn--navigation__icon">&nbsp;</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
 
-    <div class="transition-container from-left">
-      <span class="tile">&nbsp;</span>
-      <span class="tile">&nbsp;</span>
-      <span class="tile">&nbsp;</span>
-      <span class="tile">&nbsp;</span>
-      <span class="tile">&nbsp;</span>
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>01</span>Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>02 Photography</span></a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>03</span>Videography</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>PSA</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
-    <main>
-      <div class="home-container">
-        <section class="section section--hero panel">
-          <div class="u-container">
-            <div class="section--hero__content">
-              <h1
-                class="heading heading--primary u-text-uppercase u-margin-bottom-lg"
+    <main class="panels">
+      <section class="section">
+        <div class="u-container">
+          <div class="section__text-box--centered u-text-center">
+            <h1 class="heading heading--primary u-margin-bottom-xl">
+              <span class="heading--main heading--primary--main"
+                >Rora Santos</span
               >
-                <span
-                  class="heading--primary--main animate__animated animate__bounceInLeft"
-                  >Hi, I'm</span
-                >
-                <span
-                  class="heading--primary--sub animate__animated animate__bounceInRight"
-                  >Rora Santos</span
-                >
-              </h1>
-
-              <div
-                class="animate__animated animate__bounceInUp animate__delay-2s"
+              <span class="heading--sub heading--primary--sub"
+                >More than a creative</span
               >
-                <a
-                  href="#section-two"
-                  class="btn btn--down animate__animated animate__bounce animate__slow animate__delay-4s animate__infinite"
-                >
-                  <i class="fa-solid fa-chevron-down fa-2x"></i>
-                </a>
-              </div>
-            </div>
+            </h1>
+            <a href="#" class="btn btn--solid btn--animated"
+              ><i class="fa-solid fa-chevron-down"></i
+            ></a>
           </div>
-        </section>
-
-        <section class="section panel" id="section-two">
-          <div class="u-container">
-            <div class="u-text-center">
-              <h2 class="heading heading--secondary">More than a creative.</h2>
-            </div>
-          </div>
-        </section>
-
-        <section class="section panel">
-          <div class="u-container">
-            <div class="grid grid--2-cols">
-              <div class="section__text-box">
-                <h2 class="heading heading--secondary u-margin-bottom-md">
-                  Hey there! I'm Rora Santos
-                </h2>
-                <p class="paragraph">
-                  I am a creative individual, based in Metro Manila,
-                  Philippines. My passion lies in photography and filmmaking.
-                  With a Bachelor's Degree in Communication, specializing in the
-                  Digital Cinema track, I graduated from Far Eastern University
-                  - Manila in 2023. While at FEU, I was a member of the FEU Film
-                  Society, where I honed my skills and established connections
-                  with fellow aspiring filmmakers. I possess skills in
-                  Production Management, Production Design, and Photography,
-                  which have propelled me into the world of filmmaking.
-                </p>
-              </div>
-
-              <div class="section__img-box">
-                <img src="assets/images/about/about.webp" alt="Rora Santos" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section panel"></section>
-      </div>
-
-      <section class="section content content--contact" id="contact">
+        </div>
+      </section>
+      <section class="section" id="about">
         <div class="u-container">
           <div class="grid grid--2-cols">
-            <div class="greetings__header">
-              <ul class="greetings__list">
-                <li
-                  class="greetings__item heading heading--secondary--greeting"
-                >
-                  Hola at me 🤙
-                </li>
-                <li
-                  class="greetings__item heading heading--secondary--greeting"
-                >
-                  Let's talk ☎️
-                </li>
-                <li
-                  class="greetings__item heading heading--secondary--greeting"
-                >
-                  Get in touch ✍️
-                </li>
-                <li
-                  class="greetings__item heading heading--secondary--greeting"
-                >
-                  Hit me up 📲
-                </li>
-                <li
-                  class="greetings__item heading heading--secondary--greeting"
-                >
-                  Say hello 🙋‍♂️
-                </li>
-              </ul>
-              <h2
-                class="heading heading--secondary heading--greeting u-text-uppercase u-text-center u-margin-bottom-md"
-              ></h2>
-              <table class="table">
-                <tbody class="table__body">
-                  <tr class="table__row">
-                    <td class="table__data">
-                      <a href="" class="table__link">Instagram</a>
-                    </td>
-                    <td class="table__data">
-                      <a href="" class="table__link">Facebook</a>
-                    </td>
-                    <td class="table__data">
-                      <a href="" class="table__link">LinkedIn</a>
-                    </td>
-                    <td class="table__data">
-                      <a href="" class="table__link">Email</a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="section__text-box">
+              <h2 class="heading heading--secondary u-margin-bottom-lg">
+                <span class="heading--main">Hey there! 👋</span>
+                <span class="heading--sub">I'm Rora Santos</span>
+              </h2>
+              <p class="u-margin-bottom-md">
+                I am a creative individual, based in Metro Manila, Philippines.
+                My passion lies in photography and filmmaking. With a Bachelor's
+                Degree in Communication, specializing in the Digital Cinema
+                track, I graduated from Far Eastern University - Manila in 2023.
+                While at FEU, I was a member of the FEU Film Society, where I
+                honed my skills and established connections with fellow aspiring
+                filmmakers. I possess skills in Production Management,
+                Production Design, and Photography, which have propelled me into
+                the world of filmmaking.
+              </p>
+              <p>
+                One of my notable achievements was being awarded the "Best
+                Production Design" in Sinepiyu XV Liwayway for my work on
+                "Pagtangis ng mga Aninong Umiindak sa Hangin". Our production
+                crew also secured 1st place in the Experimental Category at the
+                Ika-35 Gawad CCP para sa Alternatibong Pelikula at Bidyo. My
+                experience, to say the least, has taught me how to network and
+                build great connections with fellow creatives in the field.
+              </p>
             </div>
+            <div class="section__img-box">
+              <img src="assets/images/about/about.webp" alt="Rora Santos" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <form action="#" class="form" autocomplete="off">
-              <div class="form__group u-margin-bottom-md">
-                <label for="email" class="form__label">Your Email:</label>
-                <input type="email" id="email" class="form__input" required />
-              </div>
-              <div class="form__group u-margin-bottom-md">
-                <label for="name" class="form__label">Your Name:</label>
-                <input type="text" id="name" class="form__input" required />
-              </div>
-
-              <div class="form__group u-margin-bottom-md">
-                <label for="message" class="form__label"
-                  >How can I help you?</label
-                >
-                <textarea
-                  id="message"
-                  cols="30"
-                  rows="10"
-                  class="form__input"
-                ></textarea>
-              </div>
-
-              <button class="btn btn--outline" type="submit">Submit</button>
-            </form>
+      <section class="section">
+        <div class="u-container">
+          <h2 class="heading heading--tertiary u-margin-bottom-xl">Awards</h2>
+          <div class="section__text-box">
+            <ul class="awards">
+              <li class="awards__item">
+                <p class="awards__description">
+                  <span class="awards__title"
+                    >1ST Best Film (Experimental Category)</span
+                  >
+                  Ika-35 Gawad Alternatibo Para sa Pelikula at Bidyo
+                  <span class="awards__film"
+                    >“Pagtangis ng mga Aninong Umiindak sa Hangin”</span
+                  >
+                </p>
+                <p class="awards__year">2023</p>
+              </li>
+              <li class="awards__item">
+                <p class="awards__description">
+                  <span class="awards__title"
+                    >1ST Best Film (All Tamaraws Category)</span
+                  >
+                  Sinepiyu XV Liwayway – Far Eastern University
+                  <span class="awards__film"
+                    >“Pagtangis ng mga Aninong Umiindak sa Hangin”</span
+                  >
+                </p>
+                <p class="awards__year">2023</p>
+              </li>
+              <li class="awards__item">
+                <p class="awards__description">
+                  <span class="awards__title"
+                    >Best Production Design (All Tamaraws Category)</span
+                  >
+                  Sinepiyu XV Liwayway – Far Eastern University
+                  <span class="awards__film"
+                    >“Pagtangis ng mga Aninong Umiindak sa Hangin”</span
+                  >
+                </p>
+                <p class="awards__year">2023</p>
+              </li>
+              <li class="awards__item">
+                <p class="awards__description">
+                  <span class="awards__title"
+                    >Best Student Short Film Award</span
+                  >
+                  All Asian Independent Film Festival
+                  <span class="awards__film"
+                    >“Pagtangis ng mga Aninong Umiindak sa Hangin”</span
+                  >
+                </p>
+                <p class="awards__year">2023</p>
+              </li>
+              <li class="awards__item">
+                <p class="awards__description">
+                  <span class="awards__title">Official Selection</span>
+                  All Asian Independent Film Festival
+                  <span class="awards__film"
+                    >“Pagtangis ng mga Aninong Umiindak sa Hangin”</span
+                  >
+                </p>
+                <p class="awards__year">2023</p>
+              </li>
+              <li class="awards__item">
+                <p class="awards__description">
+                  <span class="awards__title">Official Selection</span>
+                  Lift-off Global Network, Pineoowd Studios England
+                  <span class="awards__film"
+                    >“Pagtangis ng mga Aninong Umiindak sa Hangin”</span
+                  >
+                </p>
+                <p class="awards__year">2023</p>
+              </li>
+              <li class="awards__item">
+                <p class="awards__description">
+                  <span class="awards__title">Best Sound Design</span>
+                  Tamaraw Media Awards – Far Eastern University
+                  <span class="awards__film">“Last Waltz”</span>
+                </p>
+                <p class="awards__year">2023</p>
+              </li>
+              <li class="awards__item">
+                <p class="awards__description">
+                  <span class="awards__title">Finalist</span>
+                  11th ARAW Values Awards – Public Service Announcement
+                  <span class="awards__film">“PALAYa”</span>
+                </p>
+                <p class="awards__year">2019</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="src/js/script.js"></script>
   </body>

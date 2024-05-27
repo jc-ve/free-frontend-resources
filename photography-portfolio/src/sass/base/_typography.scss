@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Boucherie Block";
-  src: url(../../assets/fonts/boucherie-block.ttf);
+  src: url(/assets/fonts/boucherie-block.ttf);
 }
 
 @font-face {
   font-family: "Maru Gothic";
-  src: url(../../assets/fonts/maru-gothic.ttf);
+  src: url(/assets/fonts/maru-gothic.ttf);
 }
 
 html {
@@ -13,34 +13,44 @@ html {
 }
 
 body {
-  font-family: "Maru Gothic", sans-serif;
-  font-size: 1.8rem;
-  color: $clr-white;
+  font-size: 1.6rem;
+  font-family: "Maru Gothic";
+  line-height: 1.6;
 }
 
 .heading {
-  font-family: "Boucherie Block", sans-serif;
+  line-height: 1.2;
+
+  &--main,
+  &--sub {
+    display: block;
+  }
 
   &--primary {
-    font-size: 16rem;
-    line-height: 1.2;
+    text-transform: uppercase;
 
-    &--main,
+    &--main {
+      font-family: "Boucherie Block";
+      font-size: 10rem;
+      letter-spacing: 2rem;
+      margin-bottom: 1.6rem;
+      animation: slideInLeft 1s ease;
+    }
+
     &--sub {
-      display: block;
+      font-size: 2.4rem;
+      letter-spacing: 2rem;
+      animation: slideInRight 1s ease;
     }
   }
 
   &--secondary {
-    font-size: 10rem;
-    line-height: 1;
+    font-size: 4.8rem;
   }
 
   &--tertiary {
-    font-size: 6rem;
+    font-family: "Boucherie Block";
+    font-size: 10rem;
+    line-height: 1;
   }
-}
-
-.paragraph {
-  line-height: 1.6;
 }

@@ -7,26 +7,27 @@
   font: inherit;
 }
 
-*:focus-visible {
-  box-shadow: 0 0 0 4px rgba($clr-white, 0.5);
-  outline: none;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ::selection {
-  color: $clr-black;
   background-color: $clr-white;
+  color: $clr-black;
 }
 
 body {
   box-sizing: border-box;
   background-color: $clr-black;
-  padding: 2rem;
+  color: $clr-white;
+  padding: 0 2rem;
+  scroll-behavior: smooth;
   overscroll-behavior: none;
+  min-height: 100vh;
 }
 
 img {
   max-width: 100%;
-  height: auto;
   display: block;
-  object-fit: cover;
 }

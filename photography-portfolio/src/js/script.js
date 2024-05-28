@@ -2,7 +2,7 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-let sections = gsap.utils.toArray(".section");
+const sections = gsap.utils.toArray(".section");
 
 gsap.to(sections, {
   xPercent: -100 * (sections.length - 1),
@@ -14,4 +14,14 @@ gsap.to(sections, {
     snap: 1 / (sections.length - 1),
     end: "+=4000",
   },
+});
+
+const highlightedTexts = gsap.utils.toArray(".highlight");
+
+highlightedTexts.forEach((highlight) => {
+  ScrollTrigger.create({
+    trigger: ".highlight",
+    start: "-100px center",
+    onEnter: () => highlight.classList.add("active"),
+  });
 });

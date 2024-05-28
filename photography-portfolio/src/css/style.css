@@ -106,6 +106,15 @@ body {
     font-size: 10rem;
     line-height: 1; }
 
+.highlight {
+  all: unset;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: all 0.3s ease-out; }
+  .highlight.active {
+    color: #0e1111;
+    background: linear-gradient(#fab005, #fab005); }
+
 .u-container {
   max-width: 120rem;
   margin: 0 auto; }

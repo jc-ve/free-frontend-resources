@@ -1,0 +1,30 @@
+.contact {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid $clr-white;
+  border-radius: 6px;
+  list-style: none;
+  overflow: hidden;
+
+  &__item {
+    &:not(:last-child) {
+      border-right: 1px solid $clr-white;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      @include linkReset;
+      display: inline-block;
+      padding: 1.2rem 3.6rem;
+      transition: all 0.3s ease-out;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-black;
+      background-color: $clr-white;
+    }
+  }
+}

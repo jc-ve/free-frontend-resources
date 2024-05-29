@@ -1,27 +1,26 @@
 "use strict";
 
-gsap.registerPlugin(ScrollTrigger);
+const panels = document.querySelector(".panels");
+const contact = document.querySelector(".contacts");
 
-const sections = gsap.utils.toArray(".section");
+if (panels) {
+  gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".panels",
-    pin: true,
-    scrub: 1,
-    snap: 1 / (sections.length - 1),
-    end: "+=4000",
-  },
-});
+  const sections = gsap.utils.toArray(".section");
 
-const highlightedTexts = gsap.utils.toArray(".highlight");
-
-highlightedTexts.forEach((highlight) => {
-  ScrollTrigger.create({
-    trigger: ".highlight",
-    start: "-100px center",
-    onEnter: () => highlight.classList.add("active"),
+  gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".panels",
+      pin: true,
+      scrub: 1,
+      snap: 1 / (sections.length - 1),
+      end: "+=4000",
+    },
   });
-});
+}
+
+if (contact) {
+  const textOpts = {};
+}

@@ -105,6 +105,10 @@ body {
     font-family: "Boucherie Block";
     font-size: 10rem;
     line-height: 1; }
+    .heading--tertiary > .heading--message {
+      opacity: 0; }
+  .heading--message {
+    display: block; }
 
 .highlight {
   all: unset;
@@ -201,6 +205,59 @@ body {
 .btn--animated {
   animation: slideInBottom 1s ease-out 1s, bounce 2s infinite 2s;
   animation-fill-mode: backwards; }
+
+.contact {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #f8f9fa;
+  border-radius: 6px;
+  list-style: none;
+  overflow: hidden; }
+  .contact__item:not(:last-child) {
+    border-right: 1px solid #f8f9fa; }
+  .contact__link:link, .contact__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #f8f9fa;
+    display: inline-block;
+    padding: 1.2rem 3.6rem;
+    transition: all 0.3s ease-out; }
+  .contact__link:hover, .contact__link:active {
+    color: #0e1111;
+    background-color: #f8f9fa; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 1.6rem 2.4rem;
+  border: none;
+  border-bottom: 4px solid transparent;
+  border-radius: 2px;
+  transition: all 0.3s ease-out; }
+  .form__input:focus {
+    outline: none;
+    border-bottom: 4px solid #40c057; }
+  .form__input:focus:invalid {
+    border-bottom: 4px solid #fd7e14; }
+
+.form__label {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  margin-left: 2rem;
+  display: block;
+  transition: all 0.3s ease-out; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
+textarea.form__input {
+  resize: none; }
 
 .navigation__checkbox {
   display: none; }

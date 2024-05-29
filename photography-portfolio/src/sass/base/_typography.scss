@@ -52,6 +52,14 @@ body {
     font-family: "Boucherie Block";
     font-size: 10rem;
     line-height: 1;
+
+    & > .heading--message {
+      opacity: 0;
+    }
+  }
+
+  &--message {
+    display: block;
   }
 }
 

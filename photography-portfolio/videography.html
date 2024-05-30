@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Rora Santos &mdash; Videography</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="index.html" class="navigation__link"
+              ><span>01</span>Home</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>02 Photography</span></a>
+          </li>
+          <li class="navigation__item">
+            <a href="videography.html" class="navigation__link"
+              ><span>03</span>Videography</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>PSA</a>
+          </li>
+          <li class="navigation__item">
+            <a href="contact.html" class="navigation__link"
+              ><span>05</span>Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="videos">
+      <div class="u-container">
+        <section class="section--videos u-margin-bottom-xl">
+          <h1 class="heading heading--gallery u-margin-bottom-md">
+            Short Films
+          </h1>
+          <div class="swiper" data-id="short-film">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide gallery__item--video">
+                <iframe
+                  src="https://www.youtube.com/embed/uqBS-Fj95P8?si=whtV1oYOidK_hOuO"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  class="gallery__item--vid"
+                ></iframe>
+                <p class="gallery__item__title">
+                  Pagtangis ng mga Aninong Umiindak sa Hangin
+                </p>
+              </div>
+              <div class="swiper-slide gallery__item--video">
+                <iframe
+                  src="https://www.youtube.com/embed/3nU8FrNtIh0?si=VdDTn6uzybmG7nuG"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  class="gallery__item--vid"
+                ></iframe>
+                <p class="gallery__item__title">Gatilyo</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="u-margin-bottom-xl">
+          <h1 class="heading heading--gallery u-margin-bottom-md">
+            Documentary
+          </h1>
+          <div class="swiper" data-id="documentary">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide gallery__item--video">
+                <iframe
+                  src="https://www.youtube.com/embed/uqBS-Fj95P8?si=whtV1oYOidK_hOuO"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  class="gallery__item--vid"
+                ></iframe>
+                <p class="gallery__item__title">
+                  Pagtangis ng mga Aninong Umiindak sa Hangin
+                </p>
+              </div>
+              <div class="swiper-slide gallery__item--video">
+                <iframe
+                  src="https://www.youtube.com/embed/3nU8FrNtIh0?si=VdDTn6uzybmG7nuG"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  class="gallery__item--vid"
+                ></iframe>
+                <p class="gallery__item__title">Gatilyo</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

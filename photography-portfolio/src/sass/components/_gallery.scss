@@ -1,0 +1,18 @@
+.gallery {
+  &__item {
+    &--vid {
+      width: 60rem;
+      height: 40rem;
+      margin-bottom: 2.4rem;
+    }
+
+    &__title {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+}
+
+.swiper-slide {
+  width: 60rem;
+}

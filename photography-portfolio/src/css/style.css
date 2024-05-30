@@ -63,7 +63,8 @@ body {
   overscroll-behavior: none;
   min-height: 100vh; }
 
-img {
+img,
+iframe {
   max-width: 100%;
   display: block; }
 
@@ -109,6 +110,8 @@ body {
       opacity: 0; }
   .heading--message {
     display: block; }
+  .heading--gallery {
+    font-size: 3.6rem; }
 
 .highlight {
   all: unset;
@@ -259,6 +262,18 @@ body {
 textarea.form__input {
   resize: none; }
 
+.gallery__item--vid {
+  width: 60rem;
+  height: 40rem;
+  margin-bottom: 2.4rem; }
+
+.gallery__item__title {
+  font-size: 2rem;
+  text-align: center; }
+
+.swiper-slide {
+  width: 60rem; }
+
 .navigation__checkbox {
   display: none; }
 
@@ -394,3 +409,5 @@ textarea.form__input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  .section--videos {
+    padding-top: 16rem; }

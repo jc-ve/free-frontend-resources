@@ -38,6 +38,11 @@
     visibility: hidden;
     transform: translateY(-4rem);
   }
+
+  & .btn {
+    display: block;
+    margin-left: auto;
+  }
 }
 
 textarea.form__input {

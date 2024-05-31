@@ -58,4 +58,23 @@
     animation: slideInBottom 1s ease-out 1s, bounce 2s infinite 2s;
     animation-fill-mode: backwards;
   }
+
+  &--outline {
+    &,
+    &:link,
+    &:visited {
+      font-weight: 700;
+      background: transparent;
+      box-shadow: 0 0 0 1px inset $clr-white;
+      padding: 1rem 2rem;
+      transition: all 0.3s ease-out;
+      border-radius: 2px;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $clr-white;
+      color: $clr-black;
+    }
+  }
 }

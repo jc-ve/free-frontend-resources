@@ -1,7 +1,7 @@
 "use strict";
 
 const panels = document.querySelector(".panels");
-const contact = document.querySelector(".contacts");
+const contacts = document.querySelector(".contacts");
 const videos = document.querySelector(".videos");
 
 if (panels) {
@@ -20,6 +20,26 @@ if (panels) {
       end: "+=4000",
     },
   });
+}
+
+if (contacts) {
+  const opts = {
+    slides: document.querySelectorAll(".greetings__item"),
+    list: document.querySelector(".greetings__list"),
+    duration: 6,
+    lineHeight: 110,
+  };
+
+  const slide = new TimelineMax({ paused: true, repeat: -1 });
+
+  opts.slides.forEach(function (i) {
+    slide.to(opts.list, opts.duration / opts.slides.length, {
+      y: i * -1 * opts.lineHeight,
+      ease: Elastic.easeOut.config(1, 0.4),
+    });
+  });
+
+  slide.play();
 }
 
 if (videos) {

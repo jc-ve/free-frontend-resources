@@ -51,23 +51,15 @@
       <section class="section">
         <div class="grid grid--2-cols">
           <div class="section__text-box u-text-center">
-            <h1 class="heading heading--tertiary u-margin-bottom-lg">
-              <span class="heading--message heading--message--1"
-                >Hola at me 🤙</span
-              >
-              <span class="heading--message heading--message--2"
-                >Let's talk ☎️</span
-              >
-              <span class="heading--message heading--message--3"
-                >Get in touch ✍️</span
-              >
-              <span class="heading--message heading--message--4"
-                >Hit me up 📲</span
-              >
-              <span class="heading--message heading--message-5"
-                >Say hello 🙋‍♂️</span
-              >
-            </h1>
+            <div class="greetings">
+              <ul class="greetings__list">
+                <li class="greetings__item">Hola at me 🤙</li>
+                <li class="greetings__item">Let's talk ☎️</li>
+                <li class="greetings__item">Get in touch ✍️</li>
+                <li class="greetings__item">Hit me up 📲</li>
+                <li class="greetings__item">Say hello 🙋‍♂️</li>
+              </ul>
+            </div>
             <ul class="contact">
               <li class="contact__item">
                 <a href="#" class="contact__link">Instagram</a>
@@ -111,6 +103,7 @@
                 id="message"
                 class="form__input"
                 placeholder="How can I help you?"
+                rows="5"
                 required
               ></textarea>
               <label for="message" class="form__label"
@@ -119,7 +112,7 @@
             </div>
 
             <div class="form__group">
-              <button class="btn btn--green">Next step &rarr;</button>
+              <button class="btn btn--outline">Submit</button>
             </div>
           </form>
         </div>

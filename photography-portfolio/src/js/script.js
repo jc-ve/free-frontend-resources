@@ -43,13 +43,9 @@ if (contacts) {
 }
 
 if (videos) {
-  NodeList.prototype.forEach = Array.prototype.forEach;
-
   const buildSwiperSlider = (sliderElm) => {
-    console.log(sliderElm.dataset.id);
     const sliderIdentifier = sliderElm.dataset.id;
-
-    return new Swiper(`.${sliderElm.id}`, {
+    return new Swiper(`#${sliderElm.dataset.id}`, {
       effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
@@ -61,11 +57,22 @@ if (videos) {
         modifier: 1,
         slideShadows: true,
       },
+
+      navigation: {
+        nextEl: `.swiper-button-next-${sliderIdentifier}`,
+        prevEl: `.swiper-button-prev-${sliderIdentifier}`,
+      },
+      pagination: {
+        el: `.swiper-pagination-${sliderIdentifier}`,
+        type: "fraction",
+      },
     });
   };
 
   // Get all of the swipers on the page
   const allSliders = document.querySelectorAll(".swiper");
 
-  allSliders.forEach((slider) => buildSwiperSlider(slider));
+  allSliders.forEach((slider) => {
+    buildSwiperSlider(slider);
+  });
 }

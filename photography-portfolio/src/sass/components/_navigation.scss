@@ -23,7 +23,11 @@
     position: fixed;
     top: 4.5rem;
     right: 8.5rem;
-    background: $clr-gray;
+    background: radial-gradient(
+      circle at 10% 20%,
+      rgb(0, 0, 0) 0%,
+      rgb(64, 64, 64) 90.2%
+    );
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -67,7 +71,7 @@
         120deg,
         transparent 0%,
         transparent 50%,
-        $clr-yellow 50%
+        $clr-white 50%
       );
       background-size: 230%;
       transition: all 0.4s;

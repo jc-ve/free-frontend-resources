@@ -7,20 +7,21 @@
 
 .section {
   position: relative;
+  padding: 0 3.6rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
 
-  &__text-box {
-    &--centered {
-      @include positionCentered;
-    }
-  }
-
   &--videos {
     padding-top: 16rem;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

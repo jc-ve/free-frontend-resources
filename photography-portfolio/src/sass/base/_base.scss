@@ -10,6 +10,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
 ::selection {
@@ -21,10 +22,11 @@ body {
   box-sizing: border-box;
   background-color: $clr-black;
   color: $clr-white;
-  padding: 0 2rem;
+  // padding: 0 2rem;
   scroll-behavior: smooth;
   overscroll-behavior: none;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 img,

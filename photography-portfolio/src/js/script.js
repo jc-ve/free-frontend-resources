@@ -3,6 +3,7 @@
 const panels = document.querySelector(".panels");
 const contacts = document.querySelector(".contacts");
 const videos = document.querySelector(".videos");
+const photos = document.querySelector(".photos");
 
 if (panels) {
   gsap.registerPlugin(ScrollTrigger);
@@ -17,29 +18,9 @@ if (panels) {
       pin: true,
       scrub: 1,
       snap: 1 / (sections.length - 1),
-      end: "+=4000",
+      end: "+=3500",
     },
   });
-}
-
-if (contacts) {
-  const opts = {
-    slides: document.querySelectorAll(".greetings__item"),
-    list: document.querySelector(".greetings__list"),
-    duration: 6,
-    lineHeight: 110,
-  };
-
-  const slide = new TimelineMax({ paused: true, repeat: -1 });
-
-  opts.slides.forEach(function (i) {
-    slide.to(opts.list, opts.duration / opts.slides.length, {
-      y: i * -1 * opts.lineHeight,
-      ease: Elastic.easeOut.config(1, 0.4),
-    });
-  });
-
-  slide.play();
 }
 
 if (videos) {

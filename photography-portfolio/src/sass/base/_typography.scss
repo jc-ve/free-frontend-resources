@@ -10,6 +10,10 @@
 
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: $bp-lg) {
+    font-size: 56.25%;
+  }
 }
 
 body {
@@ -19,7 +23,7 @@ body {
 }
 
 .heading {
-  line-height: 1.2;
+  line-height: 1.4;
 
   &--main,
   &--sub {
@@ -35,12 +39,20 @@ body {
       letter-spacing: 2rem;
       margin-bottom: 1.6rem;
       animation: slideInLeft 1s ease;
+
+      @media screen and (max-width: $bp-md) {
+        font-size: 6.4rem;
+      }
     }
 
     &--sub {
       font-size: 2.4rem;
       letter-spacing: 2rem;
       animation: slideInRight 1s ease;
+
+      @media screen and (max-width: $bp-md) {
+        font-size: 1.6rem;
+      }
     }
   }
 

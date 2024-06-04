@@ -295,10 +295,18 @@ textarea.form__input {
   font-size: 2rem;
   text-align: center; }
 
+.gallery__photo {
+  width: 25%;
+  margin-bottom: 1rem; }
+
 .gallery__img {
-  width: 100%;
-  display: block;
-  height: auto; }
+  object-fit: cover; }
+  .gallery__img--sm {
+    height: 20rem; }
+  .gallery__img--md {
+    height: 40rem; }
+  .gallery__img--lg {
+    height: 60rem; }
 
 .swiper-slide {
   width: 60rem; }
@@ -428,8 +436,7 @@ textarea.form__input {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #f8f9fa;
-  z-index: 999; }
+  color: #f8f9fa; }
 
 .swiper-pagination {
   position: static;

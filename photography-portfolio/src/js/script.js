@@ -57,3 +57,12 @@ if (videos) {
     buildSwiperSlider(slider);
   });
 }
+
+if (photos) {
+  const masonry = new Masonry(".gallery--photos", {
+    itemSelector: ".gallery__photo",
+    gutter: 10,
+    horizontalOrder: true,
+  });
+  masonry.layout();
+}

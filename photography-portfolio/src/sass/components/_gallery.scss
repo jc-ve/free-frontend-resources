@@ -12,10 +12,25 @@
     }
   }
 
+  &__photo {
+    width: 25%;
+    margin-bottom: 1rem;
+  }
+
   &__img {
-    width: 100%;
-    display: block;
-    height: auto;
+    object-fit: cover;
+
+    &--sm {
+      height: 20rem;
+    }
+
+    &--md {
+      height: 40rem;
+    }
+
+    &--lg {
+      height: 60rem;
+    }
   }
 }
 

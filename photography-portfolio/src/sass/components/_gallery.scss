@@ -19,6 +19,8 @@
 
   &__img {
     object-fit: cover;
+    border-radius: 6px;
+    filter: grayscale(100%);
 
     &--sm {
       height: 20rem;

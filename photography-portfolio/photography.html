@@ -7,6 +7,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="src/css/style.css" />
     <title>Rora Santos &mdash; Photography</title>
   </head>
@@ -48,16 +52,28 @@
     </div>
 
     <main class="photos">
-      <div class="gallery--photos">
-        <div class="gallery__photo">
-          <img src="assets/images/" alt="" />
+      <section class="section">
+        <div class="u-container">
+          <div class="swiper swiper-photos">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide swiper-slide--photos swiper-slide--events"
+              >
+                <a href="photography/events.html" class="swiper-link"
+                  >Events Photography</a
+                >
+              </div>
+              <div
+                class="swiper-slide swiper-slide--photos swiper-slide--events"
+              >
+                <p>Events Photography</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="src/js/script.js"></script>
   </body>
 </html>

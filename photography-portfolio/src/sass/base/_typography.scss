@@ -43,6 +43,11 @@ body {
       @media screen and (max-width: $bp-md) {
         font-size: 6.4rem;
       }
+
+      @media screen and (max-width: $bp-sm) {
+        font-size: 5.2rem;
+        line-height: 1.2;
+      }
     }
 
     &--sub {
@@ -52,18 +57,31 @@ body {
 
       @media screen and (max-width: $bp-md) {
         font-size: 1.6rem;
+        line-height: 1.8;
+      }
+
+      @media screen and (max-width: $bp-sm) {
+        // letter-spacing: 0.2rem;
       }
     }
   }
 
   &--secondary {
     font-size: 4.8rem;
+
+    @media screen and (max-width: $bp-md) {
+      font-size: 3.6rem;
+    }
   }
 
   &--tertiary {
     font-family: "Boucherie Block";
     font-size: 10rem;
     line-height: 1;
+
+    @media screen and (max-width: $bp-md) {
+      font-size: 6.4rem;
+    }
   }
 
   &--message {

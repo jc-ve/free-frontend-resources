@@ -11,6 +11,10 @@
     align-items: center;
     justify-content: space-between;
     gap: 2.4rem;
+
+    @media screen and (max-width: $bp-md) {
+      flex: 0 0 100%;
+    }
   }
 
   &__title {

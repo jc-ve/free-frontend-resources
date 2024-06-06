@@ -5,24 +5,6 @@ const contacts = document.querySelector(".contacts");
 const videos = document.querySelector(".videos");
 const photos = document.querySelector(".photos");
 
-if (panels) {
-  gsap.registerPlugin(ScrollTrigger);
-
-  const sections = gsap.utils.toArray(".section");
-
-  gsap.to(sections, {
-    xPercent: -100 * (sections.length - 1),
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".panels",
-      pin: true,
-      scrub: 1,
-      snap: 1 / (sections.length - 1),
-      end: "+=3500",
-    },
-  });
-}
-
 if (videos) {
   const buildSwiperSlider = (sliderElm) => {
     const sliderIdentifier = sliderElm.dataset.id;
@@ -59,10 +41,8 @@ if (videos) {
 }
 
 if (photos) {
-  const masonry = new Masonry(".gallery--photos", {
-    itemSelector: ".gallery__photo",
-    gutter: 10,
-    horizontalOrder: true,
+  lightbox.option({
+    resizeDuration: 200,
+    wrapAround: true,
   });
-  masonry.layout();
 }

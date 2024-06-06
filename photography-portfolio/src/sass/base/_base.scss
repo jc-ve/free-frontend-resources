@@ -7,22 +7,34 @@
   font: inherit;
 }
 
+::selection {
+  background-color: $clr-white;
+  color: $clr-black;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: $clr-gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $clr-yellow;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   overscroll-behavior: none;
 }
 
-::selection {
-  background-color: $clr-white;
-  color: $clr-black;
-}
-
 body {
   box-sizing: border-box;
   background-color: $clr-black;
   color: $clr-white;
-  // padding: 0 2rem;
+  padding: 0 2rem;
   scroll-behavior: smooth;
   overscroll-behavior: none;
   min-height: 100vh;
@@ -33,4 +45,8 @@ img,
 iframe {
   max-width: 100%;
   display: block;
+}
+
+img {
+  pointer-events: none;
 }

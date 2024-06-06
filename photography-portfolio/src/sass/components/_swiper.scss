@@ -7,3 +7,44 @@
   position: static;
   width: auto;
 }
+
+.swiper-slide {
+  max-width: 60rem;
+
+  &--photos {
+    height: 60rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--events {
+    background: linear-gradient(rgba($clr-black, 0.5), rgba($clr-black, 0.5)),
+      url(/assets/images/events/events-46.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.swiper-link {
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-family: "Boucherie Block";
+    font-size: 6.4rem;
+    text-decoration: none;
+    color: $clr-white;
+    background: linear-gradient($clr-yellow, $clr-yellow);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover,
+  &:active {
+    color: $clr-yellow;
+    background-size: 100% 3px;
+  }
+}

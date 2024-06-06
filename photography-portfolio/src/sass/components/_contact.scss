@@ -5,6 +5,7 @@
   border-radius: 6px;
   list-style: none;
   overflow: hidden;
+  flex-wrap: wrap;
 
   &__item {
     &:not(:last-child) {
@@ -27,4 +28,21 @@
       background-color: $clr-white;
     }
   }
+}
+
+.v-slider-frame {
+  border: 1px solid #4bb3fd;
+  height: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+ul.v-slides {
+  list-style-type: none;
+  transform: translateY(50px);
+  padding: 0;
+}
+.v-slide {
+  font-size: 24px;
+  line-height: 50px;
+  color: #4bb3fd;
 }

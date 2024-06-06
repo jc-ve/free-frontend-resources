@@ -1,21 +1,13 @@
-.panels {
-  width: 300%;
-  display: flex;
-  flex-wrap: nowrap;
-  overscroll-behavior: none;
-}
-
 .section {
   position: relative;
-  padding: 0 3.6rem;
-  width: 100%;
+  padding: 3.6rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
 
-  &--videos {
-    padding-top: 16rem;
+  &--padded {
+    padding-top: 12rem;
   }
 
   &__controls {

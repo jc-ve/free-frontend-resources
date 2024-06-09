@@ -39,6 +39,30 @@ body {
       letter-spacing: 2rem;
       margin-bottom: 1.6rem;
       animation: slideInLeft 1s ease;
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        @include headerContent;
+        top: 42%;
+        left: -30%;
+        transform: translate(-30%, -42%);
+        background-position: left-bottom;
+        animation: animateBackground 1s ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+      }
+
+      &::after {
+        @include headerContent;
+        background-position: right bottom;
+        top: 58%;
+        right: -40%;
+        transform: translate(0%, -58%);
+        animation: animateBackground 1s ease-in-out;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+      }
 
       @media screen and (max-width: $bp-md) {
         font-size: 6.4rem;
@@ -90,17 +114,5 @@ body {
 
   &--gallery {
     font-size: 3.6rem;
-  }
-}
-
-.highlight {
-  all: unset;
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  transition: all 0.3s ease-out;
-
-  &.active {
-    color: $clr-black;
-    background: linear-gradient($clr-yellow, $clr-yellow);
   }
 }

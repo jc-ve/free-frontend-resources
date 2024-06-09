@@ -7,10 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="src/css/style.css" />
     <title>Rora Santos &mdash; Videography</title>
   </head>
@@ -32,7 +29,9 @@
             >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>02 Photography</span></a>
+            <a href="photography.html" class="navigation__link"
+              ><span>02 Photography</span></a
+            >
           </li>
           <li class="navigation__item">
             <a href="videography.html" class="navigation__link"
@@ -40,7 +39,7 @@
             >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>04</span>PSA</a>
+            <a href="psa.html" class="navigation__link"><span>04</span>PSA</a>
           </li>
           <li class="navigation__item">
             <a href="contact.html" class="navigation__link"
@@ -53,246 +52,100 @@
 
     <main class="videos">
       <div class="u-container">
-        <section class="section--padded u-margin-bottom-xl">
-          <div class="section__controls">
-            <h1 class="heading heading--gallery u-margin-bottom-lg">
-              Short Films
-            </h1>
-            <div class="swiper-pagination swiper-pagination-short-film"></div>
-          </div>
-          <div class="swiper" data-id="short-film" id="short-film">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <iframe
-                  src="https://www.youtube.com/embed/uqBS-Fj95P8?si=whtV1oYOidK_hOuO"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">
-                  Pagtangis ng mga Aninong Umiindak sa Hangin
-                </p>
-              </div>
-              <div class="swiper-slide">
-                <iframe
-                  src="https://www.youtube.com/embed/3nU8FrNtIh0?si=VdDTn6uzybmG7nuG"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">Gatilyo</p>
-              </div>
-              <div class="swiper-slide gallery__item--video" class="js-player">
-                <iframe
-                  src="https://www.youtube.com/embed/Kj851PWU5qo?si=0aymmgP3JqV2nPQk"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">Last Waltz</p>
-              </div>
-              <div class="swiper-slide gallery__item--video">
-                <iframe
-                  src="https://www.youtube.com/embed/oNttpbAGelI?si=RxyvygZrYG2Wjb6w"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">Agahan</p>
-              </div>
-              <div class="swiper-slide gallery__item--video">
-                <iframe
-                  src="https://www.youtube.com/embed/0jZcnRDVnas?si=m1i80eh0SfjY3ZHq"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">What Lies Within His Eyes</p>
-              </div>
-            </div>
-            <div class="swiper-button-next swiper-button-next-short-film"></div>
-            <div class="swiper-button-prev swiper-button-prev-short-film"></div>
-          </div>
-        </section>
+        <section class="section--padded row--column">
+          <div class="row row--end">
+            <figure class="movie" data-aos="fade-left">
+              <iframe
+                class="movie__video"
+                src="https://www.youtube.com/embed/uqBS-Fj95P8"
+                loading="lazy"
+                frameborder="0"
+                title="Pagtangis ng mga Aninong Umiindak sa Hangin"
+              >
+              </iframe>
 
-        <section class="u-margin-bottom-xl u-position-relative">
-          <div class="section__controls">
-            <h1 class="heading heading--gallery u-margin-bottom-md">
-              Documentary
-            </h1>
-            <div class="swiper-pagination swiper-pagination-documentary"></div>
+              <figcaption class="movie__caption movie__caption--left">
+                Pagtangis ng mga Aninong Umiindak sa Hangin
+                <span class="movie__category">Short Film</span>
+              </figcaption>
+            </figure>
           </div>
-          <div class="swiper" data-id="documentary" id="documentary">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide gallery__item--video">
-                <iframe
-                  src="https://www.youtube.com/embed/o6VnIXmU6ac?si=3Yu6DEs-MfUM7Rur"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">
-                  Pagbibigay Dignidad sa Yumao &mdash; Kwento ni Alberto Aquino,
-                  Isang Embalsamador
-                </p>
-              </div>
-              <div class="swiper-slide gallery__item--video">
-                <iframe
-                  src="https://www.youtube.com/embed/zutB6WFkGcA?si=Skscdl8vI17dN7TU"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">
-                  Juan Gomez de Liano: Becoming the Greatest Filipino
-                  Basketballer
-                </p>
-              </div>
-              <div class="swiper-slide gallery__item--video">
-                <iframe
-                  src="https://www.youtube.com/embed/sU_jKHO_74Q?si=xfbp4o_QNh-3Cb6I"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">Kat Tan: The One-Armed Mamba</p>
-              </div>
-            </div>
-            <div
-              class="swiper-button-next swiper-button-next-documentary"
-            ></div>
-            <div
-              class="swiper-button-prev swiper-button-prev-documentary"
-            ></div>
-          </div>
-        </section>
+          <div class="row">
+            <figure class="movie" data-aos="fade-right">
+              <iframe
+                class="movie__video"
+                src="https://www.youtube.com/embed/3nU8FrNtIh0?si=A_pyKMTv0_CnkaTt"
+                loading="lazy"
+                frameborder="0"
+                title="Gatilyo"
+              >
+              </iframe>
 
-        <section class="u-margin-bottom-xl u-position-relative">
-          <div class="section__controls">
-            <h1 class="heading heading--gallery u-margin-bottom-md">
-              Live Performance
-            </h1>
-            <div
-              class="swiper-pagination swiper-pagination-live-performance"
-            ></div>
+              <figcaption class="movie__caption movie__caption--right">
+                Gatilyo
+                <span class="movie__category">Short Film</span>
+              </figcaption>
+            </figure>
           </div>
-          <div class="swiper" data-id="live-performance" id="live-performance">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide gallery__item--video">
-                <iframe
-                  src="https://www.youtube.com/embed/y_dt3trP7ZM?si=DCU2jW6gyfQbGlzo"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">Gitna by JC Torino</p>
-              </div>
-              <div class="swiper-slide gallery__item--video">
-                <iframe
-                  src="https://www.youtube.com/embed/DRhoNQ2k9QI?si=e8TY-y71IMa2juUQ"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">
-                  Habang Buhay ay Kulang by Patrick Lacambacal
-                </p>
-              </div>
-              <div class="swiper-slide gallery__item--video">
-                <iframe
-                  src="https://www.youtube.com/embed/Fo9m_4T7D8k?si=YAcKkqzUCbbDye5X"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">Langit by Tome</p>
-              </div>
-              <div class="swiper-slide gallery__item--video">
-                <iframe
-                  src="https://www.youtube.com/embed/Xz7kINJsyQg?si=1_z_jLgnUDHAZRoZ"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">
-                  Gettin' Down in the Bizz by Ameria
-                </p>
-              </div>
-              <div class="swiper-slide gallery__item--video">
-                <iframe
-                  src="https://www.youtube.com/embed/lEIOgbWYFVI?si=rDf3Mz-mtSzYcJnt"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">Petrichor by PychoMGMT</p>
-              </div>
-              <div class="swiper-slide gallery__item--video">
-                <iframe
-                  src="https://www.youtube.com/embed/naVRm15ZFM0?si=hG76dEO8_9P3mrJ7"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  class="gallery__item--vid"
-                ></iframe>
-                <p class="gallery__item__title">
-                  Kung Sakaling Muling Magkita by sciscisci
-                </p>
-              </div>
-            </div>
-            <div
-              class="swiper-button-next swiper-button-next-live-performance"
-            ></div>
-            <div
-              class="swiper-button-prev swiper-button-prev-live-performance"
-            ></div>
+          <div class="row row--end">
+            <figure class="movie" data-aos="fade-left">
+              <iframe
+                class="movie__video"
+                src="https://www.youtube.com/embed/Kj851PWU5qo?si=B1Vau9EquGRXCpLD"
+                loading="lazy"
+                frameborder="0"
+                title="Last Waltz"
+              >
+              </iframe>
+
+              <figcaption class="movie__caption movie__caption--left">
+                Last Waltz
+                <span class="movie__category">Short Film</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="row">
+            <figure class="movie" data-aos="fade-right">
+              <iframe
+                src="https://www.facebook.com/plugins/video.php?height=302&href=https%3A%2F%2Fwww.facebook.com%2Fbahaybaboybagyo%2Fvideos%2F4120255898200970%2F"
+                frameborder="0"
+                allowfullscreen="true"
+                class="movie__video"
+                title="Bahay, Baboy, Bagyo"
+              ></iframe>
+
+              <figcaption class="movie__caption movie__caption--right">
+                Bahay, Baboy, Bagyo
+                <span class="movie__category">Short Film</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="row row--end">
+            <figure class="movie" data-aos="fade-left">
+              <iframe
+                class="movie__video"
+                src="https://www.youtube.com/embed/oNttpbAGelI?si=pnUE_JmqU7YvPyZS"
+                loading="lazy"
+                frameborder="0"
+                title="Agahan"
+              >
+              </iframe>
+
+              <figcaption class="movie__caption movie__caption--left">
+                Agahan
+                <span class="movie__category">Short Film</span>
+              </figcaption>
+            </figure>
           </div>
         </section>
       </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="src/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

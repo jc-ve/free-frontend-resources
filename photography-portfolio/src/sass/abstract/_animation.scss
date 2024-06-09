@@ -57,3 +57,13 @@
     transform: translateY(-0.5rem);
   }
 }
+
+@keyframes animateBackground {
+  from {
+    background-size: 0% 1px;
+  }
+
+  to {
+    background-size: 100% 1px;
+  }
+}

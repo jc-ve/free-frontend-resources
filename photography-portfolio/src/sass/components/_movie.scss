@@ -1,0 +1,59 @@
+.movie {
+  position: relative;
+  display: inline-block;
+
+  &__video {
+    height: 50rem;
+    width: 80rem;
+
+    @media screen and (max-width: $bp-lg) {
+      margin-bottom: 3.2rem;
+    }
+
+    @media screen and (max-width: $bp-md) {
+      width: 100%;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    font-size: 3.6rem;
+    max-width: 25ch;
+
+    @media screen and (max-width: $bp-lg) {
+      position: static;
+      max-width: 100%;
+    }
+
+    &--left {
+      top: 50%;
+      left: -30%;
+      transform: translate(-30%, -50%);
+      text-align: right;
+
+      @media screen and (max-width: $bp-lg) {
+        top: auto;
+        left: auto;
+        transform: translate(0, 0);
+      }
+    }
+
+    &--right {
+      top: 50%;
+      right: -30%;
+      transform: translate(-30%, -50%);
+
+      @media screen and (max-width: $bp-lg) {
+        top: auto;
+        right: auto;
+        transform: translate(0, 0);
+      }
+    }
+  }
+
+  &__category {
+    display: block;
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+  }
+}

@@ -186,6 +186,18 @@ body {
     display: block; }
   .heading--gallery {
     font-size: 3.6rem; }
+  .heading--greetings {
+    font-family: "Boucherie Block";
+    font-size: 6.4rem;
+    position: relative;
+    margin-bottom: 6.4rem; }
+    .heading--greetings > * {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      width: 100%; }
 
 .u-container {
   max-width: 120rem;
@@ -363,46 +375,41 @@ ul.v-slides {
 textarea.form__input {
   resize: none; }
 
-.gallery__item {
-  width: 24%;
-  margin-bottom: 1rem;
-  border-radius: 6px;
-  overflow: hidden; }
-  @media screen and (max-width: 62em) {
-    .gallery__item {
-      width: 48%; } }
-  @media screen and (max-width: 37.5em) {
-    .gallery__item {
-      width: 100%; } }
-  .gallery__item--300 {
-    height: 30rem; }
-  .gallery__item--400 {
-    height: 40rem; }
-  .gallery__item--500 {
-    height: 50rem; }
-  .gallery__item:hover .gallery__img {
-    filter: grayscale(0); }
-
-.gallery__img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease-in-out;
-  pointer-events: none; }
-
-.greetings {
-  height: 10rem;
-  margin-bottom: 2.4rem;
-  overflow: hidden;
-  text-align: center; }
-  .greetings__list {
-    list-style: none;
-    transform: translateY(10rem); }
-  .greetings__item {
-    font-family: "Boucherie Block";
-    font-size: 10rem;
-    line-height: 11rem; }
+.gallery {
+  padding-bottom: 2rem; }
+  .gallery__item {
+    width: 24%;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    overflow: hidden; }
+    @media screen and (max-width: 62em) {
+      .gallery__item {
+        width: 48%; } }
+    @media screen and (max-width: 28.125em) {
+      .gallery__item {
+        width: 100%;
+        height: 30rem; } }
+    .gallery__item--300 {
+      height: 30rem; }
+    .gallery__item--400 {
+      height: 40rem; }
+      @media screen and (max-width: 28.125em) {
+        .gallery__item--400 {
+          height: 30rem; } }
+    .gallery__item--500 {
+      height: 50rem; }
+      @media screen and (max-width: 28.125em) {
+        .gallery__item--500 {
+          height: 30rem; } }
+    .gallery__item:hover .gallery__img {
+      filter: grayscale(0); }
+  .gallery__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+    pointer-events: none; }
 
 .movie {
   position: relative;
@@ -563,43 +570,6 @@ textarea.form__input {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
-
-.swiper-button-prev,
-.swiper-button-next {
-  color: #f8f9fa; }
-
-.swiper-pagination {
-  position: static;
-  width: auto; }
-
-.swiper-slide {
-  max-width: 60rem; }
-  .swiper-slide--photos {
-    height: 60rem;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .swiper-slide--events {
-    background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/events/events-46.webp);
-    background-size: cover;
-    background-repeat: no-repeat; }
-
-.swiper-link:link, .swiper-link:visited {
-  display: inline-block;
-  font-family: "Boucherie Block";
-  font-size: 6.4rem;
-  text-decoration: none;
-  color: #f8f9fa;
-  background: linear-gradient(#fab005, #fab005);
-  background-size: 0% 3px;
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  transition: all 0.3s ease-in-out; }
-
-.swiper-link:hover, .swiper-link:active {
-  color: #fab005;
-  background-size: 100% 3px; }
 
 .grid {
   display: grid;

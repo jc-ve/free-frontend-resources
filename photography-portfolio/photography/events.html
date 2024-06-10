@@ -9,7 +9,7 @@
     />
     <link rel="stylesheet" href="../src/css/lightbox.min.css" />
     <link rel="stylesheet" href="../src/css/style.css" />
-    <title>Rora Santos &mdash; Events Photography</title>
+    <title>Rora Santos | Photography &mdash; Events Photography</title>
   </head>
   <body>
     <div class="navigation">
@@ -567,7 +567,7 @@
                 class="gallery__img"
             /></a>
           </div>
-          <div class="gallery__item">
+          <div class="gallery__item gallery__item--400">
             <a
               href="../assets/images/events/events-47.webp"
               data-lightbox="events"
@@ -584,19 +584,6 @@
 
     <script src="../src/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script>
-      const gallery = document.querySelector(".gallery");
-      const msnry = new Masonry(gallery, {
-        itemSelector: ".gallery__item",
-        gutter: 10,
-        percentPosition: true,
-        horizontalOrder: true,
-      });
-
-      lightbox.option({
-        resizeDuration: 200,
-        wrapAround: true,
-      });
-    </script>
+    <script src="../src/js/script.js"></script>
   </body>
 </html>

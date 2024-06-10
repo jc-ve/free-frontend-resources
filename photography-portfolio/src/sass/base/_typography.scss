@@ -115,4 +115,20 @@ body {
   &--gallery {
     font-size: 3.6rem;
   }
+
+  &--greetings {
+    font-family: "Boucherie Block";
+    font-size: 6.4rem;
+    position: relative;
+    margin-bottom: 6.4rem;
+
+    & > * {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      width: 100%;
+    }
+  }
 }

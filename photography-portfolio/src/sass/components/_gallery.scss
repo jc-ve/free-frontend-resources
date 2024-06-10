@@ -1,4 +1,6 @@
 .gallery {
+  padding-bottom: 2rem;
+
   &__item {
     width: 24%;
     margin-bottom: 1rem;
@@ -9,8 +11,9 @@
       width: 48%;
     }
 
-    @media screen and (max-width: $bp-sm) {
+    @media screen and (max-width: $bp-xs) {
       width: 100%;
+      height: 30rem;
     }
 
     &--300 {
@@ -19,10 +22,18 @@
 
     &--400 {
       height: 40rem;
+
+      @media screen and (max-width: $bp-xs) {
+        height: 30rem;
+      }
     }
 
     &--500 {
       height: 50rem;
+
+      @media screen and (max-width: $bp-xs) {
+        height: 30rem;
+      }
     }
 
     &:hover .gallery__img {

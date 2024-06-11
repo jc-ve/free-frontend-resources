@@ -1,6 +1,5 @@
 .movie {
   position: relative;
-  display: inline-block;
 
   &__video {
     height: 50rem;
@@ -10,7 +9,7 @@
       margin-bottom: 3.2rem;
     }
 
-    @media screen and (max-width: $bp-md) {
+    @media screen and (max-width: $bp-lg) {
       width: 100%;
     }
   }

@@ -412,15 +412,14 @@ textarea.form__input {
     pointer-events: none; }
 
 .movie {
-  position: relative;
-  display: inline-block; }
+  position: relative; }
   .movie__video {
     height: 50rem;
     width: 80rem; }
     @media screen and (max-width: 62em) {
       .movie__video {
         margin-bottom: 3.2rem; } }
-    @media screen and (max-width: 48em) {
+    @media screen and (max-width: 62em) {
       .movie__video {
         width: 100%; } }
   .movie__caption {
@@ -495,6 +494,7 @@ textarea.form__input {
   z-index: 1500;
   opacity: 0;
   width: 0;
+  pointer-events: none;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .navigation__list {
@@ -534,7 +534,8 @@ textarea.form__input {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  width: 100%;
+  pointer-events: auto; }
 
 .navigation__icon {
   position: relative;
@@ -570,6 +571,31 @@ textarea.form__input {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
+
+.photography__block {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-position: top; }
+  .photography__block--events {
+    background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/events/events-1.webp); }
+  .photography__block--bts {
+    background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/bts/bts-1.webp); }
+  .photography__block--portrait {
+    background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/portraits/portrait-1.webp); }
+
+.photography__link:link, .photography__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #f8f9fa;
+  font-family: "Boucherie Block";
+  font-size: 6.4rem;
+  transition: color 0.3s ease-in-out; }
+
+.photography__link:hover, .photography__link:active {
+  color: #fab005; }
 
 .grid {
   display: grid;

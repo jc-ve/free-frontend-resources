@@ -572,19 +572,30 @@ textarea.form__input {
   top: 0;
   transform: rotate(-135deg); }
 
+.photography__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem; }
+
 .photography__block {
-  height: 20rem;
+  height: 30rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-size: contain;
-  background-position: top; }
+  padding: 2rem;
+  text-align: center; }
   .photography__block--events {
-    background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/events/events-1.webp); }
+    background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/events/events-1.webp);
+    background-size: cover;
+    background-position: top; }
   .photography__block--bts {
-    background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/bts/bts-1.webp); }
+    background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/bts/bts-1.webp);
+    background-size: cover;
+    background-position: top; }
   .photography__block--portrait {
-    background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/portraits/portrait-1.webp); }
+    background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/portraits/portrait-1.webp);
+    background-size: cover;
+    background-position: top; }
 
 .photography__link:link, .photography__link:visited {
   display: inline-block;
@@ -592,6 +603,7 @@ textarea.form__input {
   color: #f8f9fa;
   font-family: "Boucherie Block";
   font-size: 6.4rem;
+  line-height: 1.2;
   transition: color 0.3s ease-in-out; }
 
 .photography__link:hover, .photography__link:active {

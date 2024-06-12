@@ -22,3 +22,8 @@
   transition: background-size 0.3s ease-in-out;
   position: absolute;
 }
+
+@mixin backgroundConst {
+  background-size: cover;
+  background-position: top;
+}

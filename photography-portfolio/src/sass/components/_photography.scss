@@ -4,6 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem;
   }
+
   &__block {
     height: 30rem;
     display: flex;
@@ -27,6 +28,24 @@
     &--portrait {
       background: linear-gradient(rgba($clr-black, 0.5), rgba($clr-black, 0.5)),
         url(/assets/images/portraits/portrait-1.webp);
+      @include backgroundConst;
+    }
+
+    &--product {
+      background: linear-gradient(rgba($clr-black, 0.5), rgba($clr-black, 0.5)),
+        url(/assets/images/products/product-1.webp);
+      @include backgroundConst;
+    }
+
+    &--analog {
+      background: linear-gradient(rgba($clr-black, 0.5), rgba($clr-black, 0.5)),
+        url(/assets/images/film/film-1.webp);
+      @include backgroundConst;
+    }
+
+    &--streets {
+      background: linear-gradient(rgba($clr-black, 0.5), rgba($clr-black, 0.5)),
+        url(/assets/images/streets/streets-1.webp);
       @include backgroundConst;
     }
   }

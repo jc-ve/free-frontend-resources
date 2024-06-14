@@ -49,6 +49,8 @@ const renderGreetings = () => {
     .to(fifthHeading, 0.5, { alpha: 0, ease: Power1.easeOut }, "+=0.3");
 };
 
+const emailFunction = () => {};
+
 renderGallery();
 renderVideos();
 renderGreetings();

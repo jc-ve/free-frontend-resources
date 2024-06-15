@@ -191,6 +191,9 @@ body {
     font-size: 6.4rem;
     position: relative;
     margin-bottom: 6.4rem; }
+    @media screen and (max-width: 37.5em) {
+      .heading--greetings {
+        font-size: 5.2rem; } }
     .heading--greetings > * {
       position: absolute;
       top: 50%;
@@ -221,27 +224,21 @@ body {
 .u-margin-bottom-xl {
   margin-bottom: 6.4rem; }
 
-.awards {
-  list-style: none;
+.awards__item {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 4.8rem;
-  row-gap: 2.4rem; }
-  .awards__item {
-    flex: 0 0 45%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2.4rem; }
-    @media screen and (max-width: 48em) {
-      .awards__item {
-        flex: 0 0 100%; } }
-  .awards__title {
-    display: block;
-    font-weight: 700; }
-  .awards__film {
-    font-style: italic;
-    display: block; }
+  align-items: center;
+  justify-content: space-between;
+  gap: 4.8rem; }
+  .awards__item:not(:last-child) {
+    margin-bottom: 2.4rem; }
+
+.awards__title {
+  display: block;
+  font-weight: 700; }
+
+.awards__film {
+  font-style: italic;
+  display: block; }
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -309,8 +306,24 @@ body {
   list-style: none;
   overflow: hidden;
   flex-wrap: wrap; }
+  @media screen and (max-width: 37.5em) {
+    .contact__item {
+      flex: 0 0 50%; } }
   .contact__item:not(:last-child) {
     border-right: 1px solid #f8f9fa; }
+    @media screen and (max-width: 37.5em) {
+      .contact__item:not(:last-child) {
+        border-right: none; } }
+  @media screen and (max-width: 37.5em) {
+    .contact__item:nth-child(1) {
+      border-right: 1px solid #f8f9fa;
+      border-bottom: 1px solid #f8f9fa; } }
+  @media screen and (max-width: 37.5em) {
+    .contact__item:nth-child(2) {
+      border-bottom: 1px solid #f8f9fa; } }
+  @media screen and (max-width: 37.5em) {
+    .contact__item:nth-child(3) {
+      border-right: 1px solid #f8f9fa; } }
   .contact__link:link, .contact__link:visited {
     display: inline-block;
     text-decoration: none;
@@ -594,6 +607,18 @@ textarea.form__input {
     background-position: top; }
   .photography__block--portrait {
     background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/portraits/portrait-1.webp);
+    background-size: cover;
+    background-position: top; }
+  .photography__block--product {
+    background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/products/product-1.webp);
+    background-size: cover;
+    background-position: top; }
+  .photography__block--analog {
+    background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/film/film-1.webp);
+    background-size: cover;
+    background-position: top; }
+  .photography__block--streets {
+    background: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(/assets/images/streets/streets-1.webp);
     background-size: cover;
     background-position: top; }
 

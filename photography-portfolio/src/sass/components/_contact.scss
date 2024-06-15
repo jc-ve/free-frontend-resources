@@ -8,8 +8,35 @@
   flex-wrap: wrap;
 
   &__item {
+    @media screen and (max-width: $bp-sm) {
+      flex: 0 0 50%;
+    }
+
     &:not(:last-child) {
       border-right: 1px solid $clr-white;
+
+      @media screen and (max-width: $bp-sm) {
+        border-right: none;
+      }
+    }
+
+    &:nth-child(1) {
+      @media screen and (max-width: $bp-sm) {
+        border-right: 1px solid $clr-white;
+        border-bottom: 1px solid $clr-white;
+      }
+    }
+
+    &:nth-child(2) {
+      @media screen and (max-width: $bp-sm) {
+        border-bottom: 1px solid $clr-white;
+      }
+    }
+
+    &:nth-child(3) {
+      @media screen and (max-width: $bp-sm) {
+        border-right: 1px solid $clr-white;
+      }
     }
   }
 

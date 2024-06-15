@@ -122,6 +122,10 @@ body {
     position: relative;
     margin-bottom: 6.4rem;
 
+    @media screen and (max-width: $bp-sm) {
+      font-size: 5.2rem;
+    }
+
     & > * {
       position: absolute;
       top: 50%;

@@ -1,19 +1,12 @@
 .awards {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 4.8rem;
-  row-gap: 2.4rem;
-
   &__item {
-    flex: 0 0 45%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2.4rem;
+    gap: 4.8rem;
 
-    @media screen and (max-width: $bp-md) {
-      flex: 0 0 100%;
+    &:not(:last-child) {
+      margin-bottom: 2.4rem;
     }
   }
 

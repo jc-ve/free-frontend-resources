@@ -1,0 +1,17 @@
+.header {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__brand {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $clr-white;
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+  }
+}

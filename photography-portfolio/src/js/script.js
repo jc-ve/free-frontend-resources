@@ -4,6 +4,11 @@ const photos = document.querySelector(".photos");
 const videos = document.querySelector(".videos");
 const contacts = document.querySelector(".contacts");
 
+const toggle = document.getElementById("toggle");
+const nav = document.getElementById("nav");
+
+toggle.addEventListener("click", () => nav.classList.toggle("active"));
+
 const renderVideos = () => {
   if (!videos) return;
   AOS.init();

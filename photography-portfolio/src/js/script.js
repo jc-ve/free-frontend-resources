@@ -4,6 +4,10 @@ const photos = document.querySelector(".photos");
 const videos = document.querySelector(".videos");
 const contacts = document.querySelector(".contacts");
 
+const fullName = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+
 const toggle = document.getElementById("toggle");
 const nav = document.getElementById("nav");
 
@@ -54,7 +58,14 @@ const renderGreetings = () => {
     .to(fifthHeading, 0.5, { alpha: 0, ease: Power1.easeOut }, "+=0.3");
 };
 
-const emailFunction = () => {};
+const emailFunction = () => {
+  Swal.fire({
+    title: "Error!",
+    text: "Do you want to continue",
+    icon: "error",
+    confirmButtonText: "Cool",
+  });
+};
 
 renderGallery();
 renderVideos();

@@ -59,6 +59,10 @@ const renderGreetings = () => {
 };
 
 const emailFunction = () => {
+  let isValid;
+
+  if (!isValid) return;
+
   Swal.fire({
     title: "Error!",
     text: "Do you want to continue",

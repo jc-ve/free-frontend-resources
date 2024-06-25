@@ -1,11 +1,13 @@
 .header {
+  padding: 4rem 0;
+
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  &__brand {
+  &__link {
     &:link,
     &:visited {
       text-decoration: none;

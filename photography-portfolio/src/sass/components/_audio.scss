@@ -1,0 +1,23 @@
+.audio {
+  padding: 2rem;
+  text-align: center;
+
+  &:first-child {
+    border-right: 1px solid $clr-white;
+  }
+
+  &__container {
+    border: 1px solid $clr-white;
+    border-radius: 10px;
+    display: flex;
+  }
+
+  &__title {
+    color: $clr-white;
+    font-size: 2rem;
+  }
+
+  &__award {
+    font-size: 1.4rem;
+  }
+}

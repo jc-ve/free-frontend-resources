@@ -8,10 +8,10 @@ const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
 
-const toggle = document.getElementById("toggle");
-const nav = document.getElementById("nav");
+const btnNav = document.querySelector(".navigation__btn");
+const elNav = document.querySelector(".navigation");
 
-toggle.addEventListener("click", () => nav.classList.toggle("active"));
+btnNav.addEventListener("click", () => elNav.classList.toggle("active"));
 
 const renderVideos = () => {
   if (!videos) return;

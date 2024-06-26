@@ -82,36 +82,4 @@
       transform: translateX(1rem);
     }
   }
-
-  &__checkbox:checked ~ &__background {
-    transform: scale(80);
-  }
-
-  &__checkbox:checked ~ &__nav {
-    opacity: 1;
-    width: 100%;
-    pointer-events: auto;
-  }
-
-  &__button:hover &__icon::before {
-    top: -1rem;
-  }
-
-  &__button:hover &__icon::after {
-    top: 1rem;
-  }
-
-  &__checkbox:checked + &__button &__icon {
-    background-color: transparent;
-  }
-
-  &__checkbox:checked + &__button &__icon::before {
-    top: 0;
-    transform: rotate(135deg);
-  }
-
-  &__checkbox:checked + &__button &__icon::after {
-    top: 0;
-    transform: rotate(-135deg);
-  }
 }

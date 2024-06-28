@@ -2,14 +2,25 @@
   padding: 2rem;
   text-align: center;
 
+  @media screen and (max-width: $bp-md) {
+    flex: 0 0 100%;
+  }
+
   &:first-child {
     border-right: 1px solid $clr-white;
+
+    @media screen and (max-width: $bp-md) {
+      border-right: none;
+      border-bottom: 1px solid $clr-white;
+    }
   }
 
   &__container {
     border: 1px solid $clr-white;
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__title {

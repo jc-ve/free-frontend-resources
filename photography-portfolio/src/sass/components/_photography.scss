@@ -3,6 +3,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem;
+
+    @media screen and (max-width: $bp-md) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__block {
@@ -15,7 +19,7 @@
 
     &--events {
       background: linear-gradient(rgba($clr-black, 0.5), rgba($clr-black, 0.5)),
-        url(/assets/images/events/events-1.webp);
+        url(/assets/images/events/events-42.webp);
       @include backgroundConst;
     }
 
@@ -27,25 +31,27 @@
 
     &--portrait {
       background: linear-gradient(rgba($clr-black, 0.5), rgba($clr-black, 0.5)),
-        url(/assets/images/portraits/portrait-1.webp);
+        url(/assets/images/portraits/portrait-2.webp);
       @include backgroundConst;
+      background-position: 0 20%;
     }
 
     &--product {
       background: linear-gradient(rgba($clr-black, 0.5), rgba($clr-black, 0.5)),
-        url(/assets/images/products/product-1.webp);
+        url(/assets/images/products/product-16.webp);
       @include backgroundConst;
+      background-position: center;
     }
 
     &--analog {
       background: linear-gradient(rgba($clr-black, 0.5), rgba($clr-black, 0.5)),
-        url(/assets/images/film/film-1.webp);
+        url(/assets/images/film/film-5.webp);
       @include backgroundConst;
     }
 
     &--streets {
       background: linear-gradient(rgba($clr-black, 0.5), rgba($clr-black, 0.5)),
-        url(/assets/images/streets/streets-1.webp);
+        url(/assets/images/streets/streets-7.webp);
       @include backgroundConst;
     }
   }
@@ -58,6 +64,10 @@
       font-size: 6.4rem;
       line-height: 1.2;
       transition: color 0.3s ease-in-out;
+
+      @media screen and (max-width: $bp-xs) {
+        font-size: 4.8rem;
+      }
     }
 
     &:hover,

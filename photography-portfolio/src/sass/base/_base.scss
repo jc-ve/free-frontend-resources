@@ -30,15 +30,23 @@ html {
   overscroll-behavior: none;
 }
 
+html.active {
+  overflow-y: hidden;
+}
+
 body {
   box-sizing: border-box;
   background-color: $clr-black;
   color: $clr-white;
-  padding: 0 2rem;
+  padding: 2rem;
   scroll-behavior: smooth;
   overscroll-behavior: none;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+body.active {
+  overflow-y: hidden;
 }
 
 img,

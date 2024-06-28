@@ -10,10 +10,13 @@
 
   &__btn {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     background-color: $clr-white;
     border: none;
-    padding: 2rem;
+    padding: 1.6rem;
     z-index: 2000;
     cursor: pointer;
   }
@@ -44,11 +47,6 @@
     list-style: none;
     text-align: center;
     width: 100%;
-
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // gap: 2.4rem;
   }
 
   &__link {

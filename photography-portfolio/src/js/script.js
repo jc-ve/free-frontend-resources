@@ -4,14 +4,17 @@ const photos = document.querySelector(".photos");
 const videos = document.querySelector(".videos");
 const contacts = document.querySelector(".contacts");
 
-const fullName = document.getElementById("name");
-const email = document.getElementById("email");
-const message = document.getElementById("message");
-
 const btnNav = document.querySelector(".navigation__btn");
 const elNav = document.querySelector(".navigation");
 
-btnNav.addEventListener("click", () => elNav.classList.toggle("active"));
+const html = document.querySelector("html");
+const body = document.querySelector("body");
+
+btnNav.addEventListener("click", () => {
+  html.classList.toggle("active");
+  body.classList.toggle("active");
+  elNav.classList.toggle("active");
+});
 
 const renderVideos = () => {
   if (!videos) return;

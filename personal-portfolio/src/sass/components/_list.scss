@@ -1,11 +1,19 @@
 .list {
   list-style-position: inside;
 
-  &--social {
+  &--inline {
     list-style: none;
     display: flex;
     gap: 1.2rem;
     align-items: center;
+    flex-wrap: wrap;
+
+    &__item {
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+    }
   }
 
   &__item {
@@ -55,12 +63,22 @@
 }
 
 @media (prefers-color-scheme: light) {
+  .list--inline__item {
+    color: $clr-white;
+    background-color: $clr-black;
+  }
+
   .list__description {
     color: $clr-gray-dark;
   }
 }
 
 @media (prefers-color-scheme: dark) {
+  .list--inline__item {
+    color: $clr-black;
+    background-color: $clr-white;
+  }
+
   .list__description {
     color: $clr-gray-light;
   }

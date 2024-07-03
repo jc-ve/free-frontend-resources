@@ -117,6 +117,9 @@ body {
 .u-margin-bottom-lg {
   margin-bottom: 3.6rem; }
 
+.u-margin-bottom-xl {
+  margin-bottom: 5.2rem; }
+
 .btn:link, .btn:visited {
   display: inline-block;
   font-size: 1.4rem;
@@ -152,11 +155,17 @@ body {
 
 .list {
   list-style-position: inside; }
-  .list--social {
+  .list--inline {
     list-style: none;
     display: flex;
     gap: 1.2rem;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
+    .list--inline__item {
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px; }
   .list__item {
     max-width: 75ch; }
     .list__item:not(:last-child) {
@@ -185,10 +194,16 @@ body {
     gap: 2.4rem; }
 
 @media (prefers-color-scheme: light) {
+  .list--inline__item {
+    color: #fdfdff;
+    background-color: #212529; }
   .list__description {
     color: #495057; } }
 
 @media (prefers-color-scheme: dark) {
+  .list--inline__item {
+    color: #212529;
+    background-color: #fdfdff; }
   .list__description {
     color: #adb5bd; } }
 

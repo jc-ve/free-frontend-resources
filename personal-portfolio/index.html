@@ -27,41 +27,40 @@
   </head>
   <body>
     <nav class="navigation">
-      <ul class="navigation__list">
+      <ul class="navigation__list" role="tablist">
         <li class="navigation__item">
           <button
             class="navigation__btn navigation__btn--active"
             id="btn-home"
             data-content="home"
+            role="tab"
           >
             Home
           </button>
         </li>
         <li class="navigation__item">
-          <button class="navigation__btn" id="btn-about" data-content="about">
-            About
+          <button
+            class="navigation__btn"
+            id="btn-about"
+            data-content="projects"
+            role="tab"
+          >
+            Projects
           </button>
         </li>
         <li class="navigation__item">
           <button
             class="navigation__btn"
             id="btn-activities"
-            data-content="activities"
+            data-content="interests"
+            role="tab"
           >
-            Activites
-          </button>
-        </li>
-        <li class="navigation__item">
-          <button
-            class="navigation__btn"
-            id="btn-youtube"
-            data-content="youtube"
-          >
-            Youtube
+            Interests
           </button>
         </li>
       </ul>
     </nav>
+
     <header class="header">
       <div class="u-container">
         <h1 class="heading heading--primary u-margin-bottom-md">JC Enriquez</h1>
@@ -71,8 +70,123 @@
         </p>
       </div>
     </header>
+
     <main class="main">
       <section class="section section--home active">
+        <div class="u-container">
+          <div class="u-margin-bottom-xl">
+            <h2 class="heading heading--secondary u-margin-bottom-lg">About</h2>
+            <p class="paragraph u-margin-bottom-md">
+              Hello! My name is JC, a Philippine-based Frontend Developer. I
+              honed my skills in FEU Institute of Technology where I developed
+              my creativity to every project I create.
+            </p>
+            <p class="paragraph u-margin-bottom-lg">
+              When I'm not in work mode, you'll likely find me shooting hoops on
+              the court, pounding the pavement for a run, or cruising along on
+              my bike.
+            </p>
+            <!-- <a
+              href="mailto:john.christopher.enriquez.2@gmail.com"
+              target="_blank"
+              class="btn"
+              >Send Message
+
+              <i class="fa-solid fa-arrow-right-long btn__icon"></i>
+            </a> -->
+            <ul class="list list--inline">
+              <li>
+                <a
+                  href="/assets/Enriquez_Resume.pdf"
+                  target="_blank"
+                  title="Resume"
+                  class="list__link--social"
+                >
+                  <i class="fa-solid fa-square-pen fa-2xl"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:john.christopher.enriquez.2@gmail.com"
+                  target="_blank"
+                  title="Email"
+                  class="list__link--social"
+                >
+                  <i class="fa-solid fa-square-envelope fa-2xl"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCakOD76rxddFiEgCukv5Ozw"
+                  target="_blank"
+                  title="Youtube"
+                  class="list__link--social"
+                >
+                  <i class="fa-brands fa-square-youtube fa-2xl"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/jc-ve"
+                  target="_blank"
+                  title="GitHub"
+                  class="list__link--social"
+                >
+                  <i class="fa-brands fa-square-github fa-2xl"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="heading heading--secondary u-margin-bottom-lg">
+              Skills
+            </h2>
+            <div class="u-margin-bottom-md">
+              <h3 class="heading heading--tertiary u-margin-bottom-sm">
+                Programming Languages
+              </h3>
+              <ul class="list list--inline">
+                <li class="list--inline__item">JavaScript</li>
+                <li class="list--inline__item">TypeScript</li>
+                <li class="list--inline__item">HTML</li>
+                <li class="list--inline__item">CSS</li>
+                <li class="list--inline__item">SASS</li>
+                <li class="list--inline__item">PHP</li>
+              </ul>
+            </div>
+
+            <div class="u-margin-bottom-md">
+              <h3 class="heading heading--tertiary u-margin-bottom-sm">
+                Libraries & Frameworks
+              </h3>
+              <ul class="list list--inline">
+                <li class="list--inline__item">React</li>
+                <li class="list--inline__item">jQuery</li>
+                <li class="list--inline__item">Tailwind CSS</li>
+                <li class="list--inline__item">Bootstrap</li>
+                <li class="list--inline__item">Bulma</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="heading heading--tertiary u-margin-bottom-sm">
+                Tools & Platforms
+              </h3>
+              <ul class="list list--inline">
+                <li class="list--inline__item">Git</li>
+                <li class="list--inline__item">Github</li>
+                <li class="list--inline__item">Figma</li>
+                <li class="list--inline__item">Gimp</li>
+                <li class="list--inline__item">Photoshop</li>
+                <li class="list--inline__item">Premiere Pro</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--projects">
         <div class="u-container">
           <h2 class="heading heading--secondary u-margin-bottom-lg">
             Projects
@@ -105,82 +219,10 @@
               </span>
             </li>
           </ul>
-          <a
-            href="mailto:john.christopher.enriquez.2@gmail.com"
-            target="_blank"
-            class="btn"
-            >Send Message
+        </div>
+      </section>
 
-            <i class="fa-solid fa-arrow-right-long btn__icon"></i>
-          </a>
-        </div>
-      </section>
-      <section class="section section--about">
-        <div class="u-container">
-          <h2 class="heading heading--secondary u-margin-bottom-lg">About</h2>
-          <p class="paragraph u-margin-bottom-md">
-            Hello! My name is JC, a Philippine-based Frontend Developer. I honed
-            my skills in FEU Institute of Technology where I developed my
-            creativity to every project I create.
-          </p>
-          <p class="paragraph u-margin-bottom-lg">
-            When I'm not in work mode, you'll likely find me shooting hoops on
-            the court, pounding the pavement for a run, or cruising along on my
-            bike.
-          </p>
-          <ul class="list list--social">
-            <li>
-              <a
-                href="/assets/Enriquez_Resume.pdf"
-                target="_blank"
-                title="Resume"
-                class="list__link--social"
-              >
-                <i class="fa-solid fa-square-pen fa-2xl"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="mailto:john.christopher.enriquez.2@gmail.com"
-                target="_blank"
-                title="Email"
-                class="list__link--social"
-              >
-                <i class="fa-solid fa-square-envelope fa-2xl"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCakOD76rxddFiEgCukv5Ozw"
-                target="_blank"
-                title="Youtube"
-                class="list__link--social"
-              >
-                <i class="fa-brands fa-square-youtube fa-2xl"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/jc-ve"
-                target="_blank"
-                title="GitHub"
-                class="list__link--social"
-              >
-                <i class="fa-brands fa-square-github fa-2xl"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="section section--activities">
-        <div class="u-container">
-          <h2 class="heading heading--secondary u-margin-bottom-lg">
-            Activities
-          </h2>
-          <ul class="list list--activities"></ul>
-        </div>
-      </section>
-      <section class="section section--youtube">
+      <section class="section section--interests">
         <div class="u-container">
           <h2 class="heading heading--secondary u-margin-bottom-md">Youtube</h2>
           <p class="paragraph u-margin-bottom-lg">

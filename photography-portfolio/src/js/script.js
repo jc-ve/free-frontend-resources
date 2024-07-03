@@ -10,6 +10,11 @@ const elNav = document.querySelector(".navigation");
 const html = document.querySelector("html");
 const body = document.querySelector("body");
 
+const form = document.getElementById("form");
+const fullname = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+
 btnNav.addEventListener("click", () => {
   html.classList.toggle("active");
   body.classList.toggle("active");
@@ -61,18 +66,34 @@ const renderGreetings = () => {
     .to(fifthHeading, 0.5, { alpha: 0, ease: Power1.easeOut }, "+=0.3");
 };
 
-const emailFunction = () => {
-  let isValid;
+const emailFunction = (e) => {
+  e.preventDefault();
 
-  if (!isValid) return;
+  const params = {
+    name: fullname.value,
+    email: email.value,
+    message: message.value,
+  };
 
-  Swal.fire({
-    title: "Error!",
-    text: "Do you want to continue",
-    icon: "error",
-    confirmButtonText: "Cool",
+  const serviceID = "service_z61pk8b";
+  const templateID = "template_o8nkgc4";
+
+  emailjs.send(serviceID, templateID, params).then((res) => {
+    fullname.value = "";
+    email.value = "";
+    message.value = "";
+
+    Swal.fire({
+      title: "Message Sent!",
+      text: "Message sent successfully!",
+      icon: "success",
+    });
   });
 };
+
+if (form) {
+  form.addEventListener("submit", emailFunction);
+}
 
 renderGallery();
 renderVideos();

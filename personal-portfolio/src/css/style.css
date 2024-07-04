@@ -150,6 +150,13 @@ body {
     background-color: #fdfdff;
     color: #212529; } }
 
+.card__title:link, .card__title:visited {
+  text-decoration: none;
+  color: currentColor; }
+
+.card__img {
+  max-width: 100%; }
+
 .header .paragraph {
   max-width: 50ch; }
 

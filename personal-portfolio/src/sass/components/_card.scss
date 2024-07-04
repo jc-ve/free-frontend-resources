@@ -1,0 +1,13 @@
+.card {
+  &__title {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: currentColor;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+}

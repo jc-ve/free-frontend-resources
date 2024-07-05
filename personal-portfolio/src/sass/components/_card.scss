@@ -10,4 +10,21 @@
   &__img {
     max-width: 100%;
   }
+
+  .card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    list-style: none;
+  }
+
+  .card__tag {
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 1px solid;
+
+    // &--html {
+    //   // border-color: ;
+    // }
+  }
 }

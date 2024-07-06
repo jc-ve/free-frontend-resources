@@ -1,14 +1,27 @@
 .card {
+  position: relative;
+  border: 1px solid $clr-gray;
+  border-radius: 4px;
+  overflow: hidden;
+
+  // &:hover {
+  //   .card__title {
+
+  //   }
+  // }
+
   &__title {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      color: currentColor;
-    }
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: currentColor;
   }
 
   &__img {
     max-width: 100%;
+  }
+
+  &__body {
+    padding: 1.6rem;
   }
 
   .card__tags {
@@ -16,15 +29,88 @@
     flex-wrap: wrap;
     gap: 1.6rem;
     list-style: none;
+    margin-bottom: 1.6rem;
   }
 
   .card__tag {
     font-weight: 600;
     font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+  }
+
+  &__label {
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
     border: 1px solid;
 
-    // &--html {
-    //   // border-color: ;
-    // }
+    &--fem {
+      background-color: $clr-fem-light;
+      color: $clr-fem;
+      border-radius: 4px;
+      border-color: $clr-fem;
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .card__tag {
+    &--html {
+      color: $clr-html-light;
+      background-color: $clr-html-dark;
+    }
+
+    &--css {
+      color: $clr-css-light;
+      background-color: $clr-css-dark;
+    }
+
+    &--js {
+      color: $clr-js-light;
+      background-color: $clr-js-dark;
+    }
+
+    &--sass {
+      color: $clr-sass-light;
+      background-color: $clr-sass-dark;
+    }
+
+    &--react {
+      color: $clr-react-light;
+      background-color: $clr-react-dark;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card__tag {
+    &--html {
+      color: $clr-html-dark;
+      background-color: $clr-html-light;
+    }
+
+    &--css {
+      color: $clr-css-dark;
+      background-color: $clr-css-light;
+    }
+
+    &--js {
+      color: $clr-js-dark;
+      background-color: $clr-js-light;
+    }
+
+    &--sass {
+      color: $clr-sass-dark;
+      background-color: $clr-sass-light;
+    }
+
+    &--react {
+      color: $clr-react-dark;
+      background-color: $clr-react-light;
+    }
   }
 }

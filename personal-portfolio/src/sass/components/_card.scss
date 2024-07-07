@@ -10,33 +10,12 @@
   //   }
   // }
 
-  &__title {
-    font-weight: 700;
-    font-size: 2.4rem;
-    color: currentColor;
-  }
-
   &__img {
     max-width: 100%;
   }
 
   &__body {
     padding: 1.6rem;
-  }
-
-  .card__tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.6rem;
-    list-style: none;
-    margin-bottom: 1.6rem;
-  }
-
-  .card__tag {
-    font-weight: 600;
-    font-size: 1.2rem;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
   }
 
   &__label {
@@ -53,6 +32,69 @@
       color: $clr-fem;
       border-radius: 4px;
       border-color: $clr-fem;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    list-style: none;
+    margin-bottom: 1.6rem;
+  }
+
+  &__tag {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: currentColor;
+    margin-bottom: 2.4rem;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1.6rem;
+  }
+
+  &__btn {
+    &,
+    &:link,
+    &:visited {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 1rem 1.2rem;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &--solid {
+      flex: 0 0 70%;
+
+      &:hover {
+        & .card__btn__icon {
+          transform: translateX(0.4rem);
+        }
+      }
+    }
+
+    &--outline {
+      flex: 0 0 20%;
+    }
+
+    &__icon {
+      transition: transform 0.3s ease;
     }
   }
 }
@@ -84,6 +126,17 @@
       background-color: $clr-react-dark;
     }
   }
+
+  .card__btn {
+    &--solid {
+      &,
+      &:link,
+      &:visited {
+        background-color: $clr-black;
+        color: $clr-white;
+      }
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -111,6 +164,32 @@
     &--react {
       color: $clr-react-dark;
       background-color: $clr-react-light;
+    }
+  }
+
+  .card__btn {
+    &--solid {
+      &,
+      &:link,
+      &:visited {
+        background-color: $clr-white;
+        color: $clr-black;
+      }
+    }
+
+    &--outline {
+      &,
+      &:link,
+      &:visited {
+        color: $clr-white;
+        box-shadow: 0 0 0 1px inset $clr-white;
+      }
+
+      &:hover,
+      &:active {
+        color: $clr-black;
+        background-color: $clr-white;
+      }
     }
   }
 }

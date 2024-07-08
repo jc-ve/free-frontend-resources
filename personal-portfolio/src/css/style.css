@@ -53,7 +53,7 @@ body {
     background-color: #212529;
     color: #fdfdff; }
   body {
-    background-color: #fdfdff;
+    background: url("/assets/overlay.png"), linear-gradient(315deg, #fdfdff 11.2%, #adb5bd 91.1%);
     color: #212529; } }
 
 @media (prefers-color-scheme: dark) {
@@ -61,7 +61,7 @@ body {
     background-color: #fdfdff;
     color: #212529; }
   body {
-    background-color: #212529;
+    background: url("/assets/overlay.png"), linear-gradient(315deg, #212529 11.2%, #495057 91.1%);
     color: #fdfdff; } }
 
 html {

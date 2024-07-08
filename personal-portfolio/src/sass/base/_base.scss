@@ -49,7 +49,8 @@ body {
   }
 
   body {
-    background-color: $clr-white;
+    background: url("/assets/overlay.png"),
+      linear-gradient(315deg, $clr-white 11.2%, $clr-gray-light 91.1%);
     color: $clr-black;
   }
 }
@@ -61,7 +62,8 @@ body {
   }
 
   body {
-    background-color: $clr-black;
+    background: url("/assets/overlay.png"),
+      linear-gradient(315deg, $clr-black 11.2%, $clr-gray-dark 91.1%);
     color: $clr-white;
   }
 }
